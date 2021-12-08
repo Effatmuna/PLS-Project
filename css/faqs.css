@@ -1,0 +1,96 @@
+*{box-sizing: border-box;margin:0; padding:0;}
+
+body{
+    
+    
+
+}
+
+
+.card h5{
+
+
+
+    color: black;
+    overflow: hidden;
+    
+
+    
+}
+
+.card-body p{
+
+
+
+    font-weight: lighter;
+    overflow: hidden;
+    text-align: left;
+    font-weight: lighter;
+    margin-left: 7px;
+    
+}
+
+.upper{
+    display: none;
+}
+.hidden2{
+    display: none;
+}
+.height {
+    background: url("../images/pic 4.jpg");
+    min-height:145vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation-name: zoom;
+    animation-duration: 20s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    z-index: -1;
+    
+  }
+.min{
+
+    z-index: 0;
+    
+    overflow: hidden;
+    position: relative;
+    top:120px;
+   
+}
+.min .title{
+      position: relative;
+      
+      left: 72vh;
+}
+.min h4{
+    
+    color: white;
+     text-align: center;
+    font-size: 35px;
+    font-family: 'Rokkitt', serif;
+     margin-bottom: 20px;
+     text-shadow:1px 1px 1px  rgb(71, 66, 66);
+}
+.min .act{
+
+    border-bottom: white 2px solid;
+    width: 200px;
+    left: 200px;
+  
+  
+  }
+
+.height .contact-support{
+
+    background-color: rgb(8, 8, 24);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+     padding:8px;
+     margin-top: 15px;
+     margin-left: 75vh;
+}

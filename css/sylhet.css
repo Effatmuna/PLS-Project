@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#sylhet-section {
+    background: url("pic3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    min-height: 500px;
+  }
+  
+  .sylhet{
+
+    
+   
+    position:absolute ;
+    top:250px;
+    right:100px;
+    font-family: 'Rokkitt', serif;
+  }
+.sylhet-title{
+    color: white;
+}
+  .sylhet h5{
+    font-size: 35px;
+    
+  color: white;
+  font-weight: 400;
+  text-shadow:1px 1px 1px  white;
+}
+
+.sylhet p{
+    font-weight: 300;
+    font-family: 'Radley', serif;
+}
+
+.sylhet .act{
+   
+    border-bottom: white 1px solid;
+    width: 2px;
+    height:1px;
+    position: relative;
+     right: 20px;
+     transform: scaleY(100);
+     top:40px;
+
+   
+  }
+
+/*Details*/
+  .details{
+    box-shadow: 2px 2px 2px gray;
+  }
+.col-md-4 h5{
+  
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px gray;
+    padding:10px;
+    cursor: pointer;
+  }
+  
+
+.details .col-md-4{
+  
+  text-align: center;
+}
+
+
+.details p{
+  font-weight: lighter;
+  
+}
+.d1{
+  display: inline;
+}
+.show-p2{
+  display: none;
+}
+.show-p3{
+  display: none;
+}
+
+
+/*Seller-details*/
+
+.seller-details .Seller{
+  text-align: center;
+  margin-top: 20px;
+}
+.Seller h6{
+  font-weight: bold;
+  font-size: 18px;
+}
+.Seller span{
+  font-weight: lighter;
+}
+
+/*Contact Seller*/
+.contact-seller-form{
+  box-shadow: 1px 1px 1px 1px gray;
+  padding:10px;
+  height:530px;
+}
+
+.form-group .form-control{
+  margin-top: 15px;
+}

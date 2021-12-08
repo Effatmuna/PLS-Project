@@ -1,0 +1,183 @@
+console.log("muna");
+console.log("rahat");
+var navToggle = document.querySelector(".navbar-toggler-icon");
+var navClose = document.querySelector("#nav-close");
+var advertiseClose = document.querySelector(".close-button");
+var advertise=document.querySelector("#advertise");
+var Home=document.querySelector("#home");
+var contactCloseButton= document.querySelector(".contact-close-button");
+var down= document.querySelectorAll(".down");
+var cardBody= document.querySelectorAll(".card-body");
+var upper= document.querySelectorAll(".upper");
+var area = document.querySelector("#area");
+var contact = document.querySelector("#contact");
+var facilities= document.querySelector("#facilities");
+var description= document.querySelector("#description");
+var pricing = document.querySelector("#pricing");
+var Card= document.querySelector(".Card");
+var leftButton = document.querySelector("#left-button");
+console.log("muna");
+console.log("munaaaaaaaaaaa");
+var homeSection = document.querySelector("home-section");
+window.addEventListener("scroll",function(){
+
+
+  var Navbar = document.querySelector("nav");
+  
+  if(pageYOffset > 0 || pageXOffset >0){
+      Navbar.style.backgroundColor="black";
+      Navbar.style.opacity="1";
+  }
+  else{
+    Navbar.style.backgroundColor="black";
+    Navbar.style.opacity= "0.6";
+  }
+
+})
+
+navToggle.addEventListener("click",function(){
+
+
+  document.querySelector(".nav-menu").classList.add("show-menu");
+  
+
+});
+navClose.addEventListener("click",function(){
+  document.querySelector(".nav-menu").classList.remove("show-menu");
+
+});
+
+
+advertise.addEventListener("click",function(){
+
+  document.querySelector(".modal-section").classList.remove("show-modal");
+  document.querySelector(".overlay").classList.remove("hidden");
+
+})
+
+advertiseClose.addEventListener("click",function(){
+
+  document.querySelector(".modal-section").classList.add("show-modal");
+   
+    
+  document.querySelector(".overlay").classList.add("hidden");
+  
+})
+if(!advertise){
+  document.querySelector(".modal-section").classList.add("show-modal");
+  
+
+}
+
+
+contact.addEventListener("click",function(){
+    document.querySelector(".contact-us").classList.remove("show-contact");
+    document.querySelector(".overlay").classList.remove("hidden");
+    
+
+})
+contactCloseButton.addEventListener("click",function(){
+  document.querySelector(".contact-us").classList.add("show-contact");
+  document.querySelector(".overlay").classList.add("hidden");
+
+})
+
+var signIn = document.querySelector("#sign-in");
+
+signIn.addEventListener("click", function(){
+    document.querySelector(".show-signIn").style.display="block";
+    document.querySelector(".overlay").classList.remove("hidden");
+})
+
+document.querySelector(".signIn-close-button").addEventListener("click",function(){
+  document.querySelector(".show-signIn").style.display="none";
+  document.querySelector(".overlay").classList.add("hidden");
+
+
+})
+var logIn= document.querySelector("#log-in");
+
+logIn.addEventListener("click",function(){
+  document.querySelector(".show-logIn").style.display="block";
+    document.querySelector(".overlay").classList.remove("hidden");
+   
+
+
+})
+document.querySelector(".logIn-close-button").addEventListener("click",function(){
+  document.querySelector(".show-logIn").style.display="none";
+  document.querySelector(".overlay").classList.add("hidden");
+
+
+})
+
+console.log(down.length);
+
+
+area.addEventListener("click",function(){
+
+document.querySelector(".area").classList.toggle("hidden");
+
+})
+
+
+
+description.addEventListener("click",function(){
+
+   
+  document.querySelector(".d1").style.display="inline";
+  document.querySelector(".d2").classList.add("show-p2");
+  document.querySelector(".d3").classList.add("show-p3");
+})
+
+
+facilities.addEventListener("click",function(){
+  document.querySelector(".d2").classList.toggle("show-p2");
+  document.querySelector(".d1").style.display="none";
+  document.querySelector(".d3").classList.add("show-p3");
+})
+pricing.addEventListener("click",function(){
+
+  document.querySelector(".d2").classList.add("show-p2");
+  document.querySelector(".d1").style.display="none";
+  document.querySelector(".d3").classList.toggle("show-p3");
+ 
+})
+
+
+
+var swiper = new Swiper(".mySwiper", {
+
+  loop: true,
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+ 
+
+});
+
+var swiper2 = new Swiper(".mySwiper2", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+ 
+ 
+  thumbs: {
+    swiper: swiper,
+  },
+});
+
+

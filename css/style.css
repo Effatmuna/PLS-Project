@@ -1,0 +1,1424 @@
+@import url(./fonts.css);
+@import url(./partials/_variables.css);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.overlay{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  min-height:270vh;
+  filter: blur(3px);
+  opacity: 0.7;
+  background-color: black;
+  z-index: 5;
+
+}
+.hidden{
+  display: none;
+}
+
+
+
+
+
+div {
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+div .navbar-brand {
+  font-size: 30px;
+  font-weight: lighter;
+  height: 62.6px;
+  margin-left: 10px;
+}
+nav{
+     background-color: #2F6D7B;
+     opacity: 1;
+}
+.sticky{
+  background-color: rgb(158, 57, 57);
+  
+}
+
+.nav__dark {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+  position: absolute;
+  left: 7rem;
+  bottom: 10rem;
+}
+
+.nav-menu .button {
+  
+  color: white;
+  font-weight: bold;
+  margin-right: 15px;
+  margin-top: 4px;
+  border-radius: 0.5rem;
+  text-decoration: none;
+
+}
+.navbar .navbar-toggler{
+  color: white;
+  margin-right: 15px;;
+
+}
+.nav-item .nav-link {
+  text-align: right;
+  text-transform: capitalize;
+  font-weight: lighter;
+}
+.nav-menu .nav-link:hover{
+
+  transition-duration: 1s;
+   background-color: red;
+ }
+ .dropdown{
+  display: flex;
+margin-left: 2px;
+}
+
+.Active{
+
+  background: white;
+}
+.card-container .latest{
+  margin-top: 40px;
+}
+
+
+
+.show-menu {
+  right: 0;
+}
+
+.home-section {
+  background: url("back2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 700px;
+
+}
+
+
+
+.home-section .dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 600px;
+
+
+}
+
+.state {
+  text-align: center;
+  margin-top: -200px;
+  background: rgb(5, 5, 5);
+  height: 70px;
+   margin-right:25px;
+   margin-left:25px;
+  opacity: 0.6;padding-top: 20px;
+  
+}
+.state .division {
+  width: 210px;
+    background: rgb(5, 5, 5);
+    margin-right: 15px;color: white;
+}
+.state .district {
+  width: 210px;
+  background: rgb(5, 5, 5);
+  color: white;
+  margin-right: 15px;
+  border:1px solid white;
+}
+.state .upozilla {
+  width: 210px;
+    background: rgb(5, 5, 5);
+    margin-right: 15px;
+    color: white;border:1px solid white;
+}
+.state .size {
+  width: 210px;
+    background: rgb(5, 5, 5);
+    margin-right: 15px;
+    color: white;border:1px solid white;
+}
+.state button {
+  width: 100px;
+  padding: 5px;
+}
+/*Advertise*/
+
+.modal-section{
+
+  margin:10px;
+  background-color:rgb(123, 174, 187);
+  width:450px;
+  z-index: 1;
+  position: absolute;
+  left:450px;
+  padding:20px;
+  top:20%;
+  
+}
+.modal-section .help{
+  text-align: justify;
+  font-weight: lighter;
+  
+}
+.modal-section .modal-contacts{
+
+  margin-left: 97px;
+  font-weight: lighter;
+  font-family: "Roboto";
+}
+.modal-section .close-button{
+
+  margin-left:375px;
+   padding:10px;
+  cursor: pointer;
+}
+.modal-section .sign-In{
+      margin-left: 175px;
+      border: none;
+      padding:5px;
+      font-weight: bold;
+      cursor: pointer;
+}
+.show-modal{
+  display: none;
+
+}
+/*section{display: -webkit-flex;display: -moz-flex;display: -ms-flex; display: flex;flex-direction: column;align-items: center;}*/
+
+/*Card section*/
+
+.card-section-home{
+  margin-top: 200px;
+  margin-right: 40px;
+  margin-left: 135px;
+  z-index: 0;
+  
+}
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  
+  width:100%;
+  margin-top: 20px;
+   
+  
+}
+.card-container h2{
+  color: #ffffff;
+  font-size: 25px;
+  
+  font-weight: 800;
+  background-color: green;
+  
+  padding: 10px;
+}
+
+.card-container .Card{
+  
+  overflow: hidden;
+  width:350px;
+  background-color: white;
+  margin:5px;
+  box-shadow: 3px 3px 3px grey;
+  position: relative;
+}
+.Card .av{
+ overflow: hidden;
+ position: absolute;
+  
+  background-color: rgba(133, 224, 28, 0.5);
+  padding:6px;
+  color: white;
+  z-index: 1;
+  left:233px;
+  top:151px;
+ 
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.card-container .card-img{
+  width: 350px;
+  height: 200px;
+  padding: 12px;
+}
+/* .card-section .avai{
+     left:28.2%;top:12.3rem;
+    position: relative;
+    background:#6DB115 ;
+    opacity:0.7;
+    padding: 0.3rem;
+    font-size: 18px;
+    font-weight: bold;
+}*/
+/*.card-section span a{
+  color: white;opacity: 1 !important;text-decoration: none;
+}*/
+
+
+.card-container .details{
+
+  display:flex;
+  flex-wrap: wrap;padding:10px;
+   
+  
+}
+.read-more{
+  margin-left: auto;
+}
+.view-more{
+  text-align:center;
+  
+  
+}
+
+
+.do-want-section{
+     background: url("back2.jpg");
+     height: 370px;
+     background-size: cover;
+     background-repeat: none;
+    background-attachment:fixed ;
+     background-position: initial;
+
+}
+.do-container{
+  display: flex;
+  justify-content: center;
+  flex:1 1 200px;
+  width:100%;
+  flex-direction: row;
+  
+}
+.do-container .buy-sell{
+   display: flex;
+   width:40%;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin:0px 0px 5px 0px;
+  margin-top: -60px;
+  padding: 5px;
+  
+}
+.do-container .links{
+ background-color: white;
+ margin-top: -2px;
+ padding:10px;
+ opacity: 0.7;
+ height:270px;
+}
+.buy-sell .for-sale{
+     background:#2C2727;
+     padding:3px;
+     text-align: center;
+     font-size: 13px;
+     color: white;
+     font-weight: lighter;
+}
+
+.buy-sell .for-buy{
+  background:#2F6D7B ;
+      padding:3px;
+      text-align: center;
+      color: white;
+      font-size: 13px;
+      font-weight: lighter;
+}
+.for-sale .fas{
+  padding: 5px;color: white;
+ font-size: 25px;
+}
+.for-buy .fas{
+  padding: 5px;color: white;
+ font-size: 25px;
+}
+.buy-sell .for-sale h4,
+.buy-sell .for-buy h4{
+  font-size: 16px;
+      font-weight: bold;
+      padding:5px;
+
+}
+/*Area*/
+
+
+
+.area{
+
+  position: fixed;
+  top:52px;
+  left:480px;
+  z-index: 1;
+  
+   
+}
+
+.area .Division{
+  width:120px;
+  background: rgb(5, 5, 5);
+  color: white;
+  margin: -5px;
+   border:1px white solid;
+}
+.hidden{
+
+  display: none;
+
+
+}
+
+
+
+
+/*Contact Us Modal*/
+
+.contact-us{
+  background: indigo;
+  margin:10px;
+  background: #02031C;
+  height:540px;
+  z-index: 2;
+  position: absolute;
+  left:440px;
+  padding:20px;
+  top:30%;
+  padding:30px;
+  
+}
+.form-group{
+    color: white;
+
+  
+}
+.form-group h5,.contact-modal h4{
+  font-size: 16px;
+}
+.form-group .send-button{
+  color: white;border: 1px solid skyblue;
+  border-radius: 15px;
+}
+.contact-modal{
+  color: white;
+  
+}
+.show-contact{
+  display: none;
+}
+
+.contact-modal .inputs{
+  color: white;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: lighter;
+}
+.contact-us .contact-close-button{
+
+  margin-left:380px;
+   padding:10px;
+  cursor: pointer;color: white;
+}
+.sign-in{
+
+
+  margin:10px;
+  background: #2F6D7B;
+   width:484px;
+  height:720px;
+  z-index: 5;
+  position: absolute;
+  left:440px;
+  padding:20px;
+  top:30%;
+  padding:30px;
+    border-radius: 10px;
+
+}
+.sign-in .file{
+background-color: white;
+   color: black;
+   width:100%;
+    padding:5px;
+    border-radius: 3px;
+   z-index: 0;
+  text-align: left;
+
+}
+ .show-signIn{
+    display: none;
+    
+}
+.sign-In{
+  background: aliceblue;
+}
+
+
+.sign-in .signIn-close-button{
+
+  margin-left:380px;
+   padding:5px;
+  cursor: pointer;
+  color: white;
+
+}
+
+.log-in{
+
+
+  margin:10px;
+  background: #2F6D7B;
+   width:484px;
+  height:300px;
+  z-index: 5;
+  position: absolute;
+  left:440px;
+  padding:20px;
+  top:30%;
+  padding:30px;
+   border-radius: 10px;
+   
+}
+.log-in .logIn-close-button{
+
+  margin-left:380px;
+   padding:10px;
+  cursor: pointer;
+  color: white;
+
+}
+.show-logIn{
+
+  display: none;
+}
+.text-white{
+  font-weight: lighter;
+  margin-top: 10px;
+}
+
+/*Footer*/
+
+footer{
+  
+  padding:10px;
+  height:180px;
+  background-color: black;
+  
+}.footer-container{color: white;margin-top: 5px;text-align: center;}
+
+   footer a{text-decoration: none;}
+
+footer p{font-weight: lighter;}
+
+
+
+
+@media(max-width:768px){
+  .nav-menu .nav-link:hover{
+
+    transition-duration: 1s;
+     background-color: red;
+   }
+
+
+
+  .state {
+    
+    margin-bottom: 10px;
+    background: rgb(5, 5, 5);
+    height: 65px;
+    text-align: center;
+    opacity: 0.6;
+    font-size: 15px;padding-top: 15px;
+    
+  }
+  .state .division {
+    width: 105px;
+    background: rgb(5, 5, 5);
+    color: white;
+    margin-right: 10px;border:1px solid white;
+  }
+  .state .district {
+    width: 105px;  
+    background: rgb(5, 5, 5);
+    color: white;
+    margin-right: 10px;
+    border:1px solid white;
+  }
+  .state .upozilla {
+    width: 105px; 
+    background: rgb(5, 5, 5);
+    color: white;
+    margin-right: 10px; 
+  
+     border:1px solid white;
+  
+  }
+  .state .size {
+    width: 105px;
+    background: rgb(5, 5, 5);
+    color: white;   
+      margin-right: 10px;
+      border:1px solid white;
+  }
+  .state button {
+    width: 100px;
+    border-radius: 10px;
+    padding: 2px;
+    font-size: 18px;
+    font-weight: bold;margin-bottom:5px;
+  }
+ 
+  .do-container .buy-sell{
+    width:250px;
+    flex-direction: row;
+    height: 40%;
+    position: relative;
+    top:110px;
+  }
+ /*.do-container .links{
+    width:150px;
+    background-color: white;
+    opacity: 0.7;
+    flex-wrap: wrap;
+    height: 70%;
+    position:relative;
+    top:45px;margin: 10px;
+  
+  }
+
+  .buy-sell .for-sale{
+    background:#2C2727;
+    padding:3px;
+    text-align: center;
+    font-size: 13px;
+
+}
+
+.buy-sell .for-buy{
+ background:#2F6D7B ;
+     padding:3px;
+     text-align: center;color: white;
+     font-size: 13px;
+}
+.for-sale a, .for-buy a{
+  font-size: 25px;
+   overflow: hidden;color: white;
+}
+.buy-sell .for-sale h4,
+.buy-sell .for-buy h4{
+
+      font-weight: bold;padding:10px;
+
+}
+*/
+
+  .card-container .Card{
+    
+    
+    width:350px;
+    background-color: white;
+    margin:5px 5px 0px 5px;
+    box-shadow: 5px 5px 5px grey;
+    
+  
+  }
+
+  
+  .links .useful h3,
+  .links .contacts h3,
+  .links .about h3{
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .links .contacts p{
+    font-weight: lighter;
+    font-size: 13px;
+  }
+  .links .useful a, .links .about a{
+    font-weight: lighter;
+    text-decoration: none;
+    font-size: 13px;
+  }
+
+  .show-menu {
+    right: 0;
+  }
+ 
+ 
+}
+@media(max-width:200px){
+  
+}
+
+@media(max-width:360px){
+  .nav-menu .nav-link:hover{
+
+    transition-duration: 1s;
+     background-color: red;
+   }
+ 
+  #logOut{
+    padding: 14px;
+  }
+
+ .state{
+     position: relative;
+     top:165px;
+     z-index: 1;
+     margin-top: -550px;
+   }
+
+  .state .division {
+    width: 105px;
+    background: rgb(5, 5, 5);
+    color: white;
+    margin-right: 5px;border:1px solid white;
+    margin-left: 5px;
+  }
+  .state .district {
+    width: 105px;  
+    background: rgb(5, 5, 5);
+    color: white;
+    margin-right: 10px;
+    border:1px solid white;
+    
+  }
+  .state .upozilla {
+    width: 105px; 
+    background: rgb(5, 5, 5);
+    color: white;
+    margin-right: 5px; 
+     border:1px solid white;
+     margin-left: 5px;
+  }
+  .state .size {
+    width: 105px;
+    background: rgb(5, 5, 5);
+    color: white;   
+      margin-right: 10px;
+      border:1px solid white;
+  }
+  .state button {
+    width: 100px;
+    border-radius: 10px;
+    padding: 2px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top:8px;
+  }
+  .do-container .buy-sell{
+    width:250px;
+    flex-direction: row;
+    position: relative;
+    bottom:5px;
+    left:5px;
+    color: white;
+    height: 150px;
+  }
+  .do-container .links{
+    width:150px;
+    background-color: white;
+    opacity: 0.7;
+    flex-wrap: wrap;
+    height: 70%;
+    position:relative;
+    top:30px;
+    margin: 0px 5px 0px 5px;
+  }
+  .buy-sell .for-sale{
+    
+    text-align: center;
+    font-size: 11px;
+    background:#2C2727 ;
+    color: white;
+    font-weight: lighter;
+    padding: 5px;
+  
+  } .buy-sell .for-buy{
+    background: #2F6D7B ;
+    text-align: center;
+    font-size: 11px;font-weight: lighter;overflow: hidden;
+     padding:5px;
+  }
+  .buy-sell .for-sale h4,
+.buy-sell .for-buy h4{
+       font-size: 16px;
+      font-weight: bold;
+      padding: 5px;
+
+}
+.home-section {
+  background: url("./images/back2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 700px;
+}
+.card-section-home{
+  position: relative;
+   top:100px;
+  min-height: 120vh;
+  right:35px;
+  overflow: hidden;
+  margin-bottom: -120px;
+  
+ }
+ .card-section-home .card-container{
+       width:600px;
+ }
+ .Card .av{
+  overflow: hidden;
+  position: absolute;
+   
+   background-color: rgba(133, 224, 28, 0.5);
+   padding:6px;
+   color: white;
+   z-index: 1;
+   left:100px;
+   top:155px;
+    font-size: 16px;
+   text-transform: uppercase;
+   font-weight: 700;
+ }
+ .swiper .swiper-button-prev{
+     width:10px;
+     height:10px;
+     position: absolute;
+     top:140px;
+     left:20px;
+ }
+ .swiper .swiper-button-next{
+  width:10px;
+  height:10px;
+  position: absolute;
+  top:140px;
+  left:180px;
+}
+
+ .card-container .best{
+   color: white;
+   font-size: 20px;
+   
+   font-weight: 800;
+   background-color: green;
+   
+   padding: 10px;
+   position: relative;
+   left:32px;
+   top:5px;
+ }
+ .card-container .latest{
+   margin-top: 60px;
+   font-size:20px;margin-left: 25px;
+ }
+ 
+ .view-more{
+   
+   
+ }
+  
+}
+@media(min-width:400px){
+  .card-section-home{
+    position: relative;
+    top:-100px;
+     right: 10px;
+  overflow: hidden;
+    height:75vh;
+    width:400px;
+    z-index: 1;
+   }
+  
+}
+
+@media(max-width:414px){
+ 
+.nav-menu .button .Sign{
+  text-align: center;
+   margin-bottom: 10px;
+  
+}
+.nav-menu .nav-link:hover{
+
+  transition-duration: 1s;
+   background-color: red;
+ }
+ .dropdown{
+    
+  margin-left: -35px;
+  }
+  #logOut{
+    position: relative;
+    right:50px;
+    padding: 14px;
+
+  }
+  .state {
+    
+    position: relative;
+    bottom:190px;
+    background: rgb(5, 5, 5);
+    height: 120px;
+    text-align: center;
+    opacity: 0.6;
+    font-size: 15px;
+    padding-top: 15px;
+    
+  }
+  .state .division {
+    width: 105px;
+    background: rgb(5, 5, 5);
+    color: white;
+    border:1px solid white;
+  }
+  .state .district {
+    width: 105px;  
+    background: rgb(5, 5, 5);
+    color: white;
+  
+    border:1px solid white;
+  }
+  .state .upozilla {
+    width: 105px; 
+    background: rgb(5, 5, 5);
+    color: white;
+     
+     border:1px solid white;
+  
+  }
+  .state .size {
+    width: 105px;
+    background: rgb(5, 5, 5);
+    color: white;   
+  
+      border:1px solid white;
+  }
+  .state button {
+    width: 100px;
+    border-radius: 10px;
+    padding: 2px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top:8px;
+    margin-left: 10px;;
+  }
+ 
+  
+   .card-container .best{
+     color: white;
+     font-size: 20px;
+     
+     font-weight: 800;
+     background-color: green;
+     
+     padding: 10px;
+     position: relative;
+     left:32px;
+     top:5px;
+   }
+   .card-container .latest{
+     margin-top: 60px;
+     font-size:20px;margin-left: 25px;
+   }
+  
+  
+  .do-container .links{
+    width:150px;
+    background-color: white;
+    opacity: 0.7;
+    flex-wrap: wrap;
+    height: 70%;
+    position:relative;
+    top:50px;
+    margin: 0px 5px 0px 5px;
+  }
+  .view-more{
+  
+  }
+}
+
+  @media(max-width:1000px){
+    .navbar{
+      border-bottom: 4px white solid;
+       opacity:0.6;
+    }
+
+    .nav-menu {
+      position: fixed;
+      background-color: black;
+      top: 0;
+      right: -100%;
+      width: 50%;
+      height: 100%;
+      box-shadow: 5px 5px 2px black;
+      padding: 3rem;
+      transition: 0.5s;
+      flex-direction: column;
+      opacity: 1 !important;
+      
+    }
+  .navbar-nav{
+    margin-right: 340px;
+  }
+
+   .nav-menu .button{
+    
+    margin-top: 10px;
+    position: fixed;
+
+   }
+ 
+
+
+   .nav__close {
+    position: absolute;
+    top: 1.75rem;
+    right: 2rem;
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: cornsilk;
+    padding: 5px;
+  }
+   
+   .show-menu{
+         right:0;
+   }
+   .nav-menu .nav-link:hover{
+
+    transition-duration: 1s;
+     background-color: red;
+   }
+
+   .card-section .left,.card-section .right{
+   display: flex;
+   flex-direction: row;
+   position:relative;
+   bottom: 100px;
+  }
+ 
+  }
+
+@media(min-width:600px){
+  
+  .do-container .buy-sell{
+    width:28rem;
+     flex-direction: row;
+     height:50%;
+     position: relative;flex-wrap: nowrap;
+     top:90px;
+     margin: 10px;
+    
+   }
+   .buy-sell .for-sale{
+    background:#2C2727 ;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    font-weight: lighter;
+   
+  
+  } .buy-sell .for-buy{
+    background:#2F6D7B ;
+    text-align: center;
+    font-size: 13px;font-weight: lighter;
+  
+  }
+  .do-container .links{
+    width:190px;
+    background-color: white;
+    opacity: 0.7;
+    padding: 7px;;
+    flex-wrap: wrap;
+    margin:10px;
+    position:relative;
+    top:50px;
+    
+  }
+  .for-sale a, .for-buy a{
+    font-size: 20px;
+     overflow: hidden;
+     color: white;
+  }
+  
+  .links .useful h3,
+  .links .contacts h3,
+  .links .about h3{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .links .contacts p{
+    font-weight: lighter;
+    font-size: 15px;
+  }
+  .links .useful a, .links .about a{
+    font-weight: lighter;
+    text-decoration: none;font-size: 15px;
+  }
+  
+
+}
+  @media(min-width:700px){
+  
+  .state{
+      display: flex;
+      flex-direction: row;
+       padding:15px;
+      height:100%;justify-content: center;align-items: center;
+     }
+    .state .division {
+      width: 200px;
+      background: rgb(5, 5, 5);
+      color: white;
+      margin-right: 10px;
+      border:1px solid white;
+      margin-left: 20px;
+    }
+    .state .district {
+      width: 200px;  
+      background: rgb(5, 5, 5);
+      color: white;
+      margin-right: 10px;
+      border:1px solid white;
+    }
+    .state .upozilla {
+      width: 200px; 
+      background: rgb(5, 5, 5);
+      color: white;
+      margin-right: 10px; 
+      border:1px solid white;
+    
+    }
+    .state .size {
+      width: 200px;
+      background: rgb(5, 5, 5);
+      color: white;   
+      margin-right: 10px;
+      border:1px solid white;
+    }
+    .state button {
+      width: 100px;
+      border-radius: 10px;
+      padding: 5px;
+      font-size: 18px;
+      font-weight: bold;margin-bottom:5px;margin-right: 20px;
+    }
+    .buy-sell .for-sale h4,
+    .buy-sell .for-buy h4{
+    
+          font-size: 16px;
+          font-weight: bold;
+          padding:10px;
+    
+    }
+    .card-section-home{
+      position: relative;
+       top:-40px;
+        
+      right: 20px;
+     }
+     .view-more{
+       
+     }
+  }
+@media(max-width:578px){
+
+
+  .nav-menu .log{
+    text-align: center;
+     margin-top: 10px;
+     width:75px;
+     padding:5px;
+  }
+.nav-menu .Sign{
+  margin-top: 10px;
+  padding:5px;
+  width:75px;
+}
+
+  .state {
+    
+    margin-bottom: 10px;
+    background: rgb(5, 5, 5);
+    height: 130px;
+    text-align: center;
+    opacity: 0.6;
+    font-size: 15px;
+    padding-top: 15px;
+    
+  }
+  .state .division {
+    width: 115px;
+    background: rgb(5, 5, 5);
+    color: white;
+    border:1px solid white;
+    margin: 5px;margin-left: 10px;;
+  }
+  .state .district {
+    width: 115px;  
+    background: rgb(5, 5, 5);
+    color: white;
+    border:1px solid white;
+  }
+  .state .upozilla {
+    width: 115px; 
+    background: rgb(5, 5, 5);
+    color: white;margin:5px;
+     border:1px solid white;margin-left: 10px;;
+  
+  }
+  .state .size {
+    width: 115px;
+    background: rgb(5, 5, 5);
+    color: white;   
+    border:1px solid white;
+  }
+  .state button {
+    width: 100px;
+    border-radius: 10px;
+  
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom:8px;overflow: hidden;
+  }
+  .do-container .buy-sell{
+    width:250px;
+    margin-right:10px;
+    position: relative;
+    
+    left:5px;
+  } 
+  .do-container .links{
+    width:150px;
+    background-color: white;
+    opacity: 0.7;
+    padding: 10px;
+    flex-wrap: wrap;
+    height: 70%;
+    position:relative;
+    top:50px;
+    margin-right: 10px;
+  
+  }
+
+  .buy-sell .for-sale{
+  
+    text-align: center;
+    font-size: 11px;
+    background:#2C2727 ;color: white;font-weight: lighter;
+   
+  
+  } .buy-sell .for-buy{
+    background: #2F6D7B ;
+    text-align: center;
+    font-size: 11px;font-weight: lighter;
+  
+  }
+  .buy-sell .for-sale h4,
+  .buy-sell .for-buy h4{
+
+        font-size: 14px;
+        font-weight: bold;
+
+  }
+  .for-sale a, .for-buy a{
+    font-size: 20px;
+     overflow: hidden;color: white;
+  }
+
+
+}
+ 
+
+
+  @media(min-width: 1000px){
+  .button .Log{
+    margin-top: 0px;
+  }
+    
+.navbar {
+  border-bottom: 4px white solid;
+  opacity: 0.6;
+  color: beige;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-menu{
+ 
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  
+}
+.nav-menu .navbar-nav{
+  margin-right: 270px;
+}
+.nav-menu .navbar-nav:not(:last-child){
+  margin-left: 0px;
+}
+.nav__close{
+    position: relative;
+    right:-100%;
+}
+.nav-menu .nav-link:hover{
+
+  transition-duration: 1s;
+   background-color: red;
+ }
+ 
+.card-section .left{
+  position: relative;
+  top:200px;
+  left:100px;
+}
+.card-section .right{
+
+  position: relative;
+  left:92.3%;
+  bottom:417px;
+}
+
+.do-want-section .buy-sell{
+  margin-top:-5px;
+}
+
+    .do-container .links{
+      width:320px;
+      background-color: white;
+      opacity: 0.7;
+      padding:14px;
+      position:relative;
+      top:55px;
+      display: flex;
+      flex-wrap: wrap;
+      height:240px;
+    } 
+     .links .contacts{
+      position: relative;
+      left: 15px;
+    }
+    .do-container .buy-sell{
+      margin-right: 20px;
+      width:45rem;
+      flex-direction: row;
+      
+      position: relative;
+      top:115px;
+      
+   }  
+   .buy-sell .for-sale {
+    background:#2C2727 ;
+    width:25rem;
+     justify-content: center;align-items: center;
+    font-size: 13px;
+
+  
+  } .buy-sell .for-buy{
+    background:#2F6D7B;
+     justify-content: center;align-items: center;
+    font-size: 13px;
+    width: 25rem;
+    padding: 5px;
+  
+  } 
+  .buy-sell .for-sale h4,
+  .buy-sell .for-buy h4{
+         font-size: 20px;
+        font-weight: bold;
+        padding:10px;
+  
+  }
+
+  .for-sale a, .for-buy a{
+    font-size: 25px;
+     overflow: hidden;color: white;
+  }
+  .for-buy span{
+   padding:7px;
+
+
+  }
+  .links .useful h3,
+  .links .contacts h3,
+  .links .about h3{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .links .contacts p{
+    font-weight: lighter;
+    font-size: 15px;
+  }
+  .links .useful a, .links .about a{
+    font-weight: lighter;
+    text-decoration: none;font-size: 15px;
+  }
+
+ 
+.for-sale blockquote,  .for-buy blockquote {
+   
+  font-weight: lighter;
+  color: white;
+  font-size: 13px;
+  
+}
+.for-sale .fas{
+  padding: 5px;
+  color: white;
+
+}
+
+}
+@media(min-width:1300px){
+  .card-section-home{
+    width:75rem;
+    height:110vh;
+    margin-top: 100px;
+    overflow: hidden;
+   margin-right: 10px;
+   padding:10px;
+  }
+  .card-container .swiper-button-next{
+  
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    width:20px;
+    right:40px;
+    
+  }
+  .card-container .swiper-button-prev{
+  
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    width:20px;
+    right:45px;
+    
+  }
+}
+
+
+/*FAQs sectiin*/
+
