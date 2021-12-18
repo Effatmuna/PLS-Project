@@ -27,7 +27,7 @@
 }
 .height {
     background: url("../images/pic 4.jpg");
-    min-height:145vh;
+     min-height: 180vh;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -37,21 +37,19 @@
     animation-delay: 2s;
     animation-iteration-count: infinite;
     z-index: -1;
-    
+  
   }
 .min{
 
     z-index: 0;
-    
+  
     overflow: hidden;
     position: relative;
     top:120px;
    
 }
 .min .title{
-      position: relative;
-      
-      left: 72vh;
+      margin: 0 auto;
 }
 .min h4{
     
@@ -66,8 +64,7 @@
 
     border-bottom: white 2px solid;
     width: 150px;
-    left: 50px;
-  
+     margin: 20px auto;
   
   }
 
@@ -79,9 +76,8 @@
     font-weight: bold;
     border: none;
     text-align: center;
-     padding:8px;
-     margin-top: 15px;
-     margin-left: 500px;
+    padding:8px;
+   margin:20px -150px 0 100px;
 }
 .overlay{
     position: absolute;
@@ -115,6 +111,81 @@
   .hidden{
   
     display: none;
-  
-  
   }
+  @media only screen and (min-width:768px){
+    .height {
+      background: url("../images/pic 4.jpg");
+       min-height: 90vh;
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      animation-name: zoom;
+      animation-duration: 20s;
+      animation-delay: 2s;
+      animation-iteration-count: infinite;
+      z-index: -1;
+    
+    }
+    .height .contact-support{
+
+      background-color: rgb(8, 8, 24);
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      text-align: center;
+      padding:8px;
+     margin:20px -130px 0 285px;
+  }
+  }
+  @media only screen and (min-width:1000px){
+    .height {
+      background: url("../images/pic 4.jpg");
+       min-height: 140vh;
+       background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      animation-name: zoom;
+      animation-duration: 20s;
+      animation-delay: 2s;
+      animation-iteration-count: infinite;
+      z-index: -1;
+    
+    }
+    .height .contact-support{
+
+      background-color: rgb(8, 8, 24);
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      text-align: center;
+      padding:8px;
+     margin:20px -130px 0 490px;
+  }
+  }
+ /* @media only screen and (max-width:360px){
+ .height{
+   min-height: 165vh;
+   box-sizing: border-box;
+   overflow: hidden;
+   background-position: center;
+ }
+ .height .contact-support{
+   
+  background-color: rgb(8, 8, 24);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  text-align: center;
+   padding:8px;
+   margin-top: 15px;
+   margin-left: 100px;
+ }
+.min h4{
+  margin: 0 auto;
+}
+  }*/
