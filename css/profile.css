@@ -117,17 +117,13 @@
 .stickyTwo{
   background-color: black;
 }
-.dropdown-menu{
-  margin-bottom: -10px;
-}
+
 .dropdown-menu .show{
   display: none;
 }
-#logOut{
-  display: flex;
-  
-}
+
 #logout{
+  
   margin-right: 0px;
   margin-top: 5px;
 }

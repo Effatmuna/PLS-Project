@@ -19,7 +19,7 @@
   filter: blur(3px);
   opacity: 0.7;
   background-color: black;
-  z-index: 5;
+  z-index: 1;
 
 }
 .hidden{
@@ -157,7 +157,7 @@ margin-left: 2px;
     margin-right: 15px;
     color: white;border:1px solid white;
 }
-.state button {
+.state a {
   width: 100px;
   padding: 5px;
 }
@@ -242,7 +242,7 @@ margin-left: 2px;
   width:350px;
   background-color: white;
   margin:5px;
-  box-shadow: 3px 3px 3px grey;
+  box-shadow: 3px 3px 3px 1px grey;
   position: relative;
 }
 .Card .av{
@@ -253,8 +253,8 @@ margin-left: 2px;
   padding:6px;
   color: white;
   z-index: 1;
-  left:233px;
-  top:151px;
+  left:231px;
+  top:150px;
  
   text-transform: uppercase;
   font-weight: 700;
@@ -445,12 +445,12 @@ margin-left: 2px;
   margin:10px;
   background: #2F6D7B;
    width:484px;
-  height:720px;
+  height:730px;
   z-index: 5;
   position: absolute;
   left:440px;
   padding:20px;
-  top:30%;
+  top:15%;
   padding:30px;
     border-radius: 10px;
 
@@ -489,7 +489,7 @@ background-color: white;
   margin:10px;
   background: #2F6D7B;
    width:484px;
-  height:300px;
+  height:310px;
   z-index: 5;
   position: absolute;
   left:440px;
@@ -596,43 +596,7 @@ footer p{font-weight: lighter;}
     position: relative;
     top:110px;
   }
- /*.do-container .links{
-    width:150px;
-    background-color: white;
-    opacity: 0.7;
-    flex-wrap: wrap;
-    height: 70%;
-    position:relative;
-    top:45px;margin: 10px;
-  
-  }
-
-  .buy-sell .for-sale{
-    background:#2C2727;
-    padding:3px;
-    text-align: center;
-    font-size: 13px;
-
-}
-
-.buy-sell .for-buy{
- background:#2F6D7B ;
-     padding:3px;
-     text-align: center;color: white;
-     font-size: 13px;
-}
-.for-sale a, .for-buy a{
-  font-size: 25px;
-   overflow: hidden;color: white;
-}
-.buy-sell .for-sale h4,
-.buy-sell .for-buy h4{
-
-      font-weight: bold;padding:10px;
-
-}
-*/
-
+ 
   .card-container .Card{
     
     
@@ -667,10 +631,61 @@ footer p{font-weight: lighter;}
  
  
 }
-@media(max-width:200px){
+@media(min-width:370px){
+  .card-section-home{
+    position: relative;
+     top:-100px;
+    min-height: 85vh;
+    margin-left: 45px;
+    overflow: hidden;
+    margin-bottom: -120px;
   
+   }
+  .Card .av{
+    
+   font-size: 14px;
+      color: white;
+    
+      left:14px;
+      top:155px;
+      text-transform: uppercase;
+    
+    }
+    .swiper .swiper-button-next{
+      margin-right: -10px;
+    }
+    .swiper-button-prev{
+      margin-left: 5px;
+    }
+ 
 }
-
+@media(min-width:400px){
+  .card-section-home{
+    position: relative;
+     top:-100px;
+    min-height: 125vh;
+    margin-left: 52px;
+    overflow: hidden;
+    margin-bottom: -120px;
+  
+   }
+  .Card .av{
+    
+   font-size: 14px;
+      color: white;
+    
+      left:26px;
+      top:155px;
+      text-transform: uppercase;
+    
+    }
+    .swiper .swiper-button-next{
+      margin-right: -10px;
+    }
+    .swiper-button-prev{
+      margin-left: 5px;
+    }
+}
 @media(max-width:360px){
   .nav-menu .nav-link:hover{
 
@@ -769,7 +784,7 @@ footer p{font-weight: lighter;}
 
 }
 .home-section {
-  background: url("./images/back2.jpg");
+  background: url("back2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 700px;
@@ -777,8 +792,8 @@ footer p{font-weight: lighter;}
 .card-section-home{
   position: relative;
    top:100px;
-  min-height: 120vh;
-  right:35px;
+  min-height: 155vh;
+  right:45px;
   overflow: hidden;
   margin-bottom: -120px;
   
@@ -787,32 +802,27 @@ footer p{font-weight: lighter;}
        width:600px;
  }
  .Card .av{
-  overflow: hidden;
-  position: absolute;
-   
-   background-color: rgba(133, 224, 28, 0.5);
-   padding:6px;
-   color: white;
-   z-index: 1;
-   left:100px;
-   top:155px;
-    font-size: 16px;
+ 
+   left:107px;
+   top:154px;
+    font-size: 15px;
    text-transform: uppercase;
    font-weight: 700;
+   margin-left: -3px;
  }
  .swiper .swiper-button-prev{
      width:10px;
      height:10px;
      position: absolute;
      top:140px;
-     left:20px;
+     left:25px;
  }
  .swiper .swiper-button-next{
   width:10px;
   height:10px;
   position: absolute;
   top:140px;
-  left:180px;
+  left:182px;
 }
 
  .card-container .best{
@@ -831,24 +841,15 @@ footer p{font-weight: lighter;}
    margin-top: 60px;
    font-size:20px;margin-left: 25px;
  }
- 
- .view-more{
-   
-   
- }
+ .read-more{
+  margin-left: -20px;
+
+}
+
   
 }
 @media(min-width:400px){
-  .card-section-home{
-    position: relative;
-    top:-100px;
-     right: 10px;
-  overflow: hidden;
-    height:75vh;
-    width:400px;
-    z-index: 1;
-   }
-  
+ 
 }
 
 @media(max-width:414px){
@@ -952,9 +953,11 @@ footer p{font-weight: lighter;}
     top:50px;
     margin: 0px 5px 0px 5px;
   }
-  .view-more{
+ 
+ /*  .card-section-home .card-container{
+     width:360px;
+   }*/
   
-  }
 }
 
   @media(max-width:1000px){
@@ -1076,7 +1079,7 @@ footer p{font-weight: lighter;}
     font-weight: lighter;
     text-decoration: none;font-size: 15px;
   }
-  
+
 
 }
   @media(min-width:700px){
@@ -1135,13 +1138,74 @@ footer p{font-weight: lighter;}
     .card-section-home{
       position: relative;
        top:-40px;
-        
-      right: 20px;
+      right: -6px;
+      min-height: 135vh;
      }
-     .view-more{
+     .Card .av{
+      
+      position: absolute;
+       background-color: rgba(133, 224, 28, 0.5);
+       padding:8px;
+       color: white;
+       z-index: 1;
+       left:119px;
+       top:150px;
+        font-size: 15px;
+       text-transform: uppercase;
+       font-weight: 700;
        
      }
+     .read-more{
+      margin-left: -5px;
+    }
   }
+  @media(min-width:800px){
+    .card-section-home{
+      position: relative;
+       top:-40px;
+      right: -6px;
+      min-height: 135vh;
+     }
+    .Card .av{
+       left:140px;
+       top:150px;
+      
+     }
+     .read-more{
+      margin-left: 25px;
+    }
+  }
+
+  @media(min-width:900px){
+    .card-section-home{
+      position: relative;
+       top:-40px;
+      right: -6px;
+      min-height: 135vh;
+      
+     }
+     .Card{
+       margin: 10px;
+     }
+    .Card .av{
+      
+      position: absolute;
+       background-color: rgba(133, 224, 28, 0.5);
+       padding:8px;
+       color: white;
+       z-index: 1;
+       left:177px;
+       top:150px;
+        font-size: 15px;
+       text-transform: uppercase;
+       font-weight: 700;
+       
+     }
+     .read-more{
+      margin-left: 50px;
+    }
+  }
+
 @media(max-width:578px){
 
 
@@ -1261,17 +1325,14 @@ footer p{font-weight: lighter;}
   border-bottom: 4px white solid;
   opacity: 0.6;
   color: beige;
+  
+}
+.nav-menu{
+  position: relative;
   display: flex;
   flex-direction: row;
 }
 
-.nav-menu{
- 
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  
-}
 .nav-menu .navbar-nav{
   margin-right: 270px;
 }
@@ -1287,7 +1348,27 @@ footer p{font-weight: lighter;}
   transition-duration: 1s;
    background-color: red;
  }
- 
+ .card-section-home{
+  position: relative;
+   top:-40px;
+  right: -6px;
+ min-height:135vh;
+  
+ }
+ .Card{
+   margin: 10px;
+ }
+.Card .av{
+  
+
+   
+   left:212px;
+   top:150px;
+   
+ }
+ .read-more{
+  margin-left: 90px;
+}
 .card-section .left{
   position: relative;
   top:200px;
@@ -1390,22 +1471,51 @@ footer p{font-weight: lighter;}
 }
 
 }
+@media(min-width:1100px){
+  .Card .av{
+  
+
+   
+    left:243px;
+    top:150px;
+    
+  }
+  .read-more{
+   margin-left: 90px;
+ }
+}
 @media(min-width:1300px){
   .card-section-home{
-    width:75rem;
-    height:110vh;
+    width:85%;    
+    min-height:125vh;
     margin-top: 100px;
     overflow: hidden;
-   margin-right: 10px;
+  
+   margin-left: 130px;
    padding:10px;
+   z-index:0;
   }
+  .Card .av{
+    overflow: hidden;
+    position: absolute;
+     
+     background-color: rgba(133, 224, 28, 0.5);
+     padding:6px;
+     color: white;
+     z-index: 1;
+     left:231px;
+     top:150px;
+      font-size: 18px;
+     text-transform: uppercase;
+     font-weight: 700;
+   }
   .card-container .swiper-button-next{
   
     position: absolute;
     overflow: hidden;
     z-index: 1;
     width:20px;
-    right:40px;
+    right:45px;
     
   }
   .card-container .swiper-button-prev{
@@ -1414,8 +1524,12 @@ footer p{font-weight: lighter;}
     overflow: hidden;
     z-index: 1;
     width:20px;
-    right:45px;
+    left:13px;
     
+  }
+  .read-more{
+    overflow: hidden;
+    margin-left: 130px !important;
   }
 }
 

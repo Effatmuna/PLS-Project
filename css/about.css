@@ -58,7 +58,7 @@
   overflow: hidden;
   padding:15px;
    font-size:30px;
-   box-shadow: 3px 3px 3px  rgb(136, 124, 124);
+   box-shadow: 1px 1px 3px 1px rgb(136, 124, 124);
    font-weight: bold;
  }
 .choose-reason .why-img{
@@ -77,7 +77,7 @@
   left: 40%;
   right:40%;
  color: rgb(58, 66, 102);
- box-shadow: 3px 3px 3px  rgb(136, 124, 124);
+ box-shadow: 1px 1px 3px 1px rgb(136, 124, 124);
  font-weight: bold;
    width:300px;
 margin-bottom: 10px;
@@ -101,17 +101,16 @@ font-size: 30px;
 
 
 
-}
+}/*
 .card-section::before{
   content: "";
   position: absolute;
 
-}
+}*/
 .card-section .card{
   box-shadow: 5px 5px 5px rgb(122, 122, 139);
   transition: ease-in-out;
   background: #1869B461;
-
   
 }
 .card-body p{
@@ -133,4 +132,43 @@ font-size: 30px;
 }
 .card p{
   font-weight: lighter;text-align: center;
+}
+@media(max-width:360px){
+  .why-choose-us h5{
+    text-align: center; 
+ margin-left: -111px;
+     font-size: 24px;
+     width:300px;
+   }
+   
+.testimonial-title h5{
+
+   width:300px;
+margin-left: -110px;
+
+font-size: 24px;
+ 
+}
+.card-section{
+    padding-left: 20px;
+    height: 400px;
+}
+.card-section .imageee{
+  margin-left: 2px;
+  margin-top: -40px;
+  border-radius: 100%;
+  background-color: turquoise;
+  width:70px;
+  
+}
+
+.card-section .card{
+  background: #85C0C38B !important;
+   
+}
+
+.card-body h5{
+  font-size: 15px;
+  
+}
 }

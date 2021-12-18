@@ -94,3 +94,15 @@ body{
      margin-top: 15px;
      margin-left: 75vh;
 }
+.overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    min-height:150vh;
+    filter: blur(3px);
+    opacity: 0.7;
+    background-color: black;
+    z-index: 1;
+  
+  }
