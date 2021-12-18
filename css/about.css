@@ -10,9 +10,6 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
-    
-   
     z-index: -1;
 
   }
@@ -45,11 +42,9 @@
 .about-body .why-choose-us{
 
              
-           position: relative;
-             left: 40%;
-             right:40%;
+        
             color: rgb(58, 66, 102);
-            
+            margin-left: 550px;
             font-weight: bold;
              width:300px;
 }
@@ -62,7 +57,9 @@
    font-weight: bold;
  }
 .choose-reason .why-img{
-  width:70px;border-radius: 50%;padding: 5px;
+  width:70px;
+  border-radius: 50%;
+  padding: 5px;
 }
 
 .about-body h4{
@@ -71,7 +68,9 @@
 .about-body p{
   font-weight: lighter;
 }
-
+.testimonials-title{
+  display: flex;
+}
 .testimonial-title h5{
   position: relative;
   left: 40%;
@@ -89,7 +88,7 @@ font-size: 30px;
 }
 .testimonials .card-section{
   margin: 0 30px 20px 15px;
-  background-color: white;
+  
   overflow: hidden;
 }
 .card-section .imageee{
@@ -135,19 +134,23 @@ font-size: 30px;
 }
 @media(max-width:360px){
   .why-choose-us h5{
+    font-size: 24px;
+  }
+ .about-body .why-choose-us{
     text-align: center; 
- margin-left: -111px;
-     font-size: 24px;
+    margin-left: 15px;
      width:300px;
    }
    
-.testimonial-title h5{
+.testimonial-title {
 
    width:300px;
-margin-left: -110px;
-
-font-size: 24px;
+  margin-left: -105px;
+  font-size: 24px;
  
+}
+.testimonial-title h5{
+  font-size: 24px;
 }
 .card-section{
     padding-left: 20px;

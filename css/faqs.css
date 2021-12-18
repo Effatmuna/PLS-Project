@@ -1,26 +1,15 @@
 *{box-sizing: border-box;margin:0; padding:0;}
 
-body{
-    
-    
-
-}
 
 
 .card h5{
 
-
-
     color: black;
     overflow: hidden;
-    
-
     
 }
 
 .card-body p{
-
-
 
     font-weight: lighter;
     overflow: hidden;
@@ -76,8 +65,8 @@ body{
 .min .act{
 
     border-bottom: white 2px solid;
-    width: 200px;
-    left: 200px;
+    width: 150px;
+    left: 50px;
   
   
   }
@@ -92,7 +81,7 @@ body{
     text-align: center;
      padding:8px;
      margin-top: 15px;
-     margin-left: 75vh;
+     margin-left: 500px;
 }
 .overlay{
     position: absolute;
@@ -104,5 +93,28 @@ body{
     opacity: 0.7;
     background-color: black;
     z-index: 1;
+  
+  }
+  .area{
+
+    position: fixed;
+    top:52px;
+    left:480px;
+    z-index: 1;
+    
+     
+  }
+  
+  .area .Division{
+    width:120px;
+    background: rgb(5, 5, 5);
+    color: white;
+    margin: -5px;
+     border:1px white solid;
+  }
+  .hidden{
+  
+    display: none;
+  
   
   }

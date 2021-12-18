@@ -318,7 +318,7 @@ margin-left: 2px;
   flex-wrap: wrap;
   flex-direction: column;
   margin:0px 0px 5px 0px;
-  margin-top: -60px;
+  margin-top: -70px;
   padding: 5px;
   
 }
@@ -659,11 +659,11 @@ footer p{font-weight: lighter;}
     }
  
 }
-@media(min-width:400px){
+/*@media(min-width:400px){
   .card-section-home{
     position: relative;
      top:-100px;
-    min-height: 125vh;
+    min-height: 115vh;
     margin-left: 52px;
     overflow: hidden;
     margin-bottom: -120px;
@@ -685,7 +685,7 @@ footer p{font-weight: lighter;}
     .swiper-button-prev{
       margin-left: 5px;
     }
-}
+}*/
 @media(max-width:360px){
   .nav-menu .nav-link:hover{
 
@@ -792,7 +792,7 @@ footer p{font-weight: lighter;}
 .card-section-home{
   position: relative;
    top:100px;
-  min-height: 155vh;
+  min-height: 125vh;
   right:45px;
   overflow: hidden;
   margin-bottom: -120px;
@@ -1164,7 +1164,7 @@ footer p{font-weight: lighter;}
       position: relative;
        top:-40px;
       right: -6px;
-      min-height: 135vh;
+     min-height: 75vh;
      }
     .Card .av{
        left:140px;
@@ -1181,7 +1181,7 @@ footer p{font-weight: lighter;}
       position: relative;
        top:-40px;
       right: -6px;
-      min-height: 135vh;
+      min-height: 85vh;
       
      }
      .Card{
@@ -1352,7 +1352,7 @@ footer p{font-weight: lighter;}
   position: relative;
    top:-40px;
   right: -6px;
- min-height:135vh;
+ min-height:85vh;
   
  }
  .Card{
@@ -1487,7 +1487,7 @@ footer p{font-weight: lighter;}
 @media(min-width:1300px){
   .card-section-home{
     width:85%;    
-    min-height:125vh;
+    min-height:75vh;
     margin-top: 100px;
     overflow: hidden;
   
