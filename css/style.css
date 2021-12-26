@@ -19,7 +19,7 @@
   filter: blur(3px);
   opacity: 0.7;
   background-color: black;
-  z-index: 1;
+  z-index: 3;
 
 }
 .hidden{
@@ -126,17 +126,21 @@ margin-left: 2px;
 .state {
   text-align: center;
   margin-top: -200px;
-  background: rgb(5, 5, 5);
+  background:rgb(5, 5, 5);
   height: 70px;
    margin-right:25px;
    margin-left:25px;
-  opacity: 0.6;padding-top: 20px;
+  opacity: 0.6;
+  padding-top: 20px;
+  display: block;
   
 }
 .state .division {
   width: 210px;
     background: rgb(5, 5, 5);
-    margin-right: 15px;color: white;
+  
+    color: white;
+  
 }
 .state .district {
   width: 210px;
@@ -206,92 +210,13 @@ margin-left: 2px;
 /*section{display: -webkit-flex;display: -moz-flex;display: -ms-flex; display: flex;flex-direction: column;align-items: center;}*/
 
 /*Card section*/
-
 .card-section-home{
-  margin-top: 200px;
-  margin-right: 40px;
-  margin-left: 135px;
+  margin-top: 55px;
   z-index: 0;
-  
-}
-.card-container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  
-  width:100%;
-  margin-top: 20px;
-   
-  
-}
-.card-container h2{
-  color: #ffffff;
-  font-size: 25px;
-  
-  font-weight: 800;
-  background-color: green;
-  
-  padding: 10px;
-}
-
-.card-container .Card{
-  
-  overflow: hidden;
-  width:350px;
-  background-color: white;
-  margin:5px;
-  box-shadow: 3px 3px 3px 1px grey;
-  position: relative;
-}
-.Card .av{
- overflow: hidden;
- position: absolute;
-  
-  background-color: rgba(133, 224, 28, 0.5);
-  padding:6px;
-  color: white;
-  z-index: 1;
-  left:231px;
-  top:150px;
- 
-  text-transform: uppercase;
-  font-weight: 700;
-}
-.card-container .card-img{
-  width: 350px;
-  height: 200px;
-  padding: 12px;
-}
-/* .card-section .avai{
-     left:28.2%;top:12.3rem;
-    position: relative;
-    background:#6DB115 ;
-    opacity:0.7;
-    padding: 0.3rem;
-    font-size: 18px;
-    font-weight: bold;
-}*/
-/*.card-section span a{
-  color: white;opacity: 1 !important;text-decoration: none;
-}*/
-
-
-.card-container .details{
-
-  display:flex;
-  flex-wrap: wrap;padding:10px;
-   
-  
-}
-.read-more{
-  margin-left: auto;
 }
 .view-more{
-  text-align:center;
-  
-  
+  margin-left: 135px;
+  margin-bottom: 5px;
 }
 
 
@@ -369,19 +294,20 @@ margin-left: 2px;
 
   position: fixed;
   top:52px;
-  left:480px;
+  left:490px;
   z-index: 1;
   
    
 }
 
-.area .Division{
+.area .Division,.District, .Upozilla, .SizeOfLand{
   width:120px;
   background: rgb(5, 5, 5);
   color: white;
   margin: -5px;
    border:1px white solid;
 }
+
 .hidden{
 
   display: none;
@@ -532,6 +458,71 @@ footer p{font-weight: lighter;}
 
 
 
+@media(max-width:1000px){
+  
+  .navbar{
+    border-bottom: 4px white solid;
+     opacity:0.6;
+  }
+
+  .nav-menu {
+    position: fixed;
+    background-color: black;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    height: 100%;
+    box-shadow: 5px 5px 2px black;
+    padding: 3rem;
+    transition: 0.5s;
+    flex-direction: column;
+    opacity: 1 !important;
+    
+  }
+.navbar-nav{
+  margin-right: 340px;
+}
+
+ .nav-menu .button{
+  
+  margin-top: 10px;
+  position: fixed;
+
+ }
+
+
+
+ .nav__close {
+  position: absolute;
+  top: 1.75rem;
+  right: 2rem;
+  font-size: 1.5rem;
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: cornsilk;
+  padding: 5px;
+}
+ 
+ .show-menu{
+       right:0;
+ }
+ .nav-menu .nav-link:hover{
+
+  transition-duration: 1s;
+   background-color: red;
+ }
+ .state .division {
+  width: 105px;
+  background: rgb(5, 5, 5);
+  color: white;
+  border:1px solid white;
+  margin-left: -10px;
+}
+ 
+
+}
+
 
 @media(max-width:768px){
   .nav-menu .nav-link:hover{
@@ -549,14 +540,15 @@ footer p{font-weight: lighter;}
     height: 65px;
     text-align: center;
     opacity: 0.6;
-    font-size: 15px;padding-top: 15px;
+    font-size: 15px;
+    padding-top: 15px;
     
   }
   .state .division {
     width: 105px;
     background: rgb(5, 5, 5);
     color: white;
-    margin-right: 10px;border:1px solid white;
+    border:1px solid white;
   }
   .state .district {
     width: 105px;  
@@ -586,7 +578,9 @@ footer p{font-weight: lighter;}
     border-radius: 10px;
     padding: 2px;
     font-size: 18px;
-    font-weight: bold;margin-bottom:5px;
+    font-weight: bold;
+    margin-bottom:5px;
+  
   }
  
   .do-container .buy-sell{
@@ -597,17 +591,7 @@ footer p{font-weight: lighter;}
     top:110px;
   }
  
-  .card-container .Card{
-    
-    
-    width:350px;
-    background-color: white;
-    margin:5px 5px 0px 5px;
-    box-shadow: 5px 5px 5px grey;
-    
-  
-  }
-
+ 
   
   .links .useful h3,
   .links .contacts h3,
@@ -631,62 +615,126 @@ footer p{font-weight: lighter;}
  
  
 }
-@media(min-width:370px){
-  .card-section-home{
+@media(max-width:500px){
+  .nav-menu .Log{
+    margin-top: 10px;
+  }
+  .state{
     position: relative;
-     top:-100px;
-    min-height: 85vh;
-    margin-left: 45px;
-    overflow: hidden;
-    margin-bottom: -120px;
-  
-   }
-  .Card .av{
-    
-   font-size: 14px;
-      color: white;
-    
-      left:14px;
-      top:155px;
-      text-transform: uppercase;
-    
-    }
-    .swiper .swiper-button-next{
-      margin-right: -10px;
-    }
-    .swiper-button-prev{
-      margin-left: 5px;
-    }
- 
+    top:-105px;
+  }
 }
-/*@media(min-width:400px){
-  .card-section-home{
-    position: relative;
-     top:-100px;
-    min-height: 115vh;
-    margin-left: 52px;
-    overflow: hidden;
-    margin-bottom: -120px;
-  
-   }
-  .Card .av{
+
+@media(max-width:414px){
+ 
+  .nav-menu .button .Sign{
+    text-align: center;
     
-   font-size: 14px;
+    
+  }
+  .nav-menu .button .Log{
+    text-align: center;
+     margin-top: 10px;
+    
+  }
+  .nav-menu .nav-link:hover{
+  
+    transition-duration: 1s;
+     background-color: red;
+   }
+   .dropdown{
+      
+    margin-left: -35px;
+    }
+    #logOut{
+      position: relative;
+      right:50px;
+      padding: 14px;
+  
+    }
+    .state {
+      
+      position: relative;
+      bottom:190px;
+      background: rgb(5, 5, 5);
+      height: 120px;
+      text-align: center;
+      opacity: 0.6;
+      font-size: 15px;
+      padding-top: 15px;
+      
+    }
+    .state .division {
+      width: 105px;
+      background: rgb(5, 5, 5);
+      color: white;
+      border:1px solid white;
+    }
+    .state .district {
+      width: 105px;  
+      background: rgb(5, 5, 5);
       color: white;
     
-      left:26px;
-      top:155px;
-      text-transform: uppercase;
+      border:1px solid white;
+    }
+    .state .upozilla {
+      width: 105px; 
+      background: rgb(5, 5, 5);
+      color: white;
+       
+       border:1px solid white;
     
     }
-    .swiper .swiper-button-next{
-      margin-right: -10px;
+    .state .size {
+      width: 105px;
+      background: rgb(5, 5, 5);
+      color: white;   
+    
+        border:1px solid white;
     }
-    .swiper-button-prev{
-      margin-left: 5px;
+    .state button {
+      width: 100px;
+      border-radius: 10px;
+      padding: 2px;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top:8px;
+      margin-left: 10px;;
     }
-}*/
+   
+    
+     .card-container .best{
+       color: white;
+       font-size: 20px;
+       
+       font-weight: 800;
+       background-color: green;
+       
+       padding: 10px;
+       position: relative;
+       left:32px;
+       top:5px;
+     }
+     .card-container .latest{
+       margin-top: 60px;
+       font-size:20px;margin-left: 25px;
+     }
+    
+    
+    .do-container .links{
+      width:150px;
+      background-color: white;
+      opacity: 0.7;
+      flex-wrap: wrap;
+      height: 70%;
+      position:relative;
+      top:50px;
+      margin: 0px 5px 0px 5px;
+    }
 @media(max-width:360px){
+  #CardSection1{
+    margin-top: 350px;
+  }
   .nav-menu .nav-link:hover{
 
     transition-duration: 1s;
@@ -702,6 +750,7 @@ footer p{font-weight: lighter;}
      top:165px;
      z-index: 1;
      margin-top: -550px;
+    
    }
 
   .state .division {
@@ -789,41 +838,7 @@ footer p{font-weight: lighter;}
   background-size: cover;
   min-height: 700px;
 }
-.card-section-home{
-  position: relative;
-   top:100px;
-  min-height: 125vh;
-  right:45px;
-  overflow: hidden;
-  margin-bottom: -120px;
-  
- }
- .card-section-home .card-container{
-       width:600px;
- }
- .Card .av{
- 
-   left:107px;
-   top:154px;
-    font-size: 15px;
-   text-transform: uppercase;
-   font-weight: 700;
-   margin-left: -3px;
- }
- .swiper .swiper-button-prev{
-     width:10px;
-     height:10px;
-     position: absolute;
-     top:140px;
-     left:25px;
- }
- .swiper .swiper-button-next{
-  width:10px;
-  height:10px;
-  position: absolute;
-  top:140px;
-  left:182px;
-}
+
 
  .card-container .best{
    color: white;
@@ -841,187 +856,98 @@ footer p{font-weight: lighter;}
    margin-top: 60px;
    font-size:20px;margin-left: 25px;
  }
- .read-more{
-  margin-left: -20px;
-
-}
+ 
 
   
 }
-@media(min-width:400px){
- 
-}
+@media(max-width:250px){
+  .nav-menu{
+    height:1637px;
+  margin-right: 5px;
 
-@media(max-width:414px){
- 
-.nav-menu .button .Sign{
-  text-align: center;
-   margin-bottom: 10px;
-  
-}
-.nav-menu .nav-link:hover{
-
-  transition-duration: 1s;
-   background-color: red;
+  }
+ .state{
+  background: rgb(5, 5, 5) !important;
+  height: 170px !important;
+  display: block;
  }
- .dropdown{
+ .state .division {
+  width: 210px;
+    background: rgb(5, 5, 5);
+    margin-right: 15px;color: white;
+}
+.state .district {
+  width: 210px;
+  background: rgb(5, 5, 5);
+  color: white;
+  margin-right: -3px;
+  border:1px solid white;
+}
+.state .upozilla {
+  width: 210px;
+    background: rgb(5, 5, 5);
+    margin-right: 20px;
+    color: white;border:1px solid white;
+}
+.state .size {
+  width: 210px;
+    background: rgb(5, 5, 5);
+    margin-right: -3px;
+    color: white;border:1px solid white;
+}
+.state a {
+  width: 100px;
+  padding: 5px;
+}
+#search{
+  margin-top: 5px;
+}
+  .card-section-home{
     
-  margin-left: -35px;
+    z-index: 0;
+    max-height: 750px;
+  
   }
-  #logOut{
-    position: relative;
-    right:50px;
-    padding: 14px;
 
+  #CardSection1{
+    margin-top: 300px;
+    min-height: 350px;
   }
-  .state {
+  .do-want-section{
+    height:600px;
+    display: block;
+  
+  }
+  .do-want-section .for-buy{
     
-    position: relative;
-    bottom:190px;
-    background: rgb(5, 5, 5);
-    height: 120px;
-    text-align: center;
-    opacity: 0.6;
-    font-size: 15px;
-    padding-top: 15px;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: -25px;
+    display: block;
+    height: 290px;
+  
+ }
+   .do-want-section .for-sale{
     
-  }
-  .state .division {
-    width: 105px;
-    background: rgb(5, 5, 5);
-    color: white;
-    border:1px solid white;
-  }
-  .state .district {
-    width: 105px;  
-    background: rgb(5, 5, 5);
-    color: white;
-  
-    border:1px solid white;
-  }
-  .state .upozilla {
-    width: 105px; 
-    background: rgb(5, 5, 5);
-    color: white;
-     
-     border:1px solid white;
-  
-  }
-  .state .size {
-    width: 105px;
-    background: rgb(5, 5, 5);
-    color: white;   
-  
-      border:1px solid white;
-  }
-  .state button {
-    width: 100px;
-    border-radius: 10px;
-    padding: 2px;
-    font-size: 18px;
-    font-weight: bold;
-    margin-top:8px;
-    margin-left: 10px;;
-  }
- 
-  
-   .card-container .best{
-     color: white;
-     font-size: 20px;
-     
-     font-weight: 800;
-     background-color: green;
-     
-     padding: 10px;
-     position: relative;
-     left:32px;
-     top:5px;
+      overflow: hidden;
+      z-index: 0;
+      margin-top: -25px;
+      display: block;
+     height: 300px;
    }
-   .card-container .latest{
-     margin-top: 60px;
-     font-size:20px;margin-left: 25px;
-   }
-  
-  
-  .do-container .links{
-    width:150px;
-    background-color: white;
-    opacity: 0.7;
-    flex-wrap: wrap;
-    height: 70%;
-    position:relative;
-    top:50px;
-    margin: 0px 5px 0px 5px;
+   .for-sale .fas,.for-buy .fas{
+    padding: 5px;color: white;
+   font-size: 20px;
+   
   }
+  .footer-container{color: white;margin-top: -10px;text-align: center;}
+}
  
  /*  .card-section-home .card-container{
      width:360px;
    }*/
   
 }
-
-  @media(max-width:1000px){
-    .navbar{
-      border-bottom: 4px white solid;
-       opacity:0.6;
-    }
-
-    .nav-menu {
-      position: fixed;
-      background-color: black;
-      top: 0;
-      right: -100%;
-      width: 50%;
-      height: 100%;
-      box-shadow: 5px 5px 2px black;
-      padding: 3rem;
-      transition: 0.5s;
-      flex-direction: column;
-      opacity: 1 !important;
-      
-    }
-  .navbar-nav{
-    margin-right: 340px;
-  }
-
-   .nav-menu .button{
-    
-    margin-top: 10px;
-    position: fixed;
-
-   }
- 
-
-
-   .nav__close {
-    position: absolute;
-    top: 1.75rem;
-    right: 2rem;
-    font-size: 1.5rem;
-    color: black;
-    cursor: pointer;
-    font-size: 16px;
-    background-color: cornsilk;
-    padding: 5px;
-  }
-   
-   .show-menu{
-         right:0;
-   }
-   .nav-menu .nav-link:hover{
-
-    transition-duration: 1s;
-     background-color: red;
-   }
-
-   .card-section .left,.card-section .right{
-   display: flex;
-   flex-direction: row;
-   position:relative;
-   bottom: 100px;
-  }
- 
-  }
 
 @media(min-width:600px){
   
@@ -1135,77 +1061,9 @@ footer p{font-weight: lighter;}
           padding:10px;
     
     }
-    .card-section-home{
-      position: relative;
-       top:-40px;
-      right: -6px;
-      min-height: 135vh;
-     }
-     .Card .av{
-      
-      position: absolute;
-       background-color: rgba(133, 224, 28, 0.5);
-       padding:8px;
-       color: white;
-       z-index: 1;
-       left:119px;
-       top:150px;
-        font-size: 15px;
-       text-transform: uppercase;
-       font-weight: 700;
-       
-     }
-     .read-more{
-      margin-left: -5px;
-    }
+   
   }
-  @media(min-width:800px){
-    .card-section-home{
-      position: relative;
-       top:-40px;
-      right: -6px;
-     min-height: 75vh;
-     }
-    .Card .av{
-       left:140px;
-       top:150px;
-      
-     }
-     .read-more{
-      margin-left: 25px;
-    }
-  }
-
-  @media(min-width:900px){
-    .card-section-home{
-      position: relative;
-       top:-40px;
-      right: -6px;
-      min-height: 85vh;
-      
-     }
-     .Card{
-       margin: 10px;
-     }
-    .Card .av{
-      
-      position: absolute;
-       background-color: rgba(133, 224, 28, 0.5);
-       padding:8px;
-       color: white;
-       z-index: 1;
-       left:177px;
-       top:150px;
-        font-size: 15px;
-       text-transform: uppercase;
-       font-weight: 700;
-       
-     }
-     .read-more{
-      margin-left: 50px;
-    }
-  }
-
+  
 @media(max-width:578px){
 
 
@@ -1334,7 +1192,7 @@ footer p{font-weight: lighter;}
 }
 
 .nav-menu .navbar-nav{
-  margin-right: 270px;
+  margin-right: 140px;
 }
 .nav-menu .navbar-nav:not(:last-child){
   margin-left: 0px;
@@ -1348,39 +1206,13 @@ footer p{font-weight: lighter;}
   transition-duration: 1s;
    background-color: red;
  }
- .card-section-home{
-  position: relative;
-   top:-40px;
-  right: -6px;
- min-height:85vh;
+ .state .division {
+  width: 210px;
+    background: rgb(5, 5, 5);
+    margin-left: 5px;
+    color: white;
   
- }
- .Card{
-   margin: 10px;
- }
-.Card .av{
-  
-
-   
-   left:212px;
-   top:150px;
-   
- }
- .read-more{
-  margin-left: 90px;
 }
-.card-section .left{
-  position: relative;
-  top:200px;
-  left:100px;
-}
-.card-section .right{
-
-  position: relative;
-  left:92.3%;
-  bottom:417px;
-}
-
 .do-want-section .buy-sell{
   margin-top:-5px;
 }
@@ -1471,68 +1303,15 @@ footer p{font-weight: lighter;}
 }
 
 }
-@media(min-width:1100px){
-  .Card .av{
-  
-
-   
-    left:243px;
-    top:150px;
+@media(min-width:1200px){
+  .nav-menu .navbar-nav{
+    margin-right: 250px;
+  }
+  .state .division {
+    width: 210px;
+      background: rgb(5, 5, 5);
+      margin-left: 20px;
+      color: white;
     
-  }
-  .read-more{
-   margin-left: 90px;
- }
-}
-@media(min-width:1300px){
-  .card-section-home{
-    width:85%;    
-    min-height:75vh;
-    margin-top: 100px;
-    overflow: hidden;
-  
-   margin-left: 130px;
-   padding:10px;
-   z-index:0;
-  }
-  .Card .av{
-    overflow: hidden;
-    position: absolute;
-     
-     background-color: rgba(133, 224, 28, 0.5);
-     padding:6px;
-     color: white;
-     z-index: 1;
-     left:231px;
-     top:150px;
-      font-size: 18px;
-     text-transform: uppercase;
-     font-weight: 700;
-   }
-  .card-container .swiper-button-next{
-  
-    position: absolute;
-    overflow: hidden;
-    z-index: 1;
-    width:20px;
-    right:45px;
-    
-  }
-  .card-container .swiper-button-prev{
-  
-    position: absolute;
-    overflow: hidden;
-    z-index: 1;
-    width:20px;
-    left:13px;
-    
-  }
-  .read-more{
-    overflow: hidden;
-    margin-left: 130px !important;
   }
 }
-
-
-/*FAQs sectiin*/
-

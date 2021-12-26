@@ -10,7 +10,7 @@
    <link rel="stylesheet" href="./css/about.css"/>
    <link rel="stylesheet" href="./css/properties.css"/>
    <link rel="stylesheet" href="./css/sylhet.css">
-   <link rel ="stylesheet" href="./css/profile.css"/>
+   <link rel ="stylesheet" href="./css/pro.css"/>
    <link rel="stylesheet" href="./css/swiper-bundle.min.css"/>
     <link
     rel="stylesheet"
@@ -399,176 +399,7 @@
 
  </section>
   <!--Card section-->
-  <section class="card-section-home ">
-        
-    <div class="card-container row">
-     <!-- <h2 class="mr-auto latest">Latest Lands</h2>-->
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-          <div class="Card">
-        
-            <div class="card-img-container">
-              
-      <span class="av">Available</span>
-              <img src="pic 4.jpg" class="card-img" >
-           
-            </div>
-            <div class="card-Body">
-              <div class="details">
-                <div class="card-Title">
-                  <h6>24lac <br />10acres <br />Mirpur,Dhaka</h6>
-                </div>
-                <div class="read-more">
-                  <a href="sylhet.html" class="read btn btn-outline-primary">
-                    Read More
-                  </a>
-              </div>
-                </div>
-                  
-            </div>
-          </div>
-    </div>
-
-
-     
-       
-    <div class="swiper-slide">
-    
-          <div class="Card">
-            <div class="card-img-container">
-              <span class="av">Available</span>
-
-              <img src="pic 2.jpg" class="card-img"    />
-             <div class="card-Body">
-              <div class="details">
-                <div class="card-Header">
-                  <h6>24lac <br />10acres <br />Mirpur,Dhaka</h6>
-                </div>
-                <div class="read-more">
-                  <button class="read btn btn-outline-primary">
-                    Read More
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-      </div>
-   
-       
-      <div class="swiper-slide">
-    
-        <div class="Card card1" >
-          <div class="card-Header">
-            <span class="av">Available</span>
-            <img src="pic 1.jpg"  class="card-img"/>
-          </div>
-          <div class="card-Body">
-            <div class="details">
-              <div class="card-Header">
-                <h6>24lac <br />10acres <br />Mirpur,Dhaka</h6>
-              </div>
-              <div class="read-more">
-                <button class="read btn btn-outline-primary">
-                  Read More
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-
-      <div class="swiper-slide">
-    
-        <div class="Card card1" >
-          <div class="card-Header">
-            <span class="av">Available</span>
-            <img src="pic 1.jpg"  class="card-img"/>
-          </div>
-          <div class="card-Body">
-            <div class="details">
-              <div class="card-Header">
-                <h6>24lac <br />10acres <br />Mirpur,Dhaka</h6>
-              </div>
-              <div class="read-more">
-                <button class="read btn btn-outline-primary">
-                  Read More
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="swiper-slide">
-    
-        <div class="Card card1" >
-          <div class="card-Header">
-            <span class="av">Available</span>
-            <img src="pic 1.jpg"  class="card-img"/>
-          </div>
-          <div class="card-Body">
-            <div class="details">
-              <div class="card-Header">
-                <h6>24lac <br />10acres <br />Mirpur,Dhaka</h6>
-              </div>
-              <div class="read-more">
-                <button class="read btn btn-outline-primary">
-                  Read More
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-     
-      <div class="swiper-slide">
-    
-        <div class="Card card1" >
-          <div class="card-Header">
-            <span class="av">Available</span>
-            <img src="pic 1.jpg"  class="card-img"/>
-          </div>
-          <div class="card-Body">
-            <div class="details">
-              <div class="card-Header">
-                <h6>24lac <br />10acres <br />Mirpur,Dhaka</h6>
-              </div>
-              <div class="read-more">
-                <button class="read btn btn-outline-primary">
-                  Read More
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-     </div>
-</div>
-        </div>
-
-    
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-       
-
-      </div>
-
-
-
-  
-
-
-  <div class="view-more m-2">
-    <a href="properties.html" class="btn btn-outline-dark">View More Properties</a>
-  </div>
-
-
-</section>
+  <!-- Swiper -->
 
    <!--Do You Want Section-->
           <section class="do-want-section ">
@@ -667,32 +498,30 @@
   integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
   crossorigin="anonymous"
 ></script>
- 
-      <script>
-         
-        var swiper = new Swiper('.swiper', {
-                slidesPerView: 3,
-                direction: getDirection(),
-                navigation: {
-                  nextEl: '.swiper-button-next',
-                  prevEl: '.swiper-button-prev',
-                },
-                on: {
-                  resize: function () {
-                    swiper.changeDirection(getDirection());
-                  },
-                },
-              });
-        
-              function getDirection() {
-                var windowWidth = window.innerWidth;
-                var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
-        
-                return direction;
-              }
-           
-        
-        </script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 50,
+      },
+    },
+  });
+</script>
      <!--<script
         src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"

@@ -112,7 +112,34 @@
   
     display: none;
   }
-  @media only screen and (min-width:768px){
+  @media only screen and (max-width:900px){
+    .height {
+      background: url("../images/pic 4.jpg");
+       min-height: 85vh;
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      animation-name: zoom;
+      animation-duration: 20s;
+      animation-delay: 2s;
+      animation-iteration-count: infinite;
+      z-index: -1;
+    
+    }
+    .height .contact-support{
+
+      background-color: rgb(8, 8, 24);
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      text-align: center;
+      padding:8px;
+     margin:20px -130px 0 285px;
+  }
+  }
+  @media only screen and (max-width:768px){
     .height {
       background: url("../images/pic 4.jpg");
        min-height: 90vh;
@@ -139,10 +166,150 @@
      margin:20px -130px 0 285px;
   }
   }
+  @media(max-width:500px){
+    .height {
+      background: url("../images/pic 4.jpg");
+       height: 130vh;
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      animation-name: zoom;
+      animation-duration: 20s;
+      animation-delay: 2s;
+      animation-iteration-count: infinite;
+      z-index: -1;
+    
+    }
+    .height .contact-support{
+
+      background-color: rgb(8, 8, 24);
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      text-align: center;
+      padding:8px;
+     margin-left: 120px !important;
+  }
+  }
+ 
+  @media(max-width:400px){
+    .height {
+      background: url("../images/pic 4.jpg");
+       height: 190vh;
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      animation-name: zoom;
+      animation-duration: 20s;
+      animation-delay: 2s;
+      animation-iteration-count: infinite;
+      z-index: -1;
+    
+    }
+    .height .contact-support{
+       z-index: 0;
+      background-color: rgb(8, 8, 24);
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      text-align: center;
+      padding:8px;
+     margin-left: 110px !important;
+  
+  }
+  }
+ 
+  @media(max-width:250px){
+    .height {
+      background: url("../images/pic 4.jpg");
+       height: 270vh !important;
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      animation-name: zoom;
+      animation-duration: 20s;
+      animation-delay: 2s;
+      animation-iteration-count: infinite;
+      z-index: -1;
+    
+    }
+    .height .contact-support{
+       z-index: 0;
+      background-color: rgb(8, 8, 24);
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      text-align: center;
+      padding:8px;
+     margin-left: 35px !important;
+  
+  }
+  }
+ 
   @media only screen and (min-width:1000px){
     .height {
       background: url("../images/pic 4.jpg");
        min-height: 140vh;
+       background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      animation-name: zoom;
+      animation-duration: 20s;
+      animation-delay: 2s;
+      animation-iteration-count: infinite;
+      z-index: -1;
+    
+    }
+    .height .contact-support{
+
+      background-color: rgb(8, 8, 24);
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      text-align: center;
+      padding:8px;
+     margin:20px -130px 0 490px;
+  }
+  }
+  @media only screen and (min-width:1200px){
+    .height {
+      background: url("../images/pic 4.jpg");
+       min-height: 120vh;
+       background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      animation-name: zoom;
+      animation-duration: 20s;
+      animation-delay: 2s;
+      animation-iteration-count: infinite;
+      z-index: -1;
+    
+    }
+    .height .contact-support{
+
+      background-color: rgb(8, 8, 24);
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      text-align: center;
+      padding:8px;
+     margin:20px -130px 0 490px;
+  }
+  }
+  @media only screen and (min-width:1400px){
+    .height {
+      background: url("../images/pic 4.jpg");
+       min-height: 105vh;
        background-attachment: fixed;
       background-size: cover;
       background-position: center;
