@@ -450,7 +450,8 @@ footer{
   height:180px;
   background-color: black;
   
-}.footer-container{color: white;margin-top: 5px;text-align: center;}
+}
+.footer-container{color: white;margin-top: 5px;text-align: center;}
 
    footer a{text-decoration: none;}
 

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Faqs</title>
-     <link href="./css/style.css" rel="stylesheet">
+     <link rel="stylesheet" href="./css/style.css" >
     <link rel="stylesheet" href="./css/faqs.css" />
     <link
     rel="stylesheet"
@@ -27,14 +27,13 @@
   />
 
   </head>
-  <body class="main">
-
+  <body>
 
     <div class="overlay hidden"></div>
 
     <header class="header_area">
        
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top sticky">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">Logo</a>
             <button
@@ -47,25 +46,26 @@
             <div class="nav-menu" id="nav-menu">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="index.html"
+                  <a class="nav-link active" aria-current="page" href="index.html" id="home"
                     >Home</a
                   >
                 </li>
+                
+                
+                  <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="#area.html" id="area"
+                    >Area</a
+                  >
+                </li>
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#area.html" id="area"
-                      >Area</a
-                    >
-                  </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html">About us</a>
+                  <a class="nav-link " href="about.html" id="about-us">About us</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#advertise.html" id="advertise">Advertise</a>
                 </li>
                 <li class="nav-item">
                   <a
-                    class="nav-link active"
+                    class="nav-link"
                     href="faqs.html"
                     tabindex="-1"
                     aria-disabled="true"
@@ -81,38 +81,41 @@
                     >Contact</a
                   >
                 </li>
+             
               </ul>
               
               <i class="fas fa-times nav__close" id="nav-close"></i>
+       
 
               <div class="button">
-                <a href="#sign-in.html" class="btn btn-outline-light Sign" id="sign-in">Sign In</a>
-                <a href="#log-in.html"  class="btn btn-outline-light Log" id="log-in">Log In</a>
+                <a href="#sign.html" class="btn btn-outline-light Sign" id="sign-in">Sign In</a>
+                <a  href="#log.html" class="btn btn-outline-light Log" id="log-in">Log In</a>
               
               </div>
+            </div>
               
-          </div>
-
+          
          </div>  
 
 
-         <section class="area m-0 hidden">
+
+         <section class="area hidden">
 
           <select class="Division">
           
-             <option>Dhaka</option>
-             <option>Sy</option>
-             <option>Ch</option>
+            <option>Dhaka</option>
+            <option>Sy</option>
+            <option>Cho</option>
              <option>Ran</option>
              <option>Bar</option>
              <option>Kh</option>
              <option>Ra</option>
             
           </select>
-            <br>
-          <select class="Division">
+          <br/>
+          <select class="District">
           
-            <option>Sylhet</option>
+            <option>Dhaka</option>
             <option>Sy</option>
             <option>Cho</option>
             <option>Ra</option>
@@ -121,8 +124,8 @@
             <option>Raj</option>
            
          </select>
-         <br>
-         <select class="Division">
+         <br/>
+         <select class="Upozilla">
          
            <option>Chottogram</option>
            <option>Sy</option>
@@ -133,9 +136,9 @@
            <option>Raj</option>
           
         </select>
-
-        <br>
-        <select class="Division">
+        <br/>
+        
+        <select class="SizeOfLand">
         
           <option>Rangpur</option>
           <option>Syl</option>
@@ -146,7 +149,7 @@
           <option>Raj</option>
          
        </select>
-       <br>
+       <br/>
        <select class="Division">
        
          <option>Barishal</option>
@@ -170,7 +173,7 @@
         <option>Rajs</option>
        
      </select>
-     <br>
+      <br/>
      <select class="Division">
      
        <option>Rajshahi</option>
@@ -183,12 +186,14 @@
       
     </select>
    
+
+       
         </section>
         </nav>
-     
     </header>
 
 
+    
     <section class="modal-section show-modal">
       <span class="close-button"><i class="fas fa-times"></i></span>
  <p>Dear Seller,<br/>
@@ -211,6 +216,8 @@
    </div>
  </section>
 
+
+ 
 
 <!--Contact Us-->
 
@@ -335,7 +342,9 @@
 
  </section>
 
-      <section class="card-section height">
+
+       <div class="height-section">
+      <section class="card-section">
     
                <div class="min container">
                 <div class="title">
@@ -343,7 +352,7 @@
                   </div>
              
                 
-                <div class="accordion" id="accordionExample">
+                <div class="accordion mt-5" id="accordionExample">
                   <div class="card mb-2" style="background: #85C0C38B;">
                     <div class="card-header" id="headingOne">
                       <h2 class="mb-0">
@@ -450,7 +459,7 @@
                     </div>
                   </div>
                
-                  <div class="card">
+                  <div class="card mb-4">
                     <div class="card-header" id="headingEight">
                       <h2 class="mb-0">
                         <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
@@ -465,34 +474,30 @@
                       </div>
                     </div>
                   </div>
-               
-
               
-
                 </div>
-
-            <button class="contact-support">Contact Support</button>
-               
-               
             </div>
-  
+            <div class="contact-support"> 
+              <a href="#" class="btn btn-warning text-white mb-4">Contact Support</a>
+            </div>
   </section>
+ </div>
 
-
-    <footer id="main-footer" class="">
-        <div class="footer-container">
-       <h5 class="text-center">Follow us on</h5>
-       <div class="row">
-         <div class=" col-md-12 text-center" id="icons">
-         <a href="www.facebook.com"><span><i class="fab fa-facebook-square text-white m-4"></i></span>    </a>
-           <a href="www.instagram.com"> <span><i class="fab fa-instagram text-white m-4"></i></span> </a>
-          <a href="www.gmail.com"> <span> <i class="fas fa-envelope text-white m-4"></i>  </span></a>
-         </div>
-       </div>
-     <p class="text-center"> Copyright &copy; 2021  Liberty  Land Sales.All Rights Reserved</p>
+  <footer id="main-footer" class="">
+    <div class="footer-container">
+   <h5 class="text-center">Follow us on</h5>
+   <div class="row">
+     <div class=" col-md-12 text-center" id="icons">
+     <a href="www.facebook.com"><span><i class="fab fa-facebook-square text-white m-4"></i></span>    </a>
+       <a href="www.instagram.com"> <span><i class="fab fa-instagram text-white m-4"></i></span> </a>
+      <a href="www.gmail.com"> <span> <i class="fas fa-envelope text-white m-4"></i>  </span></a>
+     </div>
    </div>
-     </footer>
+ <p class="text-center"> Copyright &copy; 2021  Liberty  Land Sales.All Rights Reserved</p>
+</div>
+ </footer>
 
+  
 
 
      <a href="#" class="scrollup" id="scroll-up">
