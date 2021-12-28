@@ -177,19 +177,55 @@ font-size: 30px;
 }
 
 }
+
 @media(max-width:800px){
+  .card-section{
+    padding-right: 5px;
+    margin:10px;
+    height: 300px;
+}
   .about-body .why-choose-us{
     text-align: center; 
-    margin-left: 250px;
+    margin-left: 230px;
      width:300px;
    }
    .testimonial-title {
 
     width:270px;
-   margin-left: 130px;
+   margin-left: 125px;
    font-size: 24px;
   
  }
+
+ 
+}
+@media(max-width:650px){
+  .card-section{
+    padding-right: 5px;
+    margin:10px;
+    height: 300px;
+}
+  .about-body .why-choose-us{
+    text-align: center; 
+    margin-left: 150px !important;
+     width:300px;
+   }
+   .testimonial-title {
+
+    width:270px;
+   margin-left: 50px !important;
+   font-size: 24px;
+  
+ }
+ .card-section .imageee{
+  margin-left: 225px !important;
+  margin-top: -40px;
+  border-radius: 100%;
+  background-color: turquoise;
+  width:100px;
+  
+}
+
  
 }
 @media(max-width:500px){
@@ -198,14 +234,14 @@ font-size: 30px;
   }
  .about-body .why-choose-us{
     text-align: center; 
-    margin-left: 57px;
+    margin-left: 57px !important;
      width:300px;
    }
    
 .testimonial-title {
 
    width:300px;
-  margin-left: -65px;
+  margin-left: -65px !important;
   font-size: 24px;
  
 }
@@ -213,11 +249,11 @@ font-size: 30px;
   font-size: 24px;
 }
 .card-section{
-    padding-left: 15px;
+    padding-left: 20px;
     height: 250px;
 }
 .card-section .imageee{
-  margin-left: 120px;
+  margin-left: 125px !important;
   margin-top: -40px;
   border-radius: 100%;
   background-color: turquoise;
@@ -241,14 +277,14 @@ font-size: 30px;
   }
  .about-body .why-choose-us{
     text-align: center; 
-    margin-left: 38px;
+    margin-left:30px !important;
      width:300px;
    }
    
 .testimonial-title {
 
    width:300px;
-  margin-left: -82px;
+  margin-left: -89px !important;
   font-size: 24px;
  
 }
@@ -260,7 +296,7 @@ font-size: 30px;
     height: 260px;
 }
 .card-section .imageee{
-  margin-left: 108px;
+  margin-left: 98px !important;
   margin-top: -40px;
   border-radius: 100%;
   background-color: turquoise;
@@ -379,7 +415,7 @@ font-size: 30px;
   }
  .about-body .why-choose-us{
     text-align: center; 
-    margin-left: 570px !important;
+    margin-left: 580px !important;
      width:300px;
    }
    

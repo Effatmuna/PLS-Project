@@ -538,7 +538,7 @@ footer p{font-weight: lighter;}
     
     margin-bottom: 10px;
     background: rgb(5, 5, 5);
-    height: 65px;
+    height: 85px;
     text-align: center;
     opacity: 0.6;
     font-size: 15px;
@@ -550,6 +550,7 @@ footer p{font-weight: lighter;}
     background: rgb(5, 5, 5);
     color: white;
     border:1px solid white;
+    margin-left: 10px;
   }
   .state .district {
     width: 105px;  
@@ -580,10 +581,12 @@ footer p{font-weight: lighter;}
     padding: 2px;
     font-size: 18px;
     font-weight: bold;
-    margin-bottom:5px;
+    margin-bottom:10px;
   
   }
- 
+ #Search{
+   margin-top:-5px;
+ }
   .do-container .buy-sell{
     width:250px;
     flex-direction: row;
