@@ -6,10 +6,11 @@
 }
 
 #property-section {
-    background: url("pic4.jpg");
+    background: url("../images/pic 2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 500px;
+    min-height: 600px;
+    background-position: center;
   }
   
   
@@ -21,8 +22,32 @@
     width: 100%;
     min-height: 600px;
   }
+  .property-title {
+    color: white;
+    position: absolute;
+    bottom:50%;
+    left:50%; 
+    transform: translate(-50%,-50%);
 
+}
+.property-title h5{
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Rokkitt', serif;
+  text-shadow:1px 1px 1px  rgb(71, 66, 66);
+}
 
+.property-title .act{
+
+  border-bottom: white 2px solid;
+  width: 200px;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px rgb(71, 66, 66);
+}
+
+  #cardSection1{
+    margin-top: -100px;
+  }
   .card-container{
     display: flex;
     flex-wrap: wrap;
@@ -36,7 +61,7 @@
     
   }
   
-  .property{
+ /* .property{
 
     
    
@@ -62,17 +87,59 @@
     text-shadow:1px 1px 1px  rgb(71, 66, 66);
   }
 
+*/
+        
 
-  .card-section .page{
-       
-         margin-left: 500px;
-         margin-top: 20px;
-  
-  }
   .page{
+    overflow: hidden;
+    margin-top: 30px;
     background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
   }
  .page .page-link:hover{
     background: #85C0C3F6;
 
+  }
+  @media(max-width:1000px){
+    .property-title {
+      color: white;
+      position: absolute;
+      bottom:70%;
+      left:50%; 
+      transform: translate(-50%,-50%);
+  
+  }
+  }
+  @media(max-width:500px){
+    .property-title {
+      color: white;
+      position: absolute;
+      bottom:60%;
+      left:50%; 
+      transform: translate(-50%,-50%);
+  
+  }
+  }
+  @media(min-width:1000px){
+    .property-title {
+      color: white;
+      position: absolute;
+      bottom:75%;
+      left:50%; 
+      transform: translate(-50%,-50%);
+  
+  }
+  }
+  @media(min-width:1200px){
+    .property-title {
+      color: white;
+      position: absolute;
+      bottom:55%;
+      left:50%; 
+      transform: translate(-50%,-50%);
+  
+  }
   }
