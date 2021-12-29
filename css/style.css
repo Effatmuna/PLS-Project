@@ -291,16 +291,6 @@ margin-left: 2px;
 
 
 
-.area{
-
-  position: absolute;
-  top:52px;
-  left:500px !important;
-  z-index: 1;
-  
-   
-}
-
 .area .Division,.District, .Upozilla, .SizeOfLand{
   width:120px;
   background: rgb(5, 5, 5);
@@ -462,6 +452,16 @@ footer p{font-weight: lighter;}
 
 @media(max-width:1000px){
   
+.area{
+
+  position: absolute;
+  top:52px;
+  left:620px;
+  z-index: 1;
+  
+   
+}
+
   .navbar{
     border-bottom: 4px white solid;
      opacity:0.6;
@@ -509,10 +509,12 @@ footer p{font-weight: lighter;}
  .show-menu{
        right:0;
  }
+ 
  .nav-menu .nav-link:hover{
-
+  
   transition-duration: 1s;
    background-color: red;
+   
  }
  .state .division {
   width: 105px;
@@ -532,9 +534,18 @@ footer p{font-weight: lighter;}
     transition-duration: 1s;
      background-color: red;
    }
-
-
-
+   .area{
+  
+    position: absolute;
+    top:60px;
+    left:520px;
+    z-index: 2;
+    
+  } 
+ 
+.Log{
+  margin-bottom: 10px;
+}
   .state {
     
     margin-bottom: 10px;
@@ -620,10 +631,32 @@ footer p{font-weight: lighter;}
  
  
 }
+@media(max-width: 670px){
+  .area{
+  
+    position: absolute;
+    top:60px;
+    left:460px;
+    z-index: 2;
+    
+  } 
+ 
+ 
+
+
+}
 @media(max-width:600px){
   .nav-menu .Log{
     margin-top: 10px;
   }
+  .area{
+  
+    position: absolute;
+    top:60px;
+    left:420px;
+    z-index: 2;
+    
+  } 
   .do-container .links{
     width:150px;
     background-color: white;
@@ -635,6 +668,130 @@ footer p{font-weight: lighter;}
     margin: 0px 5px 0px 5px;
   }
 }
+
+
+@media(max-width:578px){
+
+
+  .nav-menu .log{
+    text-align: center;
+     margin-top: 10px;
+     width:75px;
+     padding:5px;
+  }
+.nav-menu .Sign{
+  margin-top: 0px;
+  padding:5px;
+  width:75px;
+}
+
+
+
+  .state {
+    
+    margin-bottom: 10px;
+    background: rgb(5, 5, 5);
+    height: 130px;
+    text-align: center;
+    opacity: 0.6;
+    font-size: 15px;
+    padding-top: 15px;
+    
+  }
+  .state .division {
+    width: 115px;
+    background: rgb(5, 5, 5);
+    color: white;
+    border:1px solid white;
+    margin: 5px;margin-left: 10px;;
+  }
+  .state .district {
+    width: 115px;  
+    background: rgb(5, 5, 5);
+    color: white;
+    border:1px solid white;
+  }
+  .state .upozilla {
+    width: 115px; 
+    background: rgb(5, 5, 5);
+    color: white;margin:5px;
+     border:1px solid white;margin-left: 10px;;
+  
+  }
+  .state .size {
+    width: 115px;
+    background: rgb(5, 5, 5);
+    color: white;   
+    border:1px solid white;
+  }
+  .state button {
+    width: 100px;
+    border-radius: 10px;
+  
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom:8px;overflow: hidden;
+  }
+  .do-container .buy-sell{
+    width:250px;
+    margin-right:10px;
+    position: relative;
+    
+    left:5px;
+  } 
+  .do-container .links{
+    width:150px;
+    background-color: white;
+    opacity: 0.7;
+    padding: 10px;
+    flex-wrap: wrap;
+    height: 70%;
+    position:relative;
+    top:50px;
+    margin-right: 10px;
+  
+  }
+
+  .buy-sell .for-sale{
+  
+    text-align: center;
+    font-size: 11px;
+    background:#2C2727 ;color: white;font-weight: lighter;
+   
+  
+  } .buy-sell .for-buy{
+    background: #2F6D7B ;
+    text-align: center;
+    font-size: 11px;font-weight: lighter;
+  
+  }
+  .buy-sell .for-sale h4,
+  .buy-sell .for-buy h4{
+
+        font-size: 14px;
+        font-weight: bold;
+
+  }
+  .for-sale a, .for-buy a{
+    font-size: 20px;
+     overflow: hidden;color: white;
+  }
+
+
+}
+ @media(max-width:540px){
+  .area{
+  
+    position: absolute;
+    top:400px;
+    left:330px;
+    z-index: 2;
+    
+}
+ }
+
+
+
 @media(max-width:500px){
   .nav-menu .Log{
     margin-top: 10px;
@@ -654,6 +811,24 @@ footer p{font-weight: lighter;}
     top:50px;
     margin: 0px 5px 0px 5px;
   }
+  .area{
+  
+    position: absolute;
+    top:400px;
+    left:300px;
+    z-index: 2;
+    
+}
+}
+@media(max-width:450px){
+  .area{
+  
+    position: absolute;
+    top:400px;
+    left:270px;
+    z-index: 2;
+    
+}
 }
 
 @media(max-width:414px){
@@ -686,11 +861,12 @@ footer p{font-weight: lighter;}
     .area{
   
       position: absolute;
-      top:450px;
-      left:230px !important;
+      top:380px;
+      left:250px;
       z-index: 2;
       
-  } 
+  }
+ 
     .state {
       
       position: relative;
@@ -731,6 +907,7 @@ footer p{font-weight: lighter;}
     
         border:1px solid white;
     }
+   
     .state button {
       width: 100px;
       border-radius: 10px;
@@ -770,6 +947,8 @@ footer p{font-weight: lighter;}
       top:50px;
       margin: 0px 5px 0px 5px;
     }
+  }
+
 @media(max-width:360px){
   #CardSection1{
     margin-top: 350px;
@@ -787,7 +966,7 @@ footer p{font-weight: lighter;}
   
     position: absolute;
     top:270px;
-    left:180px !important;
+    left:220px;
     z-index: 2;
     
 } 
@@ -906,15 +1085,35 @@ footer p{font-weight: lighter;}
 
   
 }
-@media(max-width:313px){
+/*@media(max-width:370px){
+  .area{
+  
+    position: absolute;
+    top:350px;
+    left:220px;
+    z-index: 2;
+    
+} 
+}*/
+
+@media(max-width:323px){
+
   .nav-menu{
     height:1637px;
   margin-right: 5px;
 
   }
+  .area{
+  
+    position: absolute;
+    top:265px;
+    left:185px;
+    z-index: 2;
+    
+} 
  .state{
   background: rgb(5, 5, 5) !important;
-  height: 140px !important;
+  height: 130px !important;
   display: block;
  }
  .state .division {
@@ -994,15 +1193,42 @@ footer p{font-weight: lighter;}
     z-index: 1;
   }
 }
- 
+@media(max-width:300px){
+  .area{
+  
+    position: absolute;
+    top:340px;
+    left:170px;
+    z-index: 1;
+    
+}
+}
+@media(max-width:250px){
+  .nav-menu{
+    height:500px;
+  }
+  .area{
+  
+    position: absolute;
+    top:340px;
+    left:123px;
+    z-index: 1;
+    
+}
+.footer-container{
+  margin-top: -25px ;
+  padding-top: 15px;
+
+  
+}
+}
  /*  .card-section-home .card-container{
      width:360px;
    }*/
   
-}
 
 @media(min-width:600px){
-  
+ 
   .do-container .buy-sell{
     width:28rem;
      flex-direction: row;
@@ -1116,114 +1342,6 @@ footer p{font-weight: lighter;}
    
   }
   
-@media(max-width:578px){
-
-
-  .nav-menu .log{
-    text-align: center;
-     margin-top: 10px;
-     width:75px;
-     padding:5px;
-  }
-.nav-menu .Sign{
-  margin-top: 10px;
-  padding:5px;
-  width:75px;
-}
-
-  .state {
-    
-    margin-bottom: 10px;
-    background: rgb(5, 5, 5);
-    height: 130px;
-    text-align: center;
-    opacity: 0.6;
-    font-size: 15px;
-    padding-top: 15px;
-    
-  }
-  .state .division {
-    width: 115px;
-    background: rgb(5, 5, 5);
-    color: white;
-    border:1px solid white;
-    margin: 5px;margin-left: 10px;;
-  }
-  .state .district {
-    width: 115px;  
-    background: rgb(5, 5, 5);
-    color: white;
-    border:1px solid white;
-  }
-  .state .upozilla {
-    width: 115px; 
-    background: rgb(5, 5, 5);
-    color: white;margin:5px;
-     border:1px solid white;margin-left: 10px;;
-  
-  }
-  .state .size {
-    width: 115px;
-    background: rgb(5, 5, 5);
-    color: white;   
-    border:1px solid white;
-  }
-  .state button {
-    width: 100px;
-    border-radius: 10px;
-  
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom:8px;overflow: hidden;
-  }
-  .do-container .buy-sell{
-    width:250px;
-    margin-right:10px;
-    position: relative;
-    
-    left:5px;
-  } 
-  .do-container .links{
-    width:150px;
-    background-color: white;
-    opacity: 0.7;
-    padding: 10px;
-    flex-wrap: wrap;
-    height: 70%;
-    position:relative;
-    top:50px;
-    margin-right: 10px;
-  
-  }
-
-  .buy-sell .for-sale{
-  
-    text-align: center;
-    font-size: 11px;
-    background:#2C2727 ;color: white;font-weight: lighter;
-   
-  
-  } .buy-sell .for-buy{
-    background: #2F6D7B ;
-    text-align: center;
-    font-size: 11px;font-weight: lighter;
-  
-  }
-  .buy-sell .for-sale h4,
-  .buy-sell .for-buy h4{
-
-        font-size: 14px;
-        font-weight: bold;
-
-  }
-  .for-sale a, .for-buy a{
-    font-size: 20px;
-     overflow: hidden;color: white;
-  }
-
-
-}
- 
 
 
   @media(min-width: 1000px){
@@ -1235,7 +1353,7 @@ footer p{font-weight: lighter;}
   
       position: absolute;
       top:52px;
-      left:290px !important;
+      left:290px;
       z-index: 1;
       
   } 
@@ -1273,15 +1391,7 @@ footer p{font-weight: lighter;}
     color: white;
   
 }
-.area{
 
-  position: absolute;
-  top:52px;
-  left:290px;
-  z-index: 1;
-  
-   
-}
 
 .do-want-section .buy-sell{
   margin-top:-5px;
@@ -1373,7 +1483,18 @@ footer p{font-weight: lighter;}
 }
 
 }
-@media(min-width:1200px){
+@media(min-width:1000px){
+  .area{
+    
+    position: absolute;
+    top:52px;
+    left: 290px;
+    z-index: 1;
+    
+     
+  }
+}
+@media(min-width:1100px){
   .nav-menu .navbar-nav{
     margin-right: 250px;
   }
@@ -1385,29 +1506,38 @@ footer p{font-weight: lighter;}
     
   }
   .area{
-
+    
     position: absolute;
     top:52px;
-    left:410px !important;
+    left: 430px;
     z-index: 1;
     
      
   }
+ 
   
 }
-@media(min-width:1400px){
-  .area{
+@media(min-width:1300px){
+ .area{
 
     position: absolute;
     top:52px;
-    left:555px !important;
+    left:585px;
     z-index: 1;
     
      
-  }
+  }/*
+  .area{
+  
+    position: absolute;
+    top:52px;
+    left:390px;
+    z-index: 1;
+    
+} */
 }
 @media(min-width:1500px){
-  .area{
+  /*.area{
 
     position: absolute;
     top:52px;
@@ -1415,5 +1545,5 @@ footer p{font-weight: lighter;}
     z-index: 1;
     
      
-  }
+  }*/
 }

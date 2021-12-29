@@ -559,11 +559,11 @@ body{
     z-index: 1;
   
   }
-  .area{
+  /*.area{
 
-    position: fixed;
+    position: absolute;
     top:52px;
-    left:480px;
+    left:500px !important;
     z-index: 1;
     
      
@@ -635,6 +635,13 @@ body{
      margin:20px -130px 0 285px;
   }
   }*/
+  @media(max-width:1000px){
+     
+    .title{
+      margin-top:120px !important;
+    }
+   
+  }
   @media(max-width:800px){
    
     .title{
@@ -651,6 +658,14 @@ body{
       background-color: teal;
       z-index: 6;
     }
+    /*.area{
+  
+      position: absolute;
+      top:450px;
+      left:230px !important;
+      z-index: 2;
+      
+  } */
     .title{
       margin-top:100px !important;
     }
@@ -683,6 +698,14 @@ body{
       background-color: teal;
       z-index: 6;
     }
+   /* .area{
+  
+      position: absolute;
+      top:270px;
+      left:180px !important;
+      z-index: 2;
+      
+  }*/
     .title{
       margin-top:100px !important;
     }
@@ -739,6 +762,14 @@ body{
       background-color: teal;
       z-index: 6;
     }
+   /* .area{
+  
+      position: absolute;
+      top:52px;
+      left:290px;
+      z-index: 1;
+      
+  } */
     .title{
       margin-top:100px !important;
     }
@@ -764,7 +795,17 @@ body{
     
   }
   }
+  @media(min-width:1400px){
+    /*.area{
   
+      position: absolute;
+      top:52px;
+      left:550px !important;
+      z-index: 1;
+      
+       
+    }*/
+  }
  /* @media only screen and (min-width:1200px){
     .height-section {
       background: url("../images/pic 4.jpg");
