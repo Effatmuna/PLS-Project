@@ -293,9 +293,9 @@ margin-left: 2px;
 
 .area{
 
-  position: fixed;
+  position: absolute;
   top:52px;
-  left:490px;
+  left:500px !important;
   z-index: 1;
   
    
@@ -624,14 +624,35 @@ footer p{font-weight: lighter;}
   .nav-menu .Log{
     margin-top: 10px;
   }
+  .do-container .links{
+    width:150px;
+    background-color: white;
+    opacity: 0.7;
+    flex-wrap: wrap;
+    height: 70%;
+    position:relative;
+    top:60px;
+    margin: 0px 5px 0px 5px;
+  }
 }
 @media(max-width:500px){
   .nav-menu .Log{
     margin-top: 10px;
   }
+  
   .state{
     position: relative;
     top:-105px;
+  }
+  .do-container .links{
+    width:150px;
+    background-color: white;
+    opacity: 0.7;
+    flex-wrap: wrap;
+    height: 70%;
+    position:relative;
+    top:50px;
+    margin: 0px 5px 0px 5px;
   }
 }
 
@@ -662,6 +683,14 @@ footer p{font-weight: lighter;}
       padding: 14px;
   
     }
+    .area{
+  
+      position: absolute;
+      top:450px;
+      left:230px !important;
+      z-index: 2;
+      
+  } 
     .state {
       
       position: relative;
@@ -754,7 +783,14 @@ footer p{font-weight: lighter;}
   #logOut{
     padding: 14px;
   }
-
+  .area{
+  
+    position: absolute;
+    top:270px;
+    left:180px !important;
+    z-index: 2;
+    
+} 
  .state{
      position: relative;
      top:165px;
@@ -1194,7 +1230,15 @@ footer p{font-weight: lighter;}
   .button .Log{
     margin-top: 0px;
   }
-    
+ 
+    .area{
+  
+      position: absolute;
+      top:52px;
+      left:290px !important;
+      z-index: 1;
+      
+  } 
 .navbar {
   border-bottom: 4px white solid;
   opacity: 0.6;
@@ -1229,6 +1273,16 @@ footer p{font-weight: lighter;}
     color: white;
   
 }
+.area{
+
+  position: absolute;
+  top:52px;
+  left:290px;
+  z-index: 1;
+  
+   
+}
+
 .do-want-section .buy-sell{
   margin-top:-5px;
 }
@@ -1329,5 +1383,37 @@ footer p{font-weight: lighter;}
       margin-left: 20px;
       color: white;
     
+  }
+  .area{
+
+    position: absolute;
+    top:52px;
+    left:410px !important;
+    z-index: 1;
+    
+     
+  }
+  
+}
+@media(min-width:1400px){
+  .area{
+
+    position: absolute;
+    top:52px;
+    left:555px !important;
+    z-index: 1;
+    
+     
+  }
+}
+@media(min-width:1500px){
+  .area{
+
+    position: absolute;
+    top:52px;
+    left:300px !important;
+    z-index: 1;
+    
+     
   }
 }
