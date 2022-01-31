@@ -39,7 +39,7 @@ navToggle.addEventListener("click",function(){
 
 
   document.querySelector(".nav-menu").classList.add("show-menu");
-  
+   
 
 });
 navClose.addEventListener("click",function(){
@@ -52,16 +52,26 @@ advertise.addEventListener("click",function(){
 
   document.querySelector(".modal-section").classList.remove("show-modal");
   document.querySelector(".overlay").classList.remove("hidden");
-
+  document.querySelector(".show-logIn").style.display="none";
+  document.querySelector(".show-signIn").style.display="none";
+  document.querySelector(".contact-us").classList.add("show-contact");
 })
 
 advertiseClose.addEventListener("click",function(){
 
   document.querySelector(".modal-section").classList.add("show-modal");
-   
-    
   document.querySelector(".overlay").classList.add("hidden");
   
+})
+const overlay = document.querySelector(".overlay");
+overlay.addEventListener("click",function(){
+
+
+  document.querySelector(".modal-section").classList.add("show-modal");
+  overlay.classList.add("hidden");
+
+
+
 })
 if(!advertise){
   document.querySelector(".modal-section").classList.add("show-modal");
@@ -73,12 +83,23 @@ if(!advertise){
 contact.addEventListener("click",function(){
     document.querySelector(".contact-us").classList.remove("show-contact");
     document.querySelector(".overlay").classList.remove("hidden");
-    
-
+    document.querySelector(".show-logIn").style.display="none";
+    document.querySelector(".show-signIn").style.display="none";
+    document.querySelector(".modal-section").classList.add("show-modal");
+   
 })
 contactCloseButton.addEventListener("click",function(){
   document.querySelector(".contact-us").classList.add("show-contact");
   document.querySelector(".overlay").classList.add("hidden");
+
+})
+overlay.addEventListener("click",function(){
+
+
+  document.querySelector(".contact-us").classList.add("show-contact");
+  overlay.classList.add("hidden");
+
+
 
 })
 
@@ -87,6 +108,9 @@ var signIn = document.querySelector("#sign-in");
 signIn.addEventListener("click", function(){
     document.querySelector(".show-signIn").style.display="block";
     document.querySelector(".overlay").classList.remove("hidden");
+    document.querySelector(".show-logIn").style.display="none";
+    document.querySelector(".modal-section").classList.add("show-modal");
+    document.querySelector(".contact-us").classList.add("show-contact");
 })
 
 document.querySelector(".signIn-close-button").addEventListener("click",function(){
@@ -95,18 +119,40 @@ document.querySelector(".signIn-close-button").addEventListener("click",function
 
 
 })
+overlay.addEventListener("click",function(){
+
+
+  document.querySelector(".show-signIn").style.display="none";
+  overlay.classList.add("hidden");
+
+
+
+})
+
+
 var logIn= document.querySelector("#log-in");
 
 logIn.addEventListener("click",function(){
   document.querySelector(".show-logIn").style.display="block";
     document.querySelector(".overlay").classList.remove("hidden");
-   
-
+    document.querySelector(".show-signIn").style.display="none";
+    document.querySelector(".modal-section").classList.add("show-modal");
+    document.querySelector(".contact-us").classList.add("show-contact");
 
 })
 document.querySelector(".logIn-close-button").addEventListener("click",function(){
+ 
+   document.querySelector(".show-logIn").style.display="none";
+   document.querySelector(".overlay").classList.add("hidden");
+
+
+})
+overlay.addEventListener("click",function(){
+
+
   document.querySelector(".show-logIn").style.display="none";
-  document.querySelector(".overlay").classList.add("hidden");
+  overlay.classList.add("hidden");
+
 
 
 })
@@ -117,28 +163,40 @@ console.log(down.length);
 area.addEventListener("click",function(){
 
 document.querySelector(".area").classList.toggle("hidden");
+ alert("If you click area button once and your area section is not removing then click the area section again")
 
 })
-
 
 
 description.addEventListener("click",function(){
 
    
   document.querySelector(".d1").style.display="inline";
+  description.style.backgroundColor="cadetblue";
+  pricing.style.backgroundColor="white";
+  facilities.style.backgroundColor="white";
+
   document.querySelector(".d2").classList.add("show-p2");
   document.querySelector(".d3").classList.add("show-p3");
+
 })
 
 
 facilities.addEventListener("click",function(){
   document.querySelector(".d2").classList.toggle("show-p2");
+  facilities.style.backgroundColor="lightgreen";
+  pricing.style.backgroundColor="white";
+ 
+  description.style.backgroundColor="white";
   document.querySelector(".d1").style.display="none";
   document.querySelector(".d3").classList.add("show-p3");
 })
 pricing.addEventListener("click",function(){
-
+ 
   document.querySelector(".d2").classList.add("show-p2");
+  pricing.style.backgroundColor="skyblue";
+  facilities.style.backgroundColor="white";
+  description.style.backgroundColor="white";
   document.querySelector(".d1").style.display="none";
   document.querySelector(".d3").classList.toggle("show-p3");
  

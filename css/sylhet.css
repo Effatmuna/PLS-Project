@@ -109,3 +109,233 @@
 .form-group .form-control{
   margin-top: 15px;
 }
+
+
+
+@media(max-width:450px){
+  .seller-details .Seller{
+    display: flex;
+    flex-direction: column;
+  }
+  .seller-img{
+   margin-left: 50px;
+ 
+  }
+  iframe{
+    width:385px;
+    padding:10px;
+  }
+
+}
+@media(max-width:428px){
+  iframe{
+    width:385px !important;
+    padding:10px;
+  }
+}
+@media(max-width:414px){
+
+  .seller-img{
+    margin-left: 80px;
+  
+   }
+  iframe{
+    width:375px !important;
+    padding:10px;
+  }
+}
+@media(max-width:393px){
+  iframe{
+    width:350px !important; 
+  }
+  .seller-img{
+    margin-left: 70px;
+   
+  }
+}
+
+
+@media(max-width:360px){
+     .seller-img{
+       margin-left: 55px;
+      
+     }
+     iframe{
+      width:320px !important;
+      padding:10px;
+      
+
+    }
+    .Seller{
+      width:100%;
+      display: flex;
+      flex-direction: column;
+      font-size: 20px;
+      
+
+  }
+}
+
+@media(min-width:400px){
+  iframe{
+    width:450px;
+    padding:10px;
+    
+
+  }
+
+}
+
+@media(min-width:500px){
+  .allDetails{
+    display:flex;
+    flex-direction: row;
+  }
+  .seller-img{
+        width:100%;
+  }
+  .Seller{
+      width:115%;
+      display: flex;
+      flex-direction: column;
+      font-size: 20px;
+      
+
+  }
+  iframe{
+    width:510px;
+    padding:10px;
+    
+
+  }
+
+
+}
+
+@media(min-width:600px){
+  .allDetails{
+    display:flex;
+    flex-direction: row;
+  }
+  .seller-img{
+        width:120%;
+  }
+  .Seller{
+      width:210%;
+      display: flex;
+      flex-direction: column;
+      font-size: 20px;
+  }
+  iframe{
+    width:615px;
+    padding:10px;
+    
+
+  }
+
+}
+
+
+@media(min-width:700px){
+  .allDetails{
+    display:flex;
+    flex-direction: row;
+
+  }
+  .seller-img{
+        width:120%;
+  }
+  .Seller{
+      width:250%;
+      display: flex;
+      flex-direction: column;
+      font-size: 20px;
+      
+
+  }
+  iframe{
+    width:730px;
+    padding:20px;
+  }
+
+
+}
+@media(min-width:800px){
+  .allDetails{
+    display:flex;
+    flex-direction: column;
+    
+    
+  }
+  .seller-details{
+   position: relative;
+   left:110%;
+  }
+  .seller-img{
+    width:60%;
+    margin-left: 20%;
+
+}
+.Seller{
+  width:100%;
+  font-size: 25px;
+}
+iframe{
+  width:770px;
+  padding:10px;
+}
+
+}
+
+
+@media(min-width:900px){
+  iframe{
+    width:910px;
+    padding:10px;
+  }
+  
+}
+@media(min-width:1000px){
+  iframe{
+    width:320px;
+    padding:10px;
+  }
+  .seller-details{
+    position: relative;
+    left:0px;
+    height:100%;
+    overflow: hidden;
+   }
+
+}
+@media(min-width:1200px){
+  .seller-details{
+    position: relative;
+    left:0px;
+    height:100%;
+    overflow: hidden;
+   }
+  
+   .seller-img{
+    width:50%;
+    margin-left: 20%;
+
+}
+.contact-seller{
+  width:1250px !important;
+}
+iframe{
+  width:400px;
+  padding:10px;
+}
+}
+@media(min-width:1400px){
+  .contact-seller{
+    width:1440px !important;
+  }
+  iframe{
+    display: flex;
+    width:460px;
+    padding:10px;
+  }
+}

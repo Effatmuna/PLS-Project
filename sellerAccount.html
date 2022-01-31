@@ -99,7 +99,7 @@
                     <i class="fas fa-user" id="welcome"></i>Welcome Brad
                   </a>
                   <div class="dropdown-menu" id="dropdownMenu">
-                    <a href="profile.html" class="dropdown-item">
+                    <a href="EditPro.html" class="dropdown-item">
                       <i class="fas fa-user"></i> Edit profile
                     </a>
                    
@@ -221,9 +221,9 @@
     <div class="addInfo">
       <div class="info p-4">
       <img src="./images/profi.jpg" class="profileImg">
-       <span class="text-white ml-2">John Abraham</span>
+       <span class="text-white" id="john">John Abraham</span>
 
-       <a href="#" class="btn btn-danger" id="editAdvertiseBtn">Edit Advertise</a>
+       <a href="pac.html" class="btn btn-danger" id="editAdvertiseBtn">Edit Advertise</a>
        </div>
     </div>
   
@@ -240,7 +240,7 @@
 <!--Contact Us-->
 
 
-<section class="contact-us show-contactTwo">
+<section class="contact-us show-contactTwo" id="contactTwo">
   <span class="contact-close-button"><i class="fas fa-times"></i></span>
   <div class="contact-modal">
 
@@ -282,16 +282,16 @@
    <div class="p-2 border">
   <form class="image1">
     <input type="file" id="file" accept="image/*" class="d-none">
-     <label for="file">Choose image</label>
+     <label for="file" class="imagefilee">Choose image</label>
   
   </form>
   <div class="row ml-auto"> 
-    <form class="image2 col-sm-2" style="">
+    <form class="image2 col-md-2" style="">
       <input type="file" id="file" accept="image/*" class="d-none">
        <label for="file" class="ImageFile">Choose image</label>
   
     </form>
-    <form class="image2 col-sm-2" style="">
+    <form class="image2 col-md-2" style="">
       <input type="file" id="file" accept="image/*" class="d-none" >
        <label for="file" class="ImageFile">Choose image</label>
   
@@ -406,7 +406,7 @@ areaTwo.addEventListener("click",function(){
 document.querySelector(".areaTwo").classList.toggle("hiddenTwo");
 })
 
-
+const overlayTwo = document.querySelector(".overlayTwo");
 contact.addEventListener("click",function(){
     document.querySelector(".contact-us").classList.remove("show-contactTwo");
     document.querySelector(".overlayTwo").classList.remove("hidden");
@@ -417,14 +417,17 @@ const contactCloseButton= document.querySelector(".contact-close-button");
 contactCloseButton.addEventListener("click",function(){
   document.querySelector(".contact-us").classList.add("show-contactTwo");
   document.querySelector(".overlayTwo").classList.add("hidden");
+ 
+})
+overlayTwo.addEventListener("click",function(){
+
+
+document.querySelector(".contact-us").classList.add("show-contactTwo");
+overlayTwo.classList.add("hidden");
+
+
 
 })
-
-
-
-
-
-
 
 
    </script>

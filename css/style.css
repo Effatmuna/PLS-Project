@@ -4,6 +4,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
+  
 }
 .container {
   
@@ -15,11 +17,11 @@
   top: 0px;
   left: 0px;
   width: 100%;
-  min-height:270vh;
+  min-height:250vh;
   filter: blur(3px);
   opacity: 0.7;
   background-color: black;
-  z-index: 3;
+  z-index: 5;
 
 }
 .hidden{
@@ -79,10 +81,10 @@ nav{
   text-transform: capitalize;
   font-weight: lighter;
 }
-.nav-menu .nav-link:hover{
-
+.nav-link:hover{
+ background-color: palegreen;
   transition-duration: 1s;
-   background-color: red;
+
  }
  .dropdown{
   display: flex;
@@ -172,7 +174,7 @@ margin-left: 2px;
   margin:10px;
   background-color:rgb(123, 174, 187);
   width:450px;
-  z-index: 1;
+  z-index: 6;
   position: absolute;
   left:450px;
   padding:20px;
@@ -212,7 +214,7 @@ margin-left: 2px;
 /*Card section*/
 .card-section-home{
   margin-top: 55px;
-  z-index: 0;
+  z-index: 1;
 }
 .view-more{
   margin-left: 135px;
@@ -316,12 +318,12 @@ margin-left: 2px;
   margin:10px;
   background: #02031C;
   height:540px;
-  z-index: 2;
+  z-index: 6;
   position: absolute;
   left:440px;
   padding:20px;
   top:30%;
-  padding:30px;
+  
   
 }
 .form-group{
@@ -362,7 +364,7 @@ margin-left: 2px;
   margin:10px;
   background: #2F6D7B;
    width:484px;
-  height:730px;
+  height:780px;
   z-index: 5;
   position: absolute;
   left:440px;
@@ -442,7 +444,11 @@ footer{
   background-color: black;
   
 }
-.footer-container{color: white;margin-top: 5px;text-align: center;}
+.footer-container{
+  color: white;
+  margin-top: 5px;
+  text-align: center;
+}
 
    footer a{text-decoration: none;}
 
@@ -505,7 +511,7 @@ footer p{font-weight: lighter;}
   background-color: cornsilk;
   padding: 5px;
 }
- 
+
  .show-menu{
        right:0;
  }
@@ -513,7 +519,7 @@ footer p{font-weight: lighter;}
  .nav-menu .nav-link:hover{
   
   transition-duration: 1s;
-   background-color: red;
+  
    
  }
  .state .division {
@@ -523,16 +529,35 @@ footer p{font-weight: lighter;}
   border:1px solid white;
   margin-left: -10px;
 }
- 
+.contact-us{
+  background: indigo;
+  margin:10px;
+  background: #02031C;
+  height:540px;
+  z-index: 6;
+  position: absolute;
+  left: 115px;
+  padding:20px;
+  top:30%;
+  width:350px;
+  
+}
+.contact-us .contact-close-button{
 
+  margin-left:270px;
+   padding:10px;
+  cursor: pointer;color: white;
+}
 }
 
 
 @media(max-width:768px){
-  .nav-menu .nav-link:hover{
-
-    transition-duration: 1s;
-     background-color: red;
+  .nav-menu ul li a:hover{
+   background:tomato;
+    width:150px;
+  
+    transition-duration:0.2s;
+    text-align: center;
    }
    .area{
   
@@ -544,7 +569,7 @@ footer p{font-weight: lighter;}
   } 
  
 .Log{
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
   .state {
     
@@ -646,9 +671,17 @@ footer p{font-weight: lighter;}
 
 }
 @media(max-width:600px){
+
   .nav-menu .Log{
     margin-top: 10px;
   }
+  .nav-menu ul li a:hover{
+    background: palegreen;
+     width:150px;
+     transition: ease-in-out;
+     transition-duration:0.2s;
+     text-align: center;
+    }
   .area{
   
     position: absolute;
@@ -684,12 +717,18 @@ footer p{font-weight: lighter;}
   padding:5px;
   width:75px;
 }
-
+.nav-menu ul li a:hover{
+  background: tomato;
+   width:150px;
+  
+   transition-duration:0.2s;
+   text-align: center;
+  }
 
 
   .state {
     
-    margin-bottom: 10px;
+    margin-bottom: 70px;
     background: rgb(5, 5, 5);
     height: 130px;
     text-align: center;
@@ -788,6 +827,11 @@ footer p{font-weight: lighter;}
     z-index: 2;
     
 }
+.nav-menu ul li a:hover{
+  background: tomato;
+   width:150px;
+   text-align: center;
+  }
  }
 
 
@@ -796,10 +840,16 @@ footer p{font-weight: lighter;}
   .nav-menu .Log{
     margin-top: 10px;
   }
-  
+  .nav-menu ul li a:hover{
+    background: tomato;
+     width:150px;
+    
+    
+     text-align: center;
+    }
   .state{
     position: relative;
-    top:-105px;
+    top:-120px;
   }
   .do-container .links{
     width:150px;
@@ -819,15 +869,91 @@ footer p{font-weight: lighter;}
     z-index: 2;
     
 }
+
 }
 @media(max-width:450px){
   .area{
   
     position: absolute;
-    top:400px;
-    left:270px;
+    top:140px;
+    left:260px;
     z-index: 2;
     
+}
+.nav-menu ul li a:hover{
+  background: tomato;
+   width:150px;
+   
+   transition-duration:0.2s;
+   text-align: center;
+  }
+.sign-in{
+
+
+  margin:10px;
+  background: #2F6D7B;
+   width:300px;
+  height:730px;
+  z-index: 5;
+  position: absolute;
+  left:50px;
+  top:15%;
+  padding:30px;
+  border-radius: 10px;
+
+}
+.sign-in .signIn-close-button{
+
+  margin-left:220px;
+   padding:5px;
+  cursor: pointer;
+  color: white;
+
+}
+.log-in{
+  top:20%;
+  left:150px;
+  width:350px;
+}
+.log-in .logIn-close-button{
+    
+  margin-left:255px;
+   padding:10px;
+  cursor: pointer;
+  color: white;
+
+}
+.contact-us{
+  background: indigo;
+  margin:10px;
+  background: #02031C;
+  height:540px;
+  z-index: 6;
+  position: absolute;
+  left: 55px;
+  padding:20px;
+  top:15%;
+  width:300px;
+  
+}
+.contact-us .contact-close-button{
+
+  margin-left:230px;
+   padding:10px;
+  cursor: pointer;
+  color: white;
+}
+.overlay{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  min-height:200vh;
+  filter: blur(3px);
+  opacity: 0.7;
+  background-color: black;
+  z-index: 5;
+
 }
 }
 
@@ -843,11 +969,20 @@ footer p{font-weight: lighter;}
      margin-top: 10px;
     
   }
-  .nav-menu .nav-link:hover{
+  .nav-menu .nav-item:hover{
   
     transition-duration: 1s;
-     background-color: red;
+     
    }
+   .nav-menu ul li a:hover{
+    background: tomato;
+     width:150px;
+     
+     transition-duration:0.2s;
+     text-align: center;
+    }
+
+
    .dropdown{
       
     margin-left: -35px;
@@ -861,22 +996,70 @@ footer p{font-weight: lighter;}
     .area{
   
       position: absolute;
-      top:380px;
-      left:250px;
+      top:140px;
+      left:230px;
       z-index: 2;
       
   }
- 
+  .contact-us{
+    
+    position: absolute;
+       
+    top:50%;
+    left: 47%;
+    transform: translate(-50%,-50%);
+    
+    width:300px;
+    
+  }
+  .contact-us .contact-close-button{
+
+    margin-left:230px;
+     padding:10px;
+    cursor: pointer;
+    color: white;
+  }
+  .overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    min-height:110vh;
+    filter: blur(3px);
+    opacity: 0.7;
+    background-color: black;
+    z-index: 5;
+  
+  }
+  .sign-in{
+    left:30px;
+    
+    
+  }
+  .log-in{
+    left:40px !important;
+    width:350px;
+  }
+  .log-in .logIn-close-button{
+      
+    margin-left:255px;
+     padding:10px;
+    cursor: pointer;
+    color: white;
+  
+  }
+  
+
     .state {
       
       position: relative;
-      bottom:190px;
+      bottom:250px;
       background: rgb(5, 5, 5);
-      height: 120px;
+      height: 130px;
       text-align: center;
       opacity: 0.6;
       font-size: 15px;
-      padding-top: 15px;
+      padding: 15px;
       
     }
     .state .division {
@@ -949,33 +1132,183 @@ footer p{font-weight: lighter;}
     }
   }
 
+@media(max-width:393px){
+  .state{
+    padding:10px;
+    height:125px;
+
+  }
+  .sign-in{
+    left:30px;
+  }
+  .overlay{
+    min-height: 235vh;
+  }
+  .log-in{
+    left:10px;
+    width:320px;
+  }
+  .log-in .logIn-close-button{
+      
+    margin-left:230px;
+     padding:10px;
+    cursor: pointer;
+    color: white;
+  
+  }
+  .modal-section{
+    left:47.5%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width:340px;
+
+  }
+  .modal-section .close-button{
+    margin-left: 260px;
+  }
+  .modal-section .modal-contacts{
+
+    margin-left: 25px;
+    font-weight: lighter;
+    font-family: "Roboto";
+  }
+  .modal-section .sign-In{
+    margin-left: 130px;
+  }
+}
 @media(max-width:360px){
   #CardSection1{
     margin-top: 350px;
   }
-  .nav-menu .nav-link:hover{
-
-    transition-duration: 1s;
-     background-color: red;
-   }
- 
+  .nav-menu .nav-item:hover{
+   
+    transition-duration: 0.1s;
+    transform: translate(10px);
+     
+    }
   #logOut{
     padding: 14px;
   }
+  .nav-menu ul li a:hover{
+    background: tomato;
+     width:100px;
+    
+     transition-duration:0.2s;
+     text-align: center;
+    }
+
+
   .area{
   
     position: absolute;
-    top:270px;
+    top:130px;
     left:220px;
     z-index: 2;
     
 } 
+.overlay{
+  min-height: 420vh;
+}
+.modal-section{
+
+  margin:10px;
+  background-color:rgb(123, 174, 187);
+  width:300px;
+  z-index: 6;
+  position: absolute;
+ 
+  top:20%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.modal-section .help{
+  text-align: center;
+  font-weight: lighter;
+  
+}
+.modal-section .modal-contacts{
+
+  margin-left: 0px;
+  font-weight: lighter;
+  font-family: "Roboto";
+}
+.modal-section .close-button{
+
+  margin-left:220px;
+   padding:10px;
+  cursor: pointer;
+}
+.modal-section .sign-In{
+      margin-left: 105px;
+      border: none;
+      padding:5px;
+      font-weight: bold;
+      cursor: pointer;
+}
+
+.sign-in{
+
+
+  margin:10px;
+  background: #2F6D7B;
+   width:300px;
+  height:730px;
+  z-index: 5;
+  position: absolute;
+  left:20px;
+  padding:20px;
+  top:15%;
+  padding:30px;
+    border-radius: 10px;
+
+}
+.sign-in .signIn-close-button{
+
+  margin-left:220px;
+   padding:5px;
+  cursor: pointer;
+  color: white;
+
+}
+.log-in{
+  top:150px;
+  left:20px;
+  width:260px;
+}
+.log-in .logIn-close-button{
+    
+  margin-left:180px;
+   padding:10px;
+  cursor: pointer;
+  color: white;
+
+}
+
+
+.contact-us{
+ 
+  top:60%;
+   
+  left: 47%;
+  transform: translate(-50%,-50%);
+  width:300px;
+  
+}
+.contact-us .contact-close-button{
+
+  margin-left:230px;
+   padding:10px;
+  cursor: pointer;
+  color: white;
+}
+
+
  .state{
      position: relative;
      top:165px;
      z-index: 1;
      margin-top: -550px;
-    
+    height: 130px;
    }
 
   .state .division {
@@ -1018,12 +1351,13 @@ footer p{font-weight: lighter;}
   }
   .do-container .buy-sell{
     width:250px;
-    flex-direction: row;
+    flex-direction: column;
     position: relative;
-    bottom:5px;
     left:5px;
     color: white;
-    height: 150px;
+    padding:0px 10px 0px 10px;
+    
+  
   }
   .do-container .links{
     width:150px;
@@ -1032,7 +1366,7 @@ footer p{font-weight: lighter;}
     flex-wrap: wrap;
     height: 70%;
     position:relative;
-    top:30px;
+    top:35px;
     margin: 0px 5px 0px 5px;
   }
   .buy-sell .for-sale{
@@ -1042,7 +1376,7 @@ footer p{font-weight: lighter;}
     background:#2C2727 ;
     color: white;
     font-weight: lighter;
-    padding: 5px;
+    padding: 0px;
   
   } .buy-sell .for-buy{
     background: #2F6D7B ;
@@ -1113,36 +1447,37 @@ footer p{font-weight: lighter;}
 } 
  .state{
   background: rgb(5, 5, 5) !important;
-  height: 130px !important;
+  height: 170px !important;
   display: block;
  }
  .state .division {
-  width: 210px;
+  width: 200px;
     background: rgb(5, 5, 5);
-    margin-right: 15px;
+    margin-right: 10px;
     color: white;
 }
 .state .district {
-  width: 210px;
+  width: 200px;
   background: rgb(5, 5, 5);
   color: white;
   margin-right: 3px;
   border:1px solid white;
 }
 .state .upozilla {
-  width: 210px;
+  width: 200px;
     background: rgb(5, 5, 5);
-    margin-right: 20px;
+    margin-right: 10px;
     color: white;border:1px solid white;
 }
 .state .size {
-  width: 210px;
+  width: 200px;
     background: rgb(5, 5, 5);
     margin-right: 3px;
     color: white;border:1px solid white;
 }
 .state a {
   width: 100px;
+  margin-top: 5px;
   padding: 5px;
 }
 #Search{
@@ -1205,8 +1540,39 @@ footer p{font-weight: lighter;}
 }
 @media(max-width:250px){
   .nav-menu{
-    height:500px;
+    height:600px;
+    width:180px;
   }
+
+  .nav-menu ul li a:hover{
+    background: tomato;
+     width:150px;
+    
+     transition-duration:0.2s;
+     text-align: left;
+    }
+
+    .contact-us{
+     
+    
+      
+    
+      top:70%;
+      left:47%;
+      width:200px;
+      
+    }
+    .contact-us .contact-close-button{
+    
+      margin-left:125px;
+       padding:10px;
+      cursor: pointer;
+      color: white;
+    }
+    .overlay{
+      min-height: 200vh;
+    }
+    
   .area{
   
     position: absolute;
@@ -1215,6 +1581,119 @@ footer p{font-weight: lighter;}
     z-index: 1;
     
 }
+.state{
+  width:180px;
+  height:180px !important;
+  top:60px;
+}
+.state .division {
+  width: 100px;
+    background: rgb(5, 5, 5);
+    margin-right: 10px;
+    color: white;
+}
+.state .district {
+  width: 100px;
+  background: rgb(5, 5, 5);
+  color: white;
+  margin-right: 5px;
+  border:1px solid white;
+}
+.state .upozilla {
+  width: 100px;
+    background: rgb(5, 5, 5);
+    margin-right: 10px;
+    color: white;border:1px solid white;
+}
+.state .size {
+  width: 100px;
+    background: rgb(5, 5, 5);
+    margin-right: 3px;
+    color: white;border:1px solid white;
+}
+.state a {
+  width: 100px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+
+.overlay{
+  min-height: 360vh;
+}
+.modal-section{
+
+  
+  width:200px;
+  z-index: 6;
+  position: absolute;
+  top:80%;
+  left: 48%;
+  transform: translate(-50%,-50%);
+  
+  
+}
+.modal-section .modal-contacts{
+    
+  margin-left: -8px;
+  font-weight: lighter;
+  font-family: "Roboto";
+}
+.modal-section .close-button{
+
+  margin-left:130px;
+   padding:10px;
+  cursor: pointer;
+}
+.modal-section .sign-In{
+      margin-left: 50px;
+      border: none;
+      padding:5px;
+      font-weight: bold;
+      cursor: pointer;
+}
+
+
+
+.sign-in{
+  left:10px;
+  width:200px;
+  height: 750px;
+}
+.sign-in .signIn-close-button{
+  margin-left:120px;
+}.log-in{
+  left:10px;
+  width:220px;
+}.log-in .logIn-close-button{
+
+  margin-left:130px;
+   padding:10px;
+  cursor: pointer;
+  color: white;
+
+}
+.do-want-section{
+  height:610px;
+}
+.do-want-section .for-buy{
+    
+  overflow: hidden;
+  z-index: 0;
+  margin-top: -35px;
+  display: block;
+  height: 300px;
+
+}
+ .do-want-section .for-sale{
+  
+    overflow: hidden;
+    z-index: 0;
+    margin-top: -25px;
+    display: block;
+   height: 320px;
+   padding:5px;
+ }
 .footer-container{
   margin-top: -25px ;
   padding-top: 15px;
@@ -1225,10 +1704,210 @@ footer p{font-weight: lighter;}
  /*  .card-section-home .card-container{
      width:360px;
    }*/
-  
+   @media(min-width:400px){
+    .nav-menu ul li a:hover{
+      background: tomato;
+       width:150px;
+       
+       transition-duration:0.2s;
+       text-align: center;
+      }
+    .sign-in{
+      left:10px;
+      width:370px;
+    } .log-in{
+      left:90px;
+      width:300px;
+    }.log-in .logIn-close-button{
+    
+      margin-left:200px;
+       padding:10px;
+      cursor: pointer;
+      color: white;
+    
+    }
+    
+    .sign-in .signIn-close-button{
+      margin-left: 300px;
+    }
+    .overlay{
+      min-height: 225vh;
+    }
+    .modal-section{
+
+      margin:10px;
+      background-color:rgb(123, 174, 187);
+      width:300px;
+      z-index: 6;
+      position: absolute;
+      top:50%;
+      left: 48%;
+      transform: translate(-50%,-50%);
+      
+      
+    }
+    .modal-section .help{
+      text-align: center;
+      font-weight: lighter;
+      
+    }
+    .modal-section .modal-contacts{
+    
+      margin-left: 0px;
+      font-weight: lighter;
+      font-family: "Roboto";
+    }
+    .modal-section .close-button{
+    
+      margin-left:220px;
+       padding:10px;
+      cursor: pointer;
+    }
+    .modal-section .sign-In{
+          margin-left: 105px;
+          border: none;
+          padding:5px;
+          font-weight: bold;
+          cursor: pointer;
+    }
+    
+
+   }
+  @media(min-width:500px){
+    .nav-menu ul li a:hover{
+      background: tomato;
+       width:150px;
+
+       transition-duration:0.2s;
+       text-align: center;
+      }
+
+    .modal-section{
+
+      margin:10px;
+      background-color:rgb(123, 174, 187);
+      width:400px;
+      z-index: 6;
+      position: absolute;
+      left:85px;
+      padding:20px;
+      top:20%;
+      
+    }
+    .modal-section .help{
+      text-align: center;
+      font-weight: lighter;
+      
+    }
+    .modal-section .modal-contacts{
+    
+      margin-left: 0px;
+      font-weight: lighter;
+      font-family: "Roboto";
+    }
+    .modal-section .close-button{
+    
+      margin-left:300px;
+       padding:10px;
+      cursor: pointer;
+    }
+    .modal-section .sign-In{
+          margin-left: 105px;
+          border: none;
+          padding:5px;
+          font-weight: bold;
+          cursor: pointer;
+    }
+    
+
+
+    .sign-in{
+      left:20px;
+    }
+    .log-in{
+      left:50px;
+      width:400px;
+      top:20%;
+    }
+    .log-in .logIn-close-button{
+        
+      margin-left:290px;
+       padding:10px;
+      cursor: pointer;
+      color: white;
+    
+    }
+    .overlay{
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      min-height:450vh;
+      filter: blur(3px);
+      opacity: 0.7;
+      background-color: black;
+      z-index: 5;
+    
+    }
+  }
 
 @media(min-width:600px){
- 
+
+  .nav-menu ul li a:hover{
+    background: palegreen;
+     width:150px;
+     transition: ease-in-out;
+     transition-duration:0.2s;
+     text-align: center;
+    }
+
+  .contact-us{
+    background: indigo;
+    margin:10px;
+    background: #02031C;
+    height:540px;
+    z-index: 6;
+    position: absolute;
+    left: 130px;
+    padding:20px;
+    top:15%;
+    width:400px;
+    
+  }
+  .contact-us .contact-close-button{
+
+    margin-left:320px;
+     padding:10px;
+    cursor: pointer;
+    color: white;
+  }
+  .overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    min-height:180vh;
+    filter: blur(3px);
+    opacity: 0.7;
+    background-color: black;
+    z-index: 5;
+  
+  }
+  .sign-in{
+    left:90px;
+  }
+  .log-in{
+    left:100px;
+    width:400px;
+  }
+  .log-in .logIn-close-button{
+      
+    margin-left:290px;
+     padding:10px;
+    cursor: pointer;
+    color: white;
+  
+  }
   .do-container .buy-sell{
     width:28rem;
      flex-direction: row;
@@ -1287,7 +1966,108 @@ footer p{font-weight: lighter;}
 
 }
   @media(min-width:700px){
-  
+    .nav-menu ul li a:hover{
+      background: tomato;
+       text-align: center;
+      }
+
+
+    .contact-us{
+     
+      height:540px;
+      z-index: 6;
+      position: absolute;
+     
+    top:37%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+      width:350px;
+      
+    }
+    .overlay{
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      min-height:200vh;
+      filter: blur(3px);
+      opacity: 0.7;
+      background-color: black;
+      z-index: 5;
+    
+    } .contact-us .contact-close-button{
+
+      margin-left:280px;
+       padding:10px;
+      cursor: pointer;
+      color: white;
+    }
+    .modal-section{
+
+      margin:10px;
+      background-color:rgb(123, 174, 187);
+      width:450px;
+      z-index: 6;
+      position: absolute;
+      top:40%;
+      left:50%;
+      transform: translate(-50%,-50%);
+    }
+    .modal-section .help{
+      text-align: center;
+      font-weight: lighter;
+      
+    }
+    .modal-section .modal-contacts{
+    
+      margin-left: 0px;
+      font-weight: lighter;
+      font-family: "Roboto";
+    }
+    .modal-section .close-button{
+    
+      margin-left:360px;
+       padding:10px;
+      cursor: pointer;
+    }
+    .modal-section .sign-In{
+          margin-left: 180px;
+          border: none;
+          padding:5px;
+          font-weight: bold;
+          cursor: pointer;
+    }
+    
+    .sign-in{
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+    }
+    .log-in{
+
+
+      margin:10px;
+      background: #2F6D7B;
+       width:484px;
+      height:310px;
+      z-index: 5;
+      position: absolute;
+    
+      top:30%;
+      left:50%;
+      transform: translate(-50%,-50%);
+     
+       
+    }
+    .log-in .logIn-close-button{
+    
+      margin-left:380px;
+       padding:10px;
+      cursor: pointer;
+      color: white;
+    
+    }
   .state{
       display: flex;
       flex-direction: row;
@@ -1345,6 +2125,7 @@ footer p{font-weight: lighter;}
 
 
   @media(min-width: 1000px){
+   
   .button .Log{
     margin-top: 0px;
   }
@@ -1357,6 +2138,75 @@ footer p{font-weight: lighter;}
       z-index: 1;
       
   } 
+  .modal-section{
+
+    margin:10px;
+    background-color:rgb(123, 174, 187);
+    width:450px;
+    z-index: 6;
+    position: absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    
+  }
+  .modal-section .help{
+    text-align: center;
+    font-weight: lighter;
+    
+  }
+  .modal-section .modal-contacts{
+  
+    margin-left: 0px;
+    font-weight: lighter;
+    font-family: "Roboto";
+  }
+  .modal-section .close-button{
+  
+    margin-left:350px;
+     padding:10px;
+    cursor: pointer;
+  }
+  .modal-section .sign-In{
+        margin-left: 180px;
+        border: none;
+        padding:5px;
+        font-weight: bold;
+        cursor: pointer;
+  }
+  
+
+
+
+  .sign-in{
+    width:450px;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
+  .sign-in .signIn-close-button{
+    margin-left:350px;
+  }
+  .log-in{
+
+
+     width:484px;
+    height:310px;
+    z-index: 5;
+    position: absolute;
+    top:25%;
+    left:50%;
+    transform: translate(-50%,-50%);
+     
+  }
+  .log-in .logIn-close-button{
+  
+    margin-left:380px;
+     padding:10px;
+    cursor: pointer;
+    color: white;
+  
+  }
 .navbar {
   border-bottom: 4px white solid;
   opacity: 0.6;
@@ -1379,11 +2229,34 @@ footer p{font-weight: lighter;}
     position: relative;
     right:-100%;
 }
-.nav-menu .nav-link:hover{
 
-  transition-duration: 1s;
-   background-color: red;
- }
+ .contact-us{
+ 
+  left: 50%;
+  top:30%;
+  transform: translate(-50%,-50%);
+  width:380px;
+  
+}
+.overlay{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  min-height:155vh;
+  filter: blur(3px);
+  opacity: 0.7;
+  background-color: black;
+  z-index: 5;
+
+} 
+.contact-us .contact-close-button{
+
+  margin-left:300px;
+   padding:10px;
+  cursor: pointer;
+  color: white;
+}
  .state .division {
   width: 210px;
     background: rgb(5, 5, 5);
@@ -1483,18 +2356,13 @@ footer p{font-weight: lighter;}
 }
 
 }
-@media(min-width:1000px){
-  .area{
-    
-    position: absolute;
-    top:52px;
-    left: 290px;
-    z-index: 1;
-    
-     
-  }
-}
+
 @media(min-width:1100px){
+  .nav-menu ul li a:hover{
+    background: tomato;
+     text-align: center;
+    }
+
   .nav-menu .navbar-nav{
     margin-right: 250px;
   }
@@ -1511,22 +2379,157 @@ footer p{font-weight: lighter;}
     top:52px;
     left: 430px;
     z-index: 1;
-    
-     
   }
  
   
+}
+
+@media(min-width:1200px){
+  .nav-menu ul li a:hover{
+    background: tomato;
+     text-align: center;
+    }
+
+  .overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    min-height:220vh;
+    filter: blur(3px);
+    opacity: 0.7;
+    background-color: black;
+    z-index: 5;
+  
+  }
+  .contact-us{
+   
+    height:540px;
+    z-index: 6;
+    position: absolute;
+   
+    top:47%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width:500px;
+    
+  }
+  .contact-us .contact-close-button{
+  
+    margin-left:410px;
+     padding:10px;
+    cursor: pointer;
+    color: white;
+  }
+  .modal-section{
+    top:40%;
+  }
+  .sign-in{
+    top:65%;
+    left:50%;
+  }
+  .log-in{
+
+
+     width:484px;
+    height:310px;
+    z-index: 5;
+    position: absolute;
+    left:50%;
+    top:40%;
+    transform: translate(-50%,-50%);
+  
+  }
+  .log-in .logIn-close-button{
+  
+    margin-left:380px;
+     padding:10px;
+    cursor: pointer;
+    color: white;
+  
+  }
+
 }
 @media(min-width:1300px){
  .area{
 
     position: absolute;
     top:52px;
-    left:585px;
+    left:500px;
     z-index: 1;
+  
+  }
+  .modal-section{
+
+    margin:10px;
+    background-color:rgb(123, 174, 187);
+    width:450px;
+    z-index: 6;
+    position: absolute;
+   
+    padding:20px;
+    top:60%;
+    left:50%;
+  }
+  .modal-section .help{
+    text-align: center;
+    font-weight: lighter;
     
-     
-  }/*
+  }
+  .modal-section .modal-contacts{
+  
+    margin-left: 0px;
+    font-weight: lighter;
+    font-family: "Roboto";
+  }
+  .modal-section .close-button{
+  
+    margin-left:360px;
+     padding:10px;
+    cursor: pointer;
+  }
+  .modal-section .sign-In{
+        margin-left: 175px;
+        border: none;
+        padding:5px;
+        font-weight: bold;
+        cursor: pointer;
+  }
+  .contact-us{
+   
+    height:580px;
+    z-index: 6;
+    position: absolute;
+    top:70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width:500px;
+    
+  }
+
+  .log-in{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width:500px;
+  }
+  .sign-in{
+    position: absolute;
+    top:80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width:500px;
+    
+  }
+  .sign-in .signIn-close-button{
+    margin-left: 385px;
+  }
+  .overlay{
+    min-height: 200vh;;
+  }
+  
+  /*
   .area{
   
     position: absolute;
@@ -1535,15 +2538,99 @@ footer p{font-weight: lighter;}
     z-index: 1;
     
 } */
+
+
+
 }
-@media(min-width:1500px){
-  /*.area{
+@media(min-width:1400px){
+  .area{
 
     position: absolute;
     top:52px;
-    left:300px !important;
+    left:580px;
     z-index: 1;
     
      
-  }*/
+  }
+  .overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    min-height:220vh;
+    filter: blur(3px);
+    opacity: 0.7;
+    background-color: black;
+    z-index: 5;
+  
+  }
+  .contact-us{
+   
+    height:540px;
+    z-index: 6;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width:500px;
+    
+  }
+  .contact-us .contact-close-button{
+  
+    margin-left:400px;
+     padding:10px;
+    cursor: pointer;
+    color: white;
+  }
+  .sign-in{
+    left:50%;
+    top:60%;
+    transform: translate(-50%,-50%);
+  }
+  .log-in{
+
+
+  
+     width:484px;
+    height:310px;
+    z-index: 5;
+    position: absolute;
+    top:37%;
+    left:50%;
+    transform: translate(-50%,-50%);
+ 
+     
+  }
+  .log-in .logIn-close-button{
+  
+    margin-left:380px;
+     padding:10px;
+    cursor: pointer;
+    color: white;
+  
+  }
+  .modal-section{
+
+ 
+    width:450px;
+    z-index: 6;
+    position: absolute;
+ 
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    
+  }
+
+}
+@media(min-width:1500px){
+  .area{
+
+    position: absolute;
+    top:52px;
+    left:600px;
+    z-index: 1;
+    
+     
+  }
 }

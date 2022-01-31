@@ -34,20 +34,7 @@
   .show-contactTwo{
     display: none;
   }
-  
-.contact-us{
-  background: indigo;
-  margin:10px;
-  background: #02031C;
-  height:520px;
-  z-index: 5;
-  position: absolute;
-  left:440px;
-  padding:20px;
-  top:15%;
-  padding:30px;
-  
-}
+ 
 .overlayTwo{
   position: absolute;
   top: 0px;
@@ -191,4 +178,802 @@ label{
     color: red;
     background: rgb(185, 201, 193);
     padding-top: 15px;
+}
+/*@media(max-width:414px){
+  .imagefilee{
+    margin-left: -510px;
+  }
+
+  .ImageFile{
+       margin: auto;
+     position: relative;
+     left:70px;
+     top:10px;
+     font-size: 15px;
+     font-weight: lighter;
+}
+.image2{
+   
+    margin:0 -10px 0 -8px;
+    height:100px;
+    box-shadow: 0.5px 1.5px 1.5px 0.5px rgb(78, 73, 73);
+}
+#removePhotos{
+  display: flex;
+  text-align: center;
+ justify-content: center;
+  width:350px !important;
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#editAdvertiseBtn{
+    margin-top: -60px;
+  margin-left:130px;
+}
+.expireMessage{
+  margin-left: 90px;
+} 
+.Information{
+  display: flex;
+  flex-direction: column;
+  box-shadow:0.5px 0.5px 1.5px 0.5px rgb(131, 124, 124);
+  margin-left:20px;
+}
+.overlayTwo{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  min-height:340vh;
+  filter: blur(3px);
+  opacity: 0.7;
+  background-color: black;
+  z-index: 1;
+
+}
+
+
+}
+*/
+
+@media(max-width:360px){
+  .imagefilee{
+    margin-left: -510px;
+  }
+
+  .ImageFile{
+       margin: auto;
+     position: relative;
+     left:70px;
+     top:10px;
+     font-size: 15px;
+     font-weight: lighter;
+}
+.image2{
+   
+    margin:0 -10px 0 -8px;
+    height:100px;
+    box-shadow: 0.5px 1.5px 1.5px 0.5px rgb(78, 73, 73);
+}
+#removePhotos{
+  display: flex;
+  text-align: center;
+ justify-content: center;
+  width:310px;
+  margin-left: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#editAdvertiseBtn{
+    margin-top: -60px;
+  margin-left:130px;
+}
+.expireMessage{
+  margin-left: 90px;
+} 
+.Information{
+  display: flex;
+  flex-direction: column;
+  box-shadow:0.5px 0.5px 1.5px 0.5px rgb(131, 124, 124);
+  margin-left:20px;
+}
+.overlayTwo{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  min-height:340vh;
+  filter: blur(3px);
+  opacity: 0.7;
+  background-color: black;
+  z-index: 1;
+
+}
+
+
+}
+@media(max-width:260px){
+  .profileImg{
+    margin-left: 45px;
+  }
+ #john{
+   font-size: 20px;
+   margin-left: 32px;
+   margin-bottom: -10px;
+ }
+  .imagefilee{
+    margin-left: -570px;
+    font-size: 15px;
+  }
+
+  .ImageFile{
+       margin: auto;
+     position: relative;
+     left:20px;
+     top:10px;
+     font-size: 15px;
+     font-weight: lighter;
+}
+.image2{
+   
+    margin:0 -10px 0 -8px;
+    height:100px;
+    box-shadow: 0.5px 1.5px 1.5px 0.5px rgb(78, 73, 73);
+}
+#removePhotos{
+  display: flex;
+  text-align: center;
+ justify-content: center;
+ align-items: center;
+  width:200px;
+margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#editAdvertiseBtn{
+    margin-top: 0px;
+  margin-left:40px;
+}
+.expireMessage{
+  margin-left: 60px;
+} 
+.Information{
+  display: flex;
+  flex-direction: column;
+  box-shadow:0.5px 0.5px 1.5px 0.5px rgb(131, 124, 124);
+  margin-left:15px;
+}
+.overlayTwo{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  min-height:340vh;
+  filter: blur(3px);
+  opacity: 0.7;
+  background-color: black;
+  z-index: 1;
+
+}
+
+}
+@media(min-width:361px){
+
+  .imagefilee{
+    margin-left: -500px;
+  }
+
+  .ImageFile{
+       margin: auto;
+     position: relative;
+     left:70px;
+     top:10px;
+     font-size: 15px;
+     font-weight: lighter;
+}
+.image2{
+   
+    margin:0 -10px 0 -8px;
+    height:100px;
+    box-shadow: 0.5px 1.5px 1.5px 0.5px rgb(78, 73, 73);
+}
+#removePhotos{
+  display: flex;
+  text-align: center;
+ justify-content: center;
+ align-items: center;
+  width:320px;
+margin-left: 35px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#editAdvertiseBtn{
+    margin-top: -60px;
+  margin-left:130px;
+}
+.expireMessage{
+  margin-left: 90px;
+} 
+.Information{
+  display: flex;
+  flex-direction: column;
+  box-shadow:0.5px 0.5px 1.5px 0.5px rgb(131, 124, 124);
+  margin-left:20px;
+}
+.overlayTwo{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  min-height:340vh;
+  filter: blur(3px);
+  opacity: 0.7;
+  background-color: black;
+  z-index: 1;
+
+}
+
+
+}
+@media(min-width:400px){
+  #removePhotos{
+    display: flex;
+    text-align: center;
+   justify-content: center;
+  
+    width:350px;
+  margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #removePhotos{
+    display: flex;
+    text-align: center;
+   justify-content: center;
+   
+    width:80%;
+     margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .imagefilee{
+    margin-left: -490px;
+  }
+
+  .ImageFile{
+       margin: auto;
+     position: relative;
+     left:100px;
+     top:10px;
+     font-size: 15px;
+     font-weight: lighter;
+}
+.image2{
+   
+    margin:0 -10px 0 -8px;
+    height:100px;
+    box-shadow: 0.5px 1.5px 1.5px 0.5px rgb(78, 73, 73);
+}
+
+#editAdvertiseBtn{
+    margin-top: -60px;
+  margin-left:130px;
+}
+.expireMessage{
+  margin-left: 110px;
+} 
+.Information{
+  display: flex;
+  flex-direction: column;
+  box-shadow:0.5px 0.5px 1.5px 0.5px rgb(131, 124, 124);
+  margin-left:20px;
+}
+.overlayTwo{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  min-height:340vh;
+  filter: blur(3px);
+  opacity: 0.7;
+  background-color: black;
+  z-index: 1;
+
+}
+  
+
+}
+
+@media(min-width:500px){
+  #removePhotos{
+    display: flex;
+    text-align: center;
+   justify-content: center;
+   
+    width:350px;
+  margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .imagefilee{
+    margin-left: -430px;
+  }
+  
+  .ImageFile{
+    margin: auto;
+  position: relative;
+  left:160px;
+  top:10px;
+  font-size: 15px;
+  font-weight: lighter;
+  }
+  .image2{
+  margin:0 -10px 0 -5px;
+  height:100px;
+  box-shadow: 0.5px 1.5px 1.5px 0.5px rgb(78, 73, 73);
+  }
+  .Information{
+    display: flex;
+    flex-direction: column;
+    box-shadow:0.5px 0.5px 1.5px 0.5px rgb(131, 124, 124);
+    margin-left:40px;
+    
+  }
+  .expireMessage{
+    margin-left: 140px;
+  }
+
+
+}
+@media(min-width:600px){
+  #removePhotos{
+    display: flex;
+    text-align: center;
+   justify-content: center;
+   
+    width:400px;
+  margin-left: 125px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  
+  .imagefilee{
+    margin-left: -380px;
+  }
+  
+  .ImageFile{
+    
+  position: relative;
+  left:210px;
+  top:10px;
+  font-size: 15px;
+  font-weight: lighter;
+  }
+  .image2{
+    width:700px;
+  margin:0 50px 0 -10px;
+  height:100px;
+  box-shadow: 0.5px 1.5px 1.5px 0.5px rgb(78, 73, 73);
+  }
+  .Information{
+    display: flex;
+    flex-direction: column;
+    box-shadow:0.5px 0.5px 1.5px 0.5px rgb(131, 124, 124);
+    margin-left:30px;
+    
+  }
+  .expireMessage{
+    margin-left: 160px;
+  }
+
+}
+@media(min-width:700px){
+  #editAdvertiseBtn{
+    margin-top: -60px;
+  margin-left:300px;
+}
+  #removePhotos{
+    display: flex;
+    text-align: center;
+   justify-content: center;
+   
+    width:500px;
+  margin-left: 125px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  
+  .imagefilee{
+    margin-left: -320px;
+  }
+  
+  .ImageFile{
+    
+  position: relative;
+  left:-15px;
+  top:10px;
+  font-size: 15px;
+  font-weight: lighter;
+  }
+  .image2{
+    width:700px;
+  margin:0 10px 0 10px;
+  height:100px;
+  box-shadow: 0.5px 1.5px 1.5px 0.5px rgb(78, 73, 73);
+  }
+  .Information{
+    display: flex;
+    flex-direction: column;
+    box-shadow:0.5px 0.5px 1.5px 0.5px rgb(131, 124, 124);
+    margin-left:40px;
+    
+  }
+  .expireMessage{
+    margin-left: 190px;
+  }
+
+}
+@media(min-width:800px){
+  .overlayTwo{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    min-height:220vh;
+    filter: blur(3px);
+    opacity: 0.7;
+    background-color: black;
+    z-index: 5;
+  
+  }
+  #editAdvertiseBtn{
+    margin-top: -150px;
+  margin-left:630px;
+
+
+}
+#removePhotos{
+  display: flex;
+  text-align: center;
+ justify-content: center;
+ 
+  width:80%;
+   margin-left: 80px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.imagefilee{
+  margin-left: -270px;
+}
+
+.ImageFile{
+  margin: auto;
+position: relative;
+left:-10px;
+top:10px;
+font-size: 15px;
+font-weight: lighter;
+}
+.image2{
+margin:0 -10px 0 26px;
+height:100px;
+box-shadow: 0.5px 1.5px 1.5px 0.5px rgb(78, 73, 73);
+}
+.Information{
+  display: flex;
+  flex-direction: column;
+  box-shadow:0.5px 0.5px 1.5px 0.5px rgb(131, 124, 124);
+  margin-left:40px;
+  
+}
+.expireMessage{
+  margin-left: 200px;
+}
+}
+
+@media(min-width:1000px){
+  .overlayTwo{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    min-height:220vh;
+    filter: blur(3px);
+    opacity: 0.7;
+    background-color: black;
+    z-index: 5;
+  
+  }
+  #editAdvertiseBtn{
+    margin-top: -170px;
+  margin-left:830px;
+
+
+}
+#removePhotos{
+  display: flex;
+  text-align: center;
+ justify-content: center;
+ 
+  width:80%;
+   margin-left: 105px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.imagefilee{
+  margin-left: -170px;
+}
+
+.ImageFile{
+  margin: auto;
+position: relative;
+left:7px;
+top:10px;
+font-size: 15px;
+font-weight: lighter;
+}
+.image2{
+margin:0 -10px 0 31px;
+height:100px;
+box-shadow: 0.5px 1.5px 1.5px 0.5px rgb(78, 73, 73);
+}
+.Information{
+  display: flex;
+  flex-direction: column;
+  box-shadow:0.5px 0.5px 1.5px 0.5px rgb(131, 124, 124);
+  margin-left:47px;
+  
+}
+.expireMessage{
+  margin-left: 250px;
+}
+
+
+}
+@media(min-width:1200px){
+  .overlayTwo{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    min-height:220vh;
+    filter: blur(3px);
+    opacity: 0.7;
+    background-color: black;
+    z-index: 5;
+  
+  }
+  #editAdvertiseBtn{
+    margin-top: -60px;
+  margin-left:800px;
+
+
+}
+#removePhotos{
+  display: flex;
+  text-align: center;
+ justify-content: center;
+ 
+  width:80%;
+   margin-left: 130px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.imagefilee{
+  margin-left: -30px;
+}
+
+.ImageFile{
+  margin: auto;
+position: relative;
+left:30px;
+top:10px;
+font-size: 15px;
+font-weight: lighter;
+}
+.image2{
+margin:0 -10px 0 31px;
+height:100px;
+box-shadow: 0.5px 1.5px 1.5px 0.5px rgb(78, 73, 73);
+}
+.Information{
+  display: flex;
+  flex-direction: column;
+  box-shadow:0.5px 0.5px 1.5px 0.5px rgb(131, 124, 124);
+  margin-left:65px;
+  
+}
+.expireMessage{
+  margin-left: 320px;
+}
+
+}
+@media(min-width:1300px){
+  .overlayTwo{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    min-height:200vh;
+    filter: blur(3px);
+    opacity: 0.7;
+    background-color: black;
+    z-index: 5;
+  
+  }
+  #editAdvertiseBtn{
+    margin-top: -60px;
+  margin-left:900px;
+
+
+}
+#removePhotos{
+  display: flex;
+  text-align: center;
+ justify-content: center;
+ 
+  width:80%;
+   margin-left: 130px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.imagefilee{
+  margin-left: -30px;
+}
+
+.ImageFile{
+  margin: auto;
+position: relative;
+left:30px;
+top:10px;
+font-size: 15px;
+font-weight: lighter;
+}
+.image2{
+margin:0 -10px 0 40px;
+height:100px;
+box-shadow: 0.5px 1.5px 1.5px 0.5px rgb(78, 73, 73);
+}
+.Information{
+  display: flex;
+  flex-direction: column;
+  box-shadow:0.5px 0.5px 1.5px 0.5px rgb(131, 124, 124);
+  margin-left:65px;
+  
+}
+.expireMessage{
+  margin-left: 320px;
+}
+
+}
+@media(min-width:1400px){
+
+  .overlayTwo{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    min-height:190vh;
+    filter: blur(3px);
+    opacity: 0.7;
+    background-color: black;
+    z-index: 5;
+  
+  }
+  #editAdvertiseBtn{
+    margin-top: -60px;
+  margin-left:970px;
+
+
+}
+#removePhotos{
+  display: flex;
+  text-align: center;
+ justify-content: center;
+ 
+  width:80%;
+   margin-left: 130px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.imagefilee{
+  margin-left: -30px;
+}
+
+.ImageFile{
+  margin: auto;
+position: relative;
+left:40px;
+top:10px;
+font-size: 15px;
+font-weight: lighter;
+}
+.image2{
+margin:0 -10px 0 31px;
+height:100px;
+box-shadow: 0.5px 1.5px 1.5px 0.5px rgb(78, 73, 73);
+}
+.Information{
+  display: flex;
+  flex-direction: column;
+  box-shadow:0.5px 0.5px 1.5px 0.5px rgb(131, 124, 124);
+  margin-left:70px;
+  
+}
+.expireMessage{
+  margin-left: 350px;
+}
+
+
+}
+@media(min-width:1500px){
+
+  .overlayTwo{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    min-height:190vh;
+    filter: blur(3px);
+    opacity: 0.7;
+    background-color: black;
+    z-index: 5;
+  
+  }
+  #editAdvertiseBtn{
+    margin-top: -60px;
+  margin-left:970px;
+
+
+}
+#removePhotos{
+  display: flex;
+  text-align: center;
+ justify-content: center;
+ 
+  width:80%;
+   margin-left: 130px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.imagefilee{
+  margin-left: -30px;
+}
+
+.ImageFile{
+  margin: auto;
+position: relative;
+left:40px;
+top:10px;
+font-size: 15px;
+font-weight: lighter;
+}
+.image2{
+margin:0 -10px 0 31px;
+height:100px;
+box-shadow: 0.5px 1.5px 1.5px 0.5px rgb(78, 73, 73);
+}
+.Information{
+  display: flex;
+  flex-direction: column;
+  box-shadow:0.5px 0.5px 1.5px 0.5px rgb(131, 124, 124);
+  margin-left:70px;
+  
+}
+.expireMessage{
+  margin-left: 350px;
+}
+
+
 }
