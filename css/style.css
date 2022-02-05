@@ -99,8 +99,9 @@ margin-left: 2px;
   margin-top: 40px;
 }
 
-
-
+/*#Sy{
+  background: #2F6D7B;
+}*/
 .show-menu {
   right: 0;
 }
@@ -673,7 +674,7 @@ footer p{font-weight: lighter;}
 @media(max-width:600px){
 
   .nav-menu .Log{
-    margin-top: 10px;
+    margin-top: 0px;
   }
   .nav-menu ul li a:hover{
     background: palegreen;
@@ -708,7 +709,7 @@ footer p{font-weight: lighter;}
 
   .nav-menu .log{
     text-align: center;
-     margin-top: 10px;
+     margin-top: 0px;
      width:75px;
      padding:5px;
   }
@@ -887,20 +888,20 @@ footer p{font-weight: lighter;}
    transition-duration:0.2s;
    text-align: center;
   }
+ 
 .sign-in{
 
 
   margin:10px;
   background: #2F6D7B;
    width:300px;
-  height:730px;
+  height:770px;
   z-index: 5;
-  position: absolute;
-  left:50px;
+ 
+ 
   top:15%;
-  padding:30px;
-  border-radius: 10px;
-
+  left:50px;
+ 
 }
 .sign-in .signIn-close-button{
 
@@ -912,12 +913,13 @@ footer p{font-weight: lighter;}
 }
 .log-in{
   top:20%;
-  left:150px;
-  width:350px;
+  left:30%;
+  width:250px !important;
+ 
 }
 .log-in .logIn-close-button{
     
-  margin-left:255px;
+  margin-left:150px !important;
    padding:10px;
   cursor: pointer;
   color: white;
@@ -1024,7 +1026,7 @@ footer p{font-weight: lighter;}
     top: 0px;
     left: 0px;
     width: 100%;
-    min-height:110vh;
+    min-height:280vh;
     filter: blur(3px);
     opacity: 0.7;
     background-color: black;
@@ -1033,12 +1035,12 @@ footer p{font-weight: lighter;}
   }
   .sign-in{
     left:30px;
-    
+    height:780px;
     
   }
-  .log-in{
-    left:40px !important;
-    width:350px;
+ /* .log-in{
+    left:55px !important;
+    width:400px;
   }
   .log-in .logIn-close-button{
       
@@ -1047,7 +1049,7 @@ footer p{font-weight: lighter;}
     cursor: pointer;
     color: white;
   
-  }
+  }*/
   
 
     .state {
@@ -1138,15 +1140,19 @@ footer p{font-weight: lighter;}
     height:125px;
 
   }
-  .sign-in{
-    left:30px;
+  .card-section-home{
+    margin-top: 80px;
   }
+  /*.sign-in{
+    left:30px;
+    height:780px;
+  }*/
   .overlay{
-    min-height: 235vh;
+    min-height: 260vh;
   }
   .log-in{
-    left:10px;
-    width:320px;
+    left:-30px;
+    width:300px;
   }
   .log-in .logIn-close-button{
       
@@ -1178,7 +1184,7 @@ footer p{font-weight: lighter;}
 }
 @media(max-width:360px){
   #CardSection1{
-    margin-top: 350px;
+    margin-top: 360px;
   }
   .nav-menu .nav-item:hover{
    
@@ -1217,7 +1223,7 @@ footer p{font-weight: lighter;}
   z-index: 6;
   position: absolute;
  
-  top:20%;
+  top:50%;
   left:50%;
   transform: translate(-50%,-50%);
 }
@@ -1252,7 +1258,7 @@ footer p{font-weight: lighter;}
   margin:10px;
   background: #2F6D7B;
    width:300px;
-  height:730px;
+  height:780px;
   z-index: 5;
   position: absolute;
   left:20px;
@@ -1354,6 +1360,7 @@ footer p{font-weight: lighter;}
     flex-direction: column;
     position: relative;
     left:5px;
+    bottom:-10px;
     color: white;
     padding:0px 10px 0px 10px;
     
@@ -1532,7 +1539,7 @@ footer p{font-weight: lighter;}
   .area{
   
     position: absolute;
-    top:340px;
+    top:140px;
     left:170px;
     z-index: 1;
     
@@ -1554,10 +1561,7 @@ footer p{font-weight: lighter;}
 
     .contact-us{
      
-    
-      
-    
-      top:70%;
+      top:60%;
       left:47%;
       width:200px;
       
@@ -1627,7 +1631,7 @@ footer p{font-weight: lighter;}
   width:200px;
   z-index: 6;
   position: absolute;
-  top:80%;
+  top:70%;
   left: 48%;
   transform: translate(-50%,-50%);
   
@@ -1656,15 +1660,18 @@ footer p{font-weight: lighter;}
 
 
 .sign-in{
+
   left:10px;
   width:200px;
   height: 750px;
 }
 .sign-in .signIn-close-button{
   margin-left:120px;
-}.log-in{
-  left:10px;
-  width:220px;
+}
+.log-in{
+  left:-10px;
+  margin: 10px;
+  width:200px;
 }.log-in .logIn-close-button{
 
   margin-left:130px;
@@ -1712,6 +1719,14 @@ footer p{font-weight: lighter;}
        transition-duration:0.2s;
        text-align: center;
       }
+      .area{
+  
+        position: absolute;
+        top:150px;
+        left:280px;
+        z-index: 1;
+        
+    }
     .sign-in{
       left:10px;
       width:370px;
@@ -1856,11 +1871,18 @@ footer p{font-weight: lighter;}
   .nav-menu ul li a:hover{
     background: palegreen;
      width:150px;
-     transition: ease-in-out;
-     transition-duration:0.2s;
+    
      text-align: center;
     }
-
+    .area{
+  
+      position: absolute;
+      top:150px;
+      left:360px;
+      z-index: 1;
+      cursor: pointer;
+      
+  }
   .contact-us{
     background: indigo;
     margin:10px;
@@ -1971,7 +1993,14 @@ footer p{font-weight: lighter;}
        text-align: center;
       }
 
-
+      .area{
+  
+        position: absolute;
+        top:130px;
+        left:580px;
+        z-index: 2;
+        
+    }
     .contact-us{
      
       height:540px;
@@ -1990,7 +2019,7 @@ footer p{font-weight: lighter;}
       top: 0px;
       left: 0px;
       width: 100%;
-      min-height:200vh;
+      min-height:220vh;
       filter: blur(3px);
       opacity: 0.7;
       background-color: black;
@@ -2054,7 +2083,7 @@ footer p{font-weight: lighter;}
       z-index: 5;
       position: absolute;
     
-      top:30%;
+      top:50%;
       left:50%;
       transform: translate(-50%,-50%);
      
@@ -2134,7 +2163,7 @@ footer p{font-weight: lighter;}
   
       position: absolute;
       top:52px;
-      left:290px;
+      left:265px;
       z-index: 1;
       
   } 
@@ -2194,7 +2223,7 @@ footer p{font-weight: lighter;}
     height:310px;
     z-index: 5;
     position: absolute;
-    top:25%;
+    top:30%;
     left:50%;
     transform: translate(-50%,-50%);
      
@@ -2422,7 +2451,15 @@ footer p{font-weight: lighter;}
     color: white;
   }
   .modal-section{
-    top:40%;
+    top:50%;
+  }
+  .area{
+
+    position: absolute;
+    top:52px;
+    left:400px;
+    z-index: 1;
+  
   }
   .sign-in{
     top:65%;
@@ -2465,10 +2502,10 @@ footer p{font-weight: lighter;}
     background-color:rgb(123, 174, 187);
     width:450px;
     z-index: 6;
-    position: absolute;
+  
    
     padding:20px;
-    top:60%;
+    top:50%;
     left:50%;
   }
   .modal-section .help{
@@ -2514,17 +2551,15 @@ footer p{font-weight: lighter;}
     transform: translate(-50%,-50%);
     width:500px;
   }
-  .sign-in{
+ /* .sign-in{
     position: absolute;
-    top:80%;
+    top:60%;
     left: 50%;
     transform: translate(-50%,-50%);
     width:500px;
     
-  }
-  .sign-in .signIn-close-button{
-    margin-left: 385px;
-  }
+  }*/
+ 
   .overlay{
     min-height: 200vh;;
   }
@@ -2547,7 +2582,7 @@ footer p{font-weight: lighter;}
 
     position: absolute;
     top:52px;
-    left:580px;
+    left:570px;
     z-index: 1;
     
      
@@ -2582,11 +2617,7 @@ footer p{font-weight: lighter;}
     cursor: pointer;
     color: white;
   }
-  .sign-in{
-    left:50%;
-    top:60%;
-    transform: translate(-50%,-50%);
-  }
+  
   .log-in{
 
 
@@ -2624,13 +2655,22 @@ footer p{font-weight: lighter;}
 
 }
 @media(min-width:1500px){
+  .nav-menu .navbar-nav{
+    margin-right: 350px;
+  }
   .area{
 
-    position: absolute;
+  
     top:52px;
-    left:600px;
+    left:610px;
     z-index: 1;
     
      
   }
+}
+@media(min-width:1600px){
+  .nav-menu .navbar-nav{
+    margin-right: 400px;
+  }
+ 
 }

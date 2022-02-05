@@ -238,6 +238,19 @@ label{
 */
 
 @media(max-width:360px){
+  #dropdownMenu{
+    margin-top: 35px;
+        margin-left: -140px;
+  }
+  .areaTwo{
+
+    position: fixed;
+    top:140px;
+    left:200px;
+    z-index: 2;
+    
+     
+  }
   .imagefilee{
     margin-left: -510px;
   }
@@ -294,6 +307,15 @@ label{
 
 }
 @media(max-width:260px){
+  .areaTwo{
+
+    position: fixed;
+    top:145px;
+    left:140px;
+    z-index: 2;
+    
+     
+  }
   .profileImg{
     margin-left: 45px;
   }
@@ -359,7 +381,19 @@ margin-left: 20px;
 
 }
 @media(min-width:361px){
+  #dropdownMenu{
+    margin-top: 35px;
+        margin-left: -150px;
+  }
+  .areaTwo{
 
+    position: fixed;
+    top:140px;
+    left:220px;
+    z-index: 2;
+    
+     
+  }
   .imagefilee{
     margin-left: -500px;
   }
@@ -367,14 +401,14 @@ margin-left: 20px;
   .ImageFile{
        margin: auto;
      position: relative;
-     left:70px;
+     left:90px;
      top:10px;
      font-size: 15px;
      font-weight: lighter;
 }
 .image2{
-   
-    margin:0 -10px 0 -8px;
+    
+    margin:0 -10px 0 -0px;
     height:100px;
     box-shadow: 0.5px 1.5px 1.5px 0.5px rgb(78, 73, 73);
 }
@@ -417,6 +451,19 @@ margin-left: 35px;
 
 }
 @media(min-width:400px){
+  #dropdownMenu{
+    margin-top: 35px;
+        margin-left: -150px;
+  }
+  .areaTwo{
+
+    position: fixed;
+    top:140px;
+    left:240px;
+    z-index: 2;
+    
+     
+  }
   #removePhotos{
     display: flex;
     text-align: center;
@@ -452,7 +499,7 @@ margin-left: 35px;
 }
 .image2{
    
-    margin:0 -10px 0 -8px;
+    margin:0 -10px 0 0px;
     height:100px;
     box-shadow: 0.5px 1.5px 1.5px 0.5px rgb(78, 73, 73);
 }
@@ -487,6 +534,15 @@ margin-left: 35px;
 }
 
 @media(min-width:500px){
+  .areaTwo{
+
+    position: fixed;
+    top:140px;
+    left:300px;
+    z-index: 2;
+    
+     
+  }
   #removePhotos{
     display: flex;
     text-align: center;
@@ -529,6 +585,15 @@ margin-left: 35px;
 
 }
 @media(min-width:600px){
+  .areaTwo{
+
+    position: fixed;
+    top:140px;
+    left:350px;
+    z-index: 2;
+    
+     
+  }
   #removePhotos{
     display: flex;
     text-align: center;
@@ -572,6 +637,15 @@ margin-left: 35px;
 
 }
 @media(min-width:700px){
+  .areaTwo{
+
+    position: fixed;
+    top:60px;
+    left:550px;
+    z-index: 2;
+    
+     
+  }
   #editAdvertiseBtn{
     margin-top: -60px;
   margin-left:300px;
@@ -614,11 +688,20 @@ margin-left: 35px;
     
   }
   .expireMessage{
-    margin-left: 190px;
+    margin-left: 195px;
   }
 
 }
 @media(min-width:800px){
+  .areaTwo{
+
+    position: fixed;
+    top:50px;
+    left:600px;
+    z-index: 2;
+    
+     
+  }
   .overlayTwo{
     position: absolute;
     top: 0px;
@@ -673,11 +756,24 @@ box-shadow: 0.5px 1.5px 1.5px 0.5px rgb(78, 73, 73);
   
 }
 .expireMessage{
-  margin-left: 200px;
+  margin-left: 220px;
 }
 }
 
 @media(min-width:1000px){
+  #dropdownMenu{
+    margin-top: 35px;
+        margin-left: 5px;
+  }
+  .areaTwo{
+
+    position: fixed;
+    top:50px;
+    left:325px;
+    z-index: 2;
+    
+     
+  }
   .overlayTwo{
     position: absolute;
     top: 0px;
@@ -732,12 +828,25 @@ box-shadow: 0.5px 1.5px 1.5px 0.5px rgb(78, 73, 73);
   
 }
 .expireMessage{
-  margin-left: 250px;
+  margin-left: 260px;
 }
 
 
 }
 @media(min-width:1200px){
+  #dropdownMenu{
+    margin-top: 35px;
+        margin-left: 5px;
+  }
+  .areaTwo{
+
+    position: fixed;
+    top:50px;
+    left:480px;
+    z-index: 2;
+    
+     
+  }
   .overlayTwo{
     position: absolute;
     top: 0px;
@@ -768,7 +877,7 @@ box-shadow: 0.5px 1.5px 1.5px 0.5px rgb(78, 73, 73);
 }
 
 .imagefilee{
-  margin-left: -30px;
+  margin-left: -20px;
 }
 
 .ImageFile{
@@ -780,7 +889,7 @@ font-size: 15px;
 font-weight: lighter;
 }
 .image2{
-margin:0 -10px 0 31px;
+margin:0 -10px 0 42px;
 height:100px;
 box-shadow: 0.5px 1.5px 1.5px 0.5px rgb(78, 73, 73);
 }
@@ -856,7 +965,19 @@ box-shadow: 0.5px 1.5px 1.5px 0.5px rgb(78, 73, 73);
 
 }
 @media(min-width:1400px){
+  #dropdownMenu{
+    margin-top: 35px;
+        margin-left: 5px;
+  }
+  .areaTwo{
 
+    position: fixed;
+    top:50px;
+    left:650px;
+    z-index: 2;
+    
+     
+  }
   .overlayTwo{
     position: absolute;
     top: 0px;
@@ -917,7 +1038,15 @@ box-shadow: 0.5px 1.5px 1.5px 0.5px rgb(78, 73, 73);
 
 }
 @media(min-width:1500px){
+  .areaTwo{
 
+    position: fixed;
+    top:50px;
+    left:650px;
+    z-index: 2;
+    
+     
+  }
   .overlayTwo{
     position: absolute;
     top: 0px;
@@ -931,8 +1060,8 @@ box-shadow: 0.5px 1.5px 1.5px 0.5px rgb(78, 73, 73);
   
   }
   #editAdvertiseBtn{
-    margin-top: -60px;
-  margin-left:970px;
+    margin-top: -50px;
+  margin-left:1060px;
 
 
 }
@@ -948,19 +1077,19 @@ box-shadow: 0.5px 1.5px 1.5px 0.5px rgb(78, 73, 73);
 }
 
 .imagefilee{
-  margin-left: -30px;
+  margin-left: 5px;
 }
 
 .ImageFile{
   margin: auto;
 position: relative;
-left:40px;
+left:50px;
 top:10px;
 font-size: 15px;
 font-weight: lighter;
 }
 .image2{
-margin:0 -10px 0 31px;
+margin:0 -10px 0 47px;
 height:100px;
 box-shadow: 0.5px 1.5px 1.5px 0.5px rgb(78, 73, 73);
 }

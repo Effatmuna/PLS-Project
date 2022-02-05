@@ -5,7 +5,7 @@
 }
 
 #sylhet-section {
-    background: url("pic3.jpg");
+    background: url("pic8.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -175,6 +175,42 @@
 
   }
 }
+@media(max-width:250px){
+  .sylhet{
+
+    
+   
+    position:absolute ;
+    top:250px;
+    right:20px;
+    font-family: 'Rokkitt', serif;
+  }
+  .sylhet p{
+    font-weight: 300;
+    font-family: 'Radley', serif;
+    font-size: 15px;
+}
+
+
+  .seller-img{
+    margin-left: -7px;
+   
+  }
+  iframe{
+   width:200px !important;
+   padding:10px;
+   
+
+ }
+ .Seller{
+   width:100%;
+   display: flex;
+   flex-direction: column;
+   font-size: 20px;
+   
+
+}
+}
 
 @media(min-width:400px){
   iframe{
@@ -292,6 +328,7 @@ iframe{
   iframe{
     width:910px;
     padding:10px;
+    height:100%;
   }
   
 }
@@ -299,6 +336,7 @@ iframe{
   iframe{
     width:320px;
     padding:10px;
+    height: 100%;
   }
   .seller-details{
     position: relative;
@@ -308,6 +346,7 @@ iframe{
    }
 
 }
+
 @media(min-width:1200px){
   .seller-details{
     position: relative;
@@ -318,7 +357,7 @@ iframe{
   
    .seller-img{
     width:50%;
-    margin-left: 20%;
+    margin-left: 25%;
 
 }
 .contact-seller{
@@ -327,12 +366,59 @@ iframe{
 iframe{
   width:400px;
   padding:10px;
+  height: 500px;
+}
+}
+@media(min-width:1300px){
+  .seller-details{
+    position: relative;
+    left:0px;
+    height:400px;
+    overflow: hidden;
+   }
+  
+   .seller-img{
+    width:50%;
+    margin-left: 25%;
+
+}
+.contact-seller{
+  width:1350px !important;
+  
+}
+iframe{
+  width:420px;
+  padding:10px;
+  height:500px;
 }
 }
 @media(min-width:1400px){
   .contact-seller{
     width:1440px !important;
   }
+   
+  .seller-img{
+    width:50%;
+    margin-left: 25%;
+
+}
+  iframe{
+    display: flex;
+    width:460px;
+    padding:10px;
+    height:500px;
+  }
+}
+@media(min-width:1500px){
+  .contact-seller{
+    width:1440px !important;
+  }
+   
+  .seller-img{
+    width:50%;
+    margin-left: 25%;
+
+}
   iframe{
     display: flex;
     width:460px;

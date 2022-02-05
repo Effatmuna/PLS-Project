@@ -65,12 +65,8 @@ advertiseClose.addEventListener("click",function(){
 })
 const overlay = document.querySelector(".overlay");
 overlay.addEventListener("click",function(){
-
-
   document.querySelector(".modal-section").classList.add("show-modal");
   overlay.classList.add("hidden");
-
-
 
 })
 if(!advertise){
@@ -78,7 +74,16 @@ if(!advertise){
   
 
 }
+/* for advertise*/
+const signin = document.querySelector("#signIn");
+signin.addEventListener("click", function(){
+  document.querySelector(".show-signIn").style.display="block";
+    document.querySelector(".overlay").classList.remove("hidden");
+    document.querySelector(".show-logIn").style.display="none";
+    document.querySelector(".modal-section").classList.add("show-modal");
+    document.querySelector(".contact-us").classList.add("show-contact");
 
+})
 
 contact.addEventListener("click",function(){
     document.querySelector(".contact-us").classList.remove("show-contact");
@@ -102,6 +107,18 @@ overlay.addEventListener("click",function(){
 
 
 })
+/* Contact support*/
+const contactSupport = document.querySelector(".contact-support");
+contactSupport.addEventListener("click", function(){
+  document.querySelector(".contact-us").classList.remove("show-contact");
+  document.querySelector(".overlay").classList.remove("hidden");
+  document.querySelector(".show-logIn").style.display="none";
+  document.querySelector(".show-signIn").style.display="none";
+  document.querySelector(".modal-section").classList.add("show-modal");
+ 
+
+})
+
 
 var signIn = document.querySelector("#sign-in");
 
@@ -111,6 +128,7 @@ signIn.addEventListener("click", function(){
     document.querySelector(".show-logIn").style.display="none";
     document.querySelector(".modal-section").classList.add("show-modal");
     document.querySelector(".contact-us").classList.add("show-contact");
+   
 })
 
 document.querySelector(".signIn-close-button").addEventListener("click",function(){
@@ -202,7 +220,30 @@ pricing.addEventListener("click",function(){
  
 })
 
+/* For area selection*/ 
+function laO(src){
+  window.location=src;
+}
+function laT(src){
+  window.location=src;
+}
+function laH(src){
+  window.location=src;
+}
+function laF(src){
+  window.location=src;
+}
+function laI(src){
+  window.location=src;
+}
+function laS(src){
+  window.location=src;
+}
 
+function laA(src){
+  window.location=src;
+}
+/*Area section End*/
 
 var swiper = new Swiper(".mySwiper", {
 

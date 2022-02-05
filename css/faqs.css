@@ -762,14 +762,7 @@ body{
       background-color: teal;
       z-index: 6;
     }
-   /* .area{
   
-      position: absolute;
-      top:52px;
-      left:290px;
-      z-index: 1;
-      
-  } */
     .title{
       margin-top:100px !important;
     }
@@ -795,83 +788,5 @@ body{
     
   }
   }
-  @media(min-width:1400px){
-    /*.area{
-  
-      position: absolute;
-      top:52px;
-      left:550px !important;
-      z-index: 1;
-      
-       
-    }*/
-  }
- /* @media only screen and (min-width:1200px){
-    .height-section {
-      background: url("../images/pic 4.jpg");
-       min-height: 120vh;
-       background-attachment: fixed;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      animation-name: zoom;
-   
-    }
-    .card-section .contact-support{
-
-      background-color: rgb(8, 8, 24);
-      color: white;
-      font-size: 16px;
-      font-weight: bold;
-      border: none;
-      text-align: center;
-      padding:8px;
-     margin:20px -130px 0 490px;
-  }
-  }
-  @media only screen and (min-width:1400px){
-    .height-section {
-      background: url("../images/pic 4.jpg");
-       min-height: 105vh;
-       background-attachment: fixed;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-   
+ 
     
-    }
-    .card-section .contact-support{
-
-      background-color: rgb(8, 8, 24);
-      color: white;
-      font-size: 16px;
-      font-weight: bold;
-      border: none;
-      text-align: center;
-      padding:8px;
-     margin:20px -130px 0 490px;
-  }
-  }
- /* @media only screen and (max-width:360px){
- .height{
-   min-height: 165vh;
-   box-sizing: border-box;
-   overflow: hidden;
-   background-position: center;
- }
- .height .contact-support{
-   
-  background-color: rgb(8, 8, 24);
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  border: none;
-  text-align: center;
-   padding:8px;
-   margin-top: 15px;
-   margin-left: 100px;
- }
-.min h4{
-  margin: 0 auto;
-}
-  }*/

@@ -121,93 +121,85 @@
 
          <section class="areaTwo hiddenTwo">
 
-          <select class="Division">
-          
-             <option>Dhaka</option>
-             <option>Sy</option>
-             <option>Ch</option>
-             <option>Ran</option>
-             <option>Bar</option>
-             <option>Kh</option>
-             <option>Ra</option>
-            
+           
+          <select class="Division" onchange="laO(this.value)">
+            <option>Dhaka</option>
+            <option value="Dhaka-all.html">Dhaka-all</option>
+            <option>Gazipur</option>
+            <option>Manikganj</option>
+             <option>Narayanganj</option>
+             <option>Mymensingh</option>  
+             <option>Kishorganj</option>
+             <option>Rajbari</option>
           </select>
           <br/>
-          <select class="Division">
-          
+          <select class="Division" onchange="laT(this.value)">
             <option>Sylhet</option>
-            <option>Sy</option>
-            <option>Cho</option>
-            <option>Ra</option>
-            <option>Bar</option>
-            <option>Khu</option>
-            <option>Raj</option>
+            <option value="Sylhet-all.html">Sylhet-all</option>
+            <option>Hobiganj</option>
+            <option>Moulovibazar</option>
+            <option>Sunamganj</option>
+         
            
          </select>
          <br/>
-         <select class="Division">
-         
-           <option>Chottogram</option>
-           <option>Sy</option>
-           <option>Chot</option>
-           <option>Rar</option>
-           <option>Ba</option>
-           <option>Khu</option>
-           <option>Raj</option>
+         <select class="Division" onchange="laH(this.value)">
+          <option>Chottogram</option>
+           <option value="Chottogram.html">Chottogram-all</option>
+           <option>Bandarban</option>
+           <option>Brahmanbaria</option>
+           <option>Cox's Bazar</option>
+           <option>Comilla</option>
+           <option>Noakhali</option>
+           <option>Feni</option>
           
         </select>
         <br/>
         
-        <select class="Division">
-        
+        <select class="Division" onchange="laF(this.value)">
           <option>Rangpur</option>
-          <option>Syl</option>
-          <option>Chot</option>
-          <option>Ran</option>
-          <option>Bari</option>
-          <option>Khul</option>
-          <option>Raj</option>
-         
+          <option value="Rangpur.html">Rangpur-all</option>
+          <option>Dinajpur</option>
+          <option>Gaibandha</option>
+          <option>Kurigram</option>
+          <option>Nilphamri</option>
+          <option>Thaurgaon</option>
+       
        </select>
        <br/>
-       <select class="Division">
-       
-         <option>Barishal</option>
-         <option>Syl</option>
-         <option>Chott</option>
-         <option>Ran</option>
-         <option>Bari</option>
-         <option>Kh</option>
-         <option>Raj</option>
+       <select class="Division"  onchange="laI(this.value)">
+        <option>Barishal</option>
+         <option value="Barishal.html">Barishal-all</option>
+         <option>Barguna</option>
+         <option>Bhola</option>
+         <option>Jhaloathi</option>
+         <option>Pirojpur</option>
+         
         
       </select>
       <br>
-      <select class="Division">
-      
+      <select class="Division" onchange="laS(this.value)">
         <option>Khulna</option>
-        <option>Sy</option>
-        <option>Chot</option>
-        <option>Rang</option>
-        <option>Bari</option>
-        <option>Khu</option>
-        <option>Rajs</option>
+        <option value="Khulna.html">Khulna-all</option>
+        <option>Jashare</option>
+        <option>Kustia</option>
+        <option>Meherpur</option>
+        <option>Bagerhat</option>
+       
        
      </select>
       <br/>
-     <select class="Division">
+     <select class="Division" onchange="laA(this.value)">
+      <option>Rajshahi</option>
+       <option value="Rajshahi.html">Rajshahi-all</option>
+       <option>Bogura</option>
+       <option>Natore</option>
+       <option>Pabna</option>
+       <option>Sirajganj</option>
+       <option>Naogaon</option>
      
-       <option>Rajshahi</option>
-       <option>Sylh</option>
-       <option>Chot</option>
-       <option>Ra</option>
-       <option>Bar</option>
-       <option>Khul</option>
-       <option>Raj</option>
       
     </select>
-   
-
-       
   </section>
         </nav>
      
@@ -262,6 +254,7 @@
           <div class="col">
             <input type="text" class="form-control" placeholder="First name">
           </div>
+          <br>
           <div class="col">
             <input type="text" class="form-control" placeholder="Last name">
           </div>
@@ -410,8 +403,30 @@ welcome.addEventListener("click",function(){
 areaTwo.addEventListener("click",function(){
 
 document.querySelector(".areaTwo").classList.toggle("hiddenTwo");
+alert("If you click area button once and your area section is not removing then click the area section again")
 })
+function laO(src){
+  window.location=src;
+}
+function laT(src){
+  window.location=src;
+}
+function laH(src){
+  window.location=src;
+}
+function laF(src){
+  window.location=src;
+}
+function laI(src){
+  window.location=src;
+}
+function laS(src){
+  window.location=src;
+}
 
+function laA(src){
+  window.location=src;
+}
 
 contact.addEventListener("click",function(){
     document.querySelector(".contact-us").classList.remove("show-contactTwo");
@@ -425,7 +440,11 @@ contactCloseButton.addEventListener("click",function(){
   document.querySelector(".overlayTwo").classList.add("hidden");
 
 })
-
+const overlayTwo = document.querySelector(".overlayTwo");
+overlayTwo.addEventListener("click",function(){
+  document.querySelector(".contact-us").classList.add("show-contactTwo");
+  document.querySelector(".overlayTwo").classList.add("hidden");
+})
 
 
 
