@@ -85,6 +85,14 @@ signin.addEventListener("click", function(){
 
 })
 
+overlay.addEventListener("click",function(){
+
+
+  document.querySelector(".show-signIn").style.display="none";
+  overlay.classList.add("hidden");
+
+
+})
 contact.addEventListener("click",function(){
     document.querySelector(".contact-us").classList.remove("show-contact");
     document.querySelector(".overlay").classList.remove("hidden");
@@ -108,16 +116,6 @@ overlay.addEventListener("click",function(){
 
 })
 /* Contact support*/
-const contactSupport = document.querySelector(".contact-support");
-contactSupport.addEventListener("click", function(){
-  document.querySelector(".contact-us").classList.remove("show-contact");
-  document.querySelector(".overlay").classList.remove("hidden");
-  document.querySelector(".show-logIn").style.display="none";
-  document.querySelector(".show-signIn").style.display="none";
-  document.querySelector(".modal-section").classList.add("show-modal");
- 
-
-})
 
 
 var signIn = document.querySelector("#sign-in");
@@ -156,7 +154,7 @@ logIn.addEventListener("click",function(){
     document.querySelector(".show-signIn").style.display="none";
     document.querySelector(".modal-section").classList.add("show-modal");
     document.querySelector(".contact-us").classList.add("show-contact");
-
+    console.log("hi");
 })
 document.querySelector(".logIn-close-button").addEventListener("click",function(){
  

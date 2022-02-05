@@ -2209,7 +2209,7 @@ footer p{font-weight: lighter;}
 
   .sign-in{
     width:450px;
-    top:40%;
+    top:65%;
     left:50%;
     transform: translate(-50%,-50%);
   }
@@ -2424,7 +2424,7 @@ footer p{font-weight: lighter;}
     top: 0px;
     left: 0px;
     width: 100%;
-    min-height:220vh;
+    min-height:250vh;
     filter: blur(3px);
     opacity: 0.7;
     background-color: black;
@@ -2462,7 +2462,7 @@ footer p{font-weight: lighter;}
   
   }
   .sign-in{
-    top:65%;
+    top:80%;
     left:50%;
   }
   .log-in{
@@ -2537,7 +2537,7 @@ footer p{font-weight: lighter;}
     height:580px;
     z-index: 6;
     position: absolute;
-    top:70%;
+    top:60%;
     left: 50%;
     transform: translate(-50%,-50%);
     width:500px;
