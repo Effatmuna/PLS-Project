@@ -531,7 +531,64 @@
          <script src="js/bootstrap.min.js"></script>
      
        <script src="js/main.js"></script>
-    
+        <script>
+          
+description.addEventListener("click",function(){
+
+   
+document.querySelector(".d1").style.display="inline";
+description.style.backgroundColor="cadetblue";
+pricing.style.backgroundColor="white";
+facilities.style.backgroundColor="white";
+
+document.querySelector(".d2").classList.add("show-p2");
+document.querySelector(".d3").classList.add("show-p3");
+
+})
+
+
+facilities.addEventListener("click",function(){
+document.querySelector(".d2").classList.toggle("show-p2");
+facilities.style.backgroundColor="lightgreen";
+pricing.style.backgroundColor="white";
+
+description.style.backgroundColor="white";
+document.querySelector(".d1").style.display="none";
+document.querySelector(".d3").classList.add("show-p3");
+})
+pricing.addEventListener("click",function(){
+
+document.querySelector(".d2").classList.add("show-p2");
+pricing.style.backgroundColor="skyblue";
+facilities.style.backgroundColor="white";
+description.style.backgroundColor="white";
+document.querySelector(".d1").style.display="none";
+document.querySelector(".d3").classList.toggle("show-p3");
+
+
+})
+var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+
+
+
+        </script>
      <script
        src="https://code.jquery.com/jquery-3.6.0.min.js"
        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="

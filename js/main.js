@@ -184,40 +184,6 @@ document.querySelector(".area").classList.toggle("hidden");
 })
 
 
-description.addEventListener("click",function(){
-
-   
-  document.querySelector(".d1").style.display="inline";
-  description.style.backgroundColor="cadetblue";
-  pricing.style.backgroundColor="white";
-  facilities.style.backgroundColor="white";
-
-  document.querySelector(".d2").classList.add("show-p2");
-  document.querySelector(".d3").classList.add("show-p3");
-
-})
-
-
-facilities.addEventListener("click",function(){
-  document.querySelector(".d2").classList.toggle("show-p2");
-  facilities.style.backgroundColor="lightgreen";
-  pricing.style.backgroundColor="white";
- 
-  description.style.backgroundColor="white";
-  document.querySelector(".d1").style.display="none";
-  document.querySelector(".d3").classList.add("show-p3");
-})
-pricing.addEventListener("click",function(){
- 
-  document.querySelector(".d2").classList.add("show-p2");
-  pricing.style.backgroundColor="skyblue";
-  facilities.style.backgroundColor="white";
-  description.style.backgroundColor="white";
-  document.querySelector(".d1").style.display="none";
-  document.querySelector(".d3").classList.toggle("show-p3");
- 
-})
-
 /* For area selection*/ 
 function laO(src){
   window.location=src;
@@ -242,39 +208,3 @@ function laA(src){
   window.location=src;
 }
 /*Area section End*/
-
-var swiper = new Swiper(".mySwiper", {
-
-  loop: true,
-  spaceBetween: 10,
-  slidesPerView: 4,
-  freeMode: true,
-  watchSlidesProgress: true,
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: false,
-  },
-
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
- 
-
-});
-
-var swiper2 = new Swiper(".mySwiper2", {
-  spaceBetween: 30,
-  centeredSlides: true,
-  autoplay: {
-    delay: 2000,
-    disableOnInteraction: false,
-  },
- 
- 
-  thumbs: {
-    swiper: swiper,
-  },
-});
-
-
