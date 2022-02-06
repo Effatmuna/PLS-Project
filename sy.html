@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chottogram</title>
+    <title>Sylhet</title>
     <link rel="stylesheet" href="./css/style.css" />
    <link rel="stylesheet" href="./css/sylhet.css">
 
@@ -352,8 +352,8 @@
                    
     <div class="sylhet-title">
         <div class="act"></div>
-          <h5>Rajshahi</h5>
-          <p class="Bangladesh">The silk city of Bangladesh!!</p>
+          <h5>Sylhet</h5>
+          <p class="Bangladesh">The London of Bangladesh!</p>
     </div>
 
 </section>
@@ -365,40 +365,40 @@
 <div class="swiper mySwiper2 bg-dark">
 <div class="swiper-wrapper"style="width:300px; height: 500px;"  >
   <div class="swiper-slide"   >
-    <img src="./images/pic9.jpg" class="image img-fluid"/>
+    <img src="./images/pic 3.jpg" class="image"/>
   </div>
-  <div class="swiper-slide" class="image img-fluid">
-    <img src="./images/pic9.jpg" class="image img-fluid"/>
-  </div>
-  <div class="swiper-slide">
-    <img src="./images/pic9.jpg" class="image img-fluid"/>
+  <div class="swiper-slide" class="image">
+    <img src="./images/pic 3.jpg" />
   </div>
   <div class="swiper-slide">
-    <img src="./images/pic9.jpg" class="image img-fluid"/>
+    <img src="./images/pic 3.jpg" />
   </div>
   <div class="swiper-slide">
-    <img src="./images/pic9.jpg" class="image img-fluid"/>
+    <img src="./images/pic 3.jpg" />
+  </div>
+  <div class="swiper-slide">
+    <img src="./images/pic 3.jpg" />
   </div>
 
 </div>
 
 </div>
 <div thumbsSlider="" class="swiper mySwiper m-2" >
-<div class="swiper-wrapper" style="height:150px">
+<div class="swiper-wrapper" style="height:200px">
   <div class="swiper-slide">
-    <img src="./images/pic9.jpg" class="img-fluid" />
+    <img src="./images/pic 3.jpg" class="" />
   </div>
   <div class="swiper-slide">
-    <img src="./images/pic9.jpg" class="img-fluid"/>
+    <img src="./images/pic 3.jpg" class=""/>
   </div>
   <div class="swiper-slide ">
-    <img src="./images/pic9.jpg" class="img-fluid" />
+    <img src="./images/pic 3.jpg" class="" />
   </div>
   <div class="swiper-slide">
-    <img src="./images/pic9.jpg" class="img-fluid"/>
+    <img src="./images/pic 3.jpg" class=""/>
   </div>
   <div class="swiper-slide">
-    <img src="./images/pic9.jpg" class="img-fluid"/>
+    <img src="./images/pic 3.jpg" />
   </div>
 
 </div>
@@ -451,7 +451,7 @@
 
           <div class="allDetails">
             <div class="">
-              <img src="./images/person4.jpg" class="seller-img">
+              <img src="./images/person2.jpg" class="seller-img">
             </div>
             <div class=" text-center">
               <div class="Seller">
@@ -473,7 +473,7 @@
 
 
   <!--Contact Seller-->
-   <div class="contact-seller m-2">
+   <div class="contact-seller mb-2">
      <h2 class="contact-seller-title">Contact Seller</h2>
   <div class="contact-seller-form">
     <form class="form-group">
@@ -525,15 +525,247 @@
          <a href="#" class="scrollup" id="scroll-up">
            <i class="ri-arrow-up-line scrollup__icon"></i>
          </a>
-          
+     
          <script src="js/swiper-bundle.min.js"></script>
          <script src="js/scrollreveal.min.js"></script>
          <script src="js/bootstrap.min.js"></script>
      
-       <script src="js/main.js"></script>
-       <script>
-          
-        description.addEventListener("click",function(){
+        <script>
+
+
+
+
+    var swiper = new Swiper(".mySwiper", {
+                loop: true,
+                spaceBetween: 10,
+                slidesPerView: 4,
+                freeMode: true,
+                watchSlidesProgress: true,
+              });
+              var swiper2 = new Swiper(".mySwiper2", {
+                loop: true,
+                spaceBetween: 10,
+                navigation: {
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev",
+                },
+                thumbs: {
+                  swiper: swiper,
+                },
+              });
+              console.log("muna");
+console.log("rahat");
+var navToggle = document.querySelector(".navbar-toggler-icon");
+var navClose = document.querySelector("#nav-close");
+var advertiseClose = document.querySelector(".close-button");
+var advertise=document.querySelector("#advertise");
+var Home=document.querySelector("#home");
+var contactCloseButton= document.querySelector(".contact-close-button");
+var down= document.querySelectorAll(".down");
+var cardBody= document.querySelectorAll(".card-body");
+var upper= document.querySelectorAll(".upper");
+var area = document.querySelector("#area");
+var contact = document.querySelector("#contact");
+var facilities= document.querySelector("#facilities");
+var description= document.querySelector("#description");
+var pricing = document.querySelector("#pricing");
+var Card= document.querySelector(".Card");
+var leftButton = document.querySelector("#left-button");
+console.log("muna");
+console.log("munaaaaaaaaaaa");
+var homeSection = document.querySelector("home-section");
+window.addEventListener("scroll",function(){
+
+
+  var Navbar = document.querySelector("nav");
+  
+  if(pageYOffset > 0 || pageXOffset >0){
+      Navbar.style.backgroundColor="black";
+      Navbar.style.opacity="1";
+  }
+  else{
+    Navbar.style.backgroundColor="black";
+    Navbar.style.opacity= "0.6";
+  }
+
+})
+
+navToggle.addEventListener("click",function(){
+
+
+  document.querySelector(".nav-menu").classList.add("show-menu");
+   
+
+});
+navClose.addEventListener("click",function(){
+  document.querySelector(".nav-menu").classList.remove("show-menu");
+
+});
+
+
+advertise.addEventListener("click",function(){
+
+  document.querySelector(".modal-section").classList.remove("show-modal");
+  document.querySelector(".overlay").classList.remove("hidden");
+  document.querySelector(".show-logIn").style.display="none";
+  document.querySelector(".show-signIn").style.display="none";
+  document.querySelector(".contact-us").classList.add("show-contact");
+})
+
+advertiseClose.addEventListener("click",function(){
+
+  document.querySelector(".modal-section").classList.add("show-modal");
+  document.querySelector(".overlay").classList.add("hidden");
+  
+})
+const overlay = document.querySelector(".overlay");
+overlay.addEventListener("click",function(){
+  document.querySelector(".modal-section").classList.add("show-modal");
+  overlay.classList.add("hidden");
+
+})
+if(!advertise){
+  document.querySelector(".modal-section").classList.add("show-modal");
+  
+
+}
+/* for advertise*/
+const signin = document.querySelector("#signIn");
+signin.addEventListener("click", function(){
+  document.querySelector(".show-signIn").style.display="block";
+    document.querySelector(".overlay").classList.remove("hidden");
+    document.querySelector(".show-logIn").style.display="none";
+    document.querySelector(".modal-section").classList.add("show-modal");
+    document.querySelector(".contact-us").classList.add("show-contact");
+
+})
+
+overlay.addEventListener("click",function(){
+
+
+  document.querySelector(".show-signIn").style.display="none";
+  overlay.classList.add("hidden");
+
+
+})
+contact.addEventListener("click",function(){
+    document.querySelector(".contact-us").classList.remove("show-contact");
+    document.querySelector(".overlay").classList.remove("hidden");
+    document.querySelector(".show-logIn").style.display="none";
+    document.querySelector(".show-signIn").style.display="none";
+    document.querySelector(".modal-section").classList.add("show-modal");
+   
+})
+contactCloseButton.addEventListener("click",function(){
+  document.querySelector(".contact-us").classList.add("show-contact");
+  document.querySelector(".overlay").classList.add("hidden");
+
+})
+overlay.addEventListener("click",function(){
+
+
+  document.querySelector(".contact-us").classList.add("show-contact");
+  overlay.classList.add("hidden");
+
+
+
+})
+/* Contact support*/
+
+
+var signIn = document.querySelector("#sign-in");
+
+signIn.addEventListener("click", function(){
+    document.querySelector(".show-signIn").style.display="block";
+    document.querySelector(".overlay").classList.remove("hidden");
+    document.querySelector(".show-logIn").style.display="none";
+    document.querySelector(".modal-section").classList.add("show-modal");
+    document.querySelector(".contact-us").classList.add("show-contact");
+   
+})
+
+document.querySelector(".signIn-close-button").addEventListener("click",function(){
+  document.querySelector(".show-signIn").style.display="none";
+  document.querySelector(".overlay").classList.add("hidden");
+
+
+})
+overlay.addEventListener("click",function(){
+
+
+  document.querySelector(".show-signIn").style.display="none";
+  overlay.classList.add("hidden");
+
+
+
+})
+
+
+var logIn= document.querySelector("#log-in");
+
+logIn.addEventListener("click",function(){
+  document.querySelector(".show-logIn").style.display="block";
+    document.querySelector(".overlay").classList.remove("hidden");
+    document.querySelector(".show-signIn").style.display="none";
+    document.querySelector(".modal-section").classList.add("show-modal");
+    document.querySelector(".contact-us").classList.add("show-contact");
+    console.log("hi");
+})
+document.querySelector(".logIn-close-button").addEventListener("click",function(){
+ 
+   document.querySelector(".show-logIn").style.display="none";
+   document.querySelector(".overlay").classList.add("hidden");
+
+
+})
+overlay.addEventListener("click",function(){
+
+
+  document.querySelector(".show-logIn").style.display="none";
+  overlay.classList.add("hidden");
+
+
+
+})
+
+console.log(down.length);
+
+
+area.addEventListener("click",function(){
+
+document.querySelector(".area").classList.toggle("hidden");
+ alert("If you click area button once and your area section is not removing then click the area section again")
+
+})
+
+
+/* For area selection*/ 
+function laO(src){
+  window.location=src;
+}
+function laT(src){
+  window.location=src;
+}
+function laH(src){
+  window.location=src;
+}
+function laF(src){
+  window.location=src;
+}
+function laI(src){
+  window.location=src;
+}
+function laS(src){
+  window.location=src;
+}
+
+function laA(src){
+  window.location=src;
+}
+
+
+
+              description.addEventListener("click",function(){
         
            
         document.querySelector(".d1").style.display="inline";
@@ -567,28 +799,12 @@
         
         
         })
-        var swiper = new Swiper(".mySwiper", {
-                loop: true,
-                spaceBetween: 10,
-                slidesPerView: 4,
-                freeMode: true,
-                watchSlidesProgress: true,
-              });
-              var swiper2 = new Swiper(".mySwiper2", {
-                loop: true,
-                spaceBetween: 10,
-                navigation: {
-                  nextEl: ".swiper-button-next",
-                  prevEl: ".swiper-button-prev",
-                },
-                thumbs: {
-                  swiper: swiper,
-                },
-              });
         
-        
-        
-                </script>
+
+
+
+
+        </script>
      <script
        src="https://code.jquery.com/jquery-3.6.0.min.js"
        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
