@@ -913,8 +913,8 @@ footer p{font-weight: lighter;}
 }
 .log-in{
   top:20%;
-  left:30%;
-  width:250px !important;
+  left:65px !important;
+  width:270px !important;
  
 }
 .log-in .logIn-close-button{
@@ -1038,10 +1038,10 @@ footer p{font-weight: lighter;}
     height:780px;
     
   }
- /* .log-in{
-    left:55px !important;
+  .log-in{
+    left:20px;
     width:400px;
-  }
+  }/*
   .log-in .logIn-close-button{
       
     margin-left:255px;
@@ -1151,7 +1151,7 @@ footer p{font-weight: lighter;}
     min-height: 260vh;
   }
   .log-in{
-    left:55px;
+    left:45px !important;
     width:300px;
   }
   .log-in .logIn-close-button{
@@ -1278,7 +1278,7 @@ footer p{font-weight: lighter;}
 }
 .log-in{
   top:150px;
-  left:20px;
+  left:35px !important;
   width:260px;
 }
 .log-in .logIn-close-button{
