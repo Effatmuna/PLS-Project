@@ -553,8 +553,8 @@
                 },
               });
               var facilities= document.querySelector("#facilities");
-var description= document.querySelector("#description");
-var pricing = document.querySelector("#pricing");
+              var description= document.querySelector("#description");
+              var pricing = document.querySelector("#pricing");
 
         description.addEventListener("click",function(){
         
@@ -667,7 +667,7 @@ document.querySelector(".modal-section").classList.add("show-modal");
 
 
 }
-/* for advertise*/
+/* for advertise signin*/
 const signin = document.querySelector("#signIn");
 signin.addEventListener("click", function(){
 document.querySelector(".show-signIn").style.display="block";
@@ -686,6 +686,9 @@ overlay.classList.add("hidden");
 
 
 })
+/* advertise sign in end*/
+
+/* Contact start*/
 contact.addEventListener("click",function(){
 document.querySelector(".contact-us").classList.remove("show-contact");
 document.querySelector(".overlay").classList.remove("hidden");
@@ -708,9 +711,10 @@ overlay.classList.add("hidden");
 
 
 })
-/* Contact support*/
+/* Contact end */
 
 
+/*Sign in start*/
 var signIn = document.querySelector("#sign-in");
 
 signIn.addEventListener("click", function(){
@@ -737,8 +741,10 @@ overlay.classList.add("hidden");
 
 
 })
+/*Sign in end*/
 
 
+/* login start*/
 var logIn= document.querySelector("#log-in");
 
 logIn.addEventListener("click",function(){
@@ -765,19 +771,17 @@ overlay.classList.add("hidden");
 
 
 })
-
+/* login end*/
 console.log(down.length);
 
-
+/* Area section*/
 area.addEventListener("click",function(){
 
 document.querySelector(".area").classList.toggle("hidden");
 alert("If you click area button once and your area section is not removing then click the area section again")
 
 })
-
-
-/* For area selection*/ 
+      
 function laO(src){
 window.location=src;
 }
@@ -801,12 +805,7 @@ function laA(src){
 window.location=src;
 }
 
-
-
-
-        
-        
-                </script>
+ </script>
      <script
        src="https://code.jquery.com/jquery-3.6.0.min.js"
        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="

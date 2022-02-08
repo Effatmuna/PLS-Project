@@ -365,7 +365,7 @@
   <textarea rows="3" cols="37" class="form-control"></textarea>
 
 <br/>
-  <button class="form-control send-button btn btn-outline-primary">Send</button>
+  <button class="form-control send-button btn btn-outline-primary" id="send">Send</button>
 
 </form>
 
@@ -739,11 +739,7 @@
           <script src="js/swiper-bundle.min.js"></script>
         <script src="js/main.js"></script>
       
-        <script>
-  
-      
-        </script>
-
+    
 <script>
   var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
@@ -781,7 +777,15 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
         crossorigin="anonymous"
       ></script>
-      
+      <script>
+           
+        $(document).ready(function(){
+          $(".send-button").click(function(){
+            $("body").load("pac.html");
+          });
+        });
+    </script>
+
   <script
   src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
   integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="

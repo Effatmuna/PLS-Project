@@ -19,6 +19,8 @@ var leftButton = document.querySelector("#left-button");
 console.log("muna");
 console.log("munaaaaaaaaaaa");
 var homeSection = document.querySelector("home-section");
+
+/* For scrolling*/
 window.addEventListener("scroll",function(){
 
 
@@ -37,7 +39,6 @@ window.addEventListener("scroll",function(){
 
 navToggle.addEventListener("click",function(){
 
-
   document.querySelector(".nav-menu").classList.add("show-menu");
    
 
@@ -47,7 +48,7 @@ navClose.addEventListener("click",function(){
 
 });
 
-
+/* For advertise modal*/
 advertise.addEventListener("click",function(){
 
   document.querySelector(".modal-section").classList.remove("show-modal");
@@ -74,7 +75,7 @@ if(!advertise){
   
 
 }
-/* for advertise*/
+/* for advertise signin*/
 const signin = document.querySelector("#signIn");
 signin.addEventListener("click", function(){
   document.querySelector(".show-signIn").style.display="block";
@@ -93,6 +94,7 @@ overlay.addEventListener("click",function(){
 
 
 })
+/* Contact*/
 contact.addEventListener("click",function(){
     document.querySelector(".contact-us").classList.remove("show-contact");
     document.querySelector(".overlay").classList.remove("hidden");
@@ -115,8 +117,9 @@ overlay.addEventListener("click",function(){
 
 
 })
-/* Contact support*/
+/* Contact End*/
 
+/* Sign in start*/
 
 var signIn = document.querySelector("#sign-in");
 
@@ -144,8 +147,10 @@ overlay.addEventListener("click",function(){
 
 
 })
+/* Sign in end*/
 
 
+/*login start*/
 var logIn= document.querySelector("#log-in");
 
 logIn.addEventListener("click",function(){
@@ -175,16 +180,16 @@ overlay.addEventListener("click",function(){
 
 console.log(down.length);
 
-
+/* For area selection*/ 
 area.addEventListener("click",function(){
 
 document.querySelector(".area").classList.toggle("hidden");
  alert("If you click area button once and your area section is not removing then click the area section again")
-
+  
 })
 
 
-/* For area selection*/ 
+
 function laO(src){
   window.location=src;
 }
