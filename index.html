@@ -39,7 +39,7 @@
        
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top sticky">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">Logo</a>
+            <a class="navbar-brand" href="index.html">Logo</a>
             <button
               class="navbar-toggler"
               type="button"
@@ -332,7 +332,7 @@
 
     <div class="form-row">
       <div class="col">
-        <input type="text" class="form-control" placeholder="First name">
+        <input type="text" name="firstname"  class="form-control" placeholder="First name">
       </div>
       <div class="col">
         <input type="text" class="form-control" placeholder="Last name">
@@ -391,7 +391,7 @@
 
 
            <div class="oRSignIn text-right">
-           <button class="logIn-button btn btn-outline-light">Send</button>
+           <button class="logIn-button btn btn-outline-light" id="login">Send</button>
       
            </div>
          </form>
@@ -702,14 +702,13 @@
                       
                       <div class="about">
                            <h3>About Us</h3>
-                           <a href=#>About Us</a>
+                           <a href="about.html">About Us</a>
                 
                        </div>
                      </div>
                 </div>
                
           </section>
-
 
 
       
@@ -780,8 +779,13 @@
       <script>
            
         $(document).ready(function(){
-          $(".send-button").click(function(){
+          $("#send").click(function(){
             $("body").load("pac.html");
+          });
+        });
+        $(document).ready(function(){
+          $("#login").click(function(){
+            $("body").load("sellerAccount.html");
           });
         });
     </script>
