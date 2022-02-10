@@ -2021,7 +2021,7 @@ footer p{font-weight: lighter;}
       top: 0px;
       left: 0px;
       width: 100%;
-      min-height:220vh;
+      min-height:180vh;
       filter: blur(3px);
       opacity: 0.7;
       background-color: black;
@@ -2153,9 +2153,6 @@ footer p{font-weight: lighter;}
   }
   @media(min-width:800px){
     .log-in{
-
-
-   
       z-index: 5;
       position: absolute;
     
@@ -2165,6 +2162,20 @@ footer p{font-weight: lighter;}
      
        
     }
+    .overlay{
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      min-height:160vh;
+      filter: blur(3px);
+      opacity: 0.7;
+      background-color: black;
+      z-index: 5;
+    
+    }
+
+
   }
 
 
@@ -2287,7 +2298,7 @@ footer p{font-weight: lighter;}
   top: 0px;
   left: 0px;
   width: 100%;
-  min-height:155vh;
+  min-height:140vh;
   filter: blur(3px);
   opacity: 0.7;
   background-color: black;
